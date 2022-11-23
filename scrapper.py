@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
-import re
 import time
 import pickle
+import sys
+sys.setrecursionlimit(10000)
 
 
 def mcode_list(): # 네이버 최근영화목록의 영화코드를 리스트로 리턴하는 함수
@@ -16,26 +17,46 @@ def mcode_list(): # 네이버 최근영화목록의 영화코드를 리스트로
             line.append(code)    
     return line
 
+ 
+url = urlopen('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49948&target=after')
+soup = BeautifulSoup(url, 'html.parser')
+with open('list.pickle', 'wb') as fw:
+	pickle.dump(soup, fw)
+with open('list.pickle', 'rb') as fr:
+    res = pickle.load(fr)
+print(res)
 
-def asd():   
-    review = []
-    movie_code = input("영화코드를 입력하세요 : ")
-    for page in range(10):
-        url = urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={movie_code}&target=after&page={page}')
-        soup = BeautifulSoup(url, 'html.parser')
-        review = soup.find('tbody').text 
-        print(review)
-        # if review == "":
-        #     return False
-        time.sleep(0.5)  
-        
-hi = [1, 2, 3]
-with open("test.pickle","wb") as fw:
-    pickle.dump(hi, fw)
+def url_html(url):
+    url = urlopen(f"{url}")
+    soup = BeautifulSoup(url, 'html.parser')
+    return soup
 
-with open("test.pickle","rb") as fr:
-    data1234 = pickle.load(fr)
-print(data1234)
+print(type(url_html('https://stackoverflow.com/questions/32957708/python-pickle-error-unicodedecodeerror')))
+
+# def asd(movie_code):   
+#     review = []
+#     review_data=[]
+#     need_reviews_cnt = 1000
+#     for page in range(need_reviews_cnt):
+#         url = urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={movie_code}&target=after&page={page}')
+#         soup = BeautifulSoup(url, 'html.parser')
+#         reviews = soup.find_all("td",{"class":"title"})
+#         for review in reviews:
+#             sentence = review.find("a",{"class":"report"}).get("onclick").split("', '")[2]
+#             if sentence != "":
+#                 movie = review.find("a",{"class":"movie color_b"}).get_text()
+#                 review_data.append([movie,sentence])
+#                 need_reviews_cnt-= 1
+#                 time.sleep(0.5)
+#         if need_reviews_cnt < 0:
+#             break
+#     return review_data
+
+        # with open('list.pickle', 'w', encoding="utf8") as fw:
+#     pickle.dump(asd(49945), fw)
+# with open("list.pickle","r", encoding="UtF-8") as fr:
+#     data = pickle.load(fr)
+# print(data)
 
 
 
@@ -44,7 +65,6 @@ print(data1234)
 # soup = BeautifulSoup(url, 'html.parser')
 # # td_list = soup.find_all("td", class_="title")
 # td_list = soup.find_all("td",{"class":"title"})
-# print(td_list)
 
 # # for td in td_list:
 #     print(td.find_all(class_="report"))
@@ -98,8 +118,26 @@ print(data1234)
 #     linebreak.extract()
 #     print(soup.prettify())    
 
+# # def test1():
+# for page in range(1,11):
+#     url = urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page={page}')
+#     soup = BeautifulSoup(url, 'html.parser')
+#     reviews = soup.find_all("tbody")
+    
+    # for review in reviews:
+    #     sentence = review.find("a",{"class":"report"}.get("onclick"))
+    #     print(sentence)
+# with open("abc.pickle","wb") as fw:
+#     pickle.dump(test1(), fw)
 
-# url = urlopenf'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page=1'
-# soup = BeautifulSoup(url, 'html.parser')
-# print(soup.find('tr'))
+# with open("abc.pickle","rb") as fr:
+#     data1234 = pickle.load(fr)
+# print(data1234)
+
+
+
+
+    #old_content > table > tbody > tr:nth-child(1) > td.title
+
+
 
