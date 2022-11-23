@@ -5,8 +5,30 @@ import pickle
 import sys
 sys.setrecursionlimit(10000)
 
+def add(a: int, b: int) -> int: 
+    return a+b
 
-def mcode_list(): # 네이버 최근영화목록의 영화코드를 리스트로 리턴하는 함수
+result = add(3, 3.4)
+# print(result)  # 6.4 출력
+
+def test(a = 'a', b = 1, c = None):
+    """
+    test 함수입니다.
+        Args:
+            a ``str``: a value
+            b ``int``: b value
+            c ``str``: c value
+        Retruns:
+            None
+    """
+    pass
+test()
+
+
+def mcode_list():
+    """
+    네이버 최근영화목록의 영화코드를 리스트로 리턴하는 함수입니다.
+    """
     url = urlopen('https://movie.naver.com/movie/point/af/list.naver?&page=1')
     soup = BeautifulSoup(url, 'html.parser')
     soup = soup.select('#current_movie > option')
@@ -17,21 +39,29 @@ def mcode_list(): # 네이버 최근영화목록의 영화코드를 리스트로
             line.append(code)    
     return line
 
- 
-url = urlopen('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49948&target=after')
-soup = BeautifulSoup(url, 'html.parser')
-with open('list.pickle', 'wb') as fw:
-	pickle.dump(soup, fw)
-with open('list.pickle', 'rb') as fr:
-    res = pickle.load(fr)
-print(res)
+def save():
+    '''
+    지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 list.pickle 폴더에 저장하는 함수입니다.
+    '''
+    url = urlopen('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49948&target=after')
+    soup = BeautifulSoup(url, 'html.parser')
 
-def url_html(url):
-    url = urlopen(f"{url}")
+    with open('list.pickle', 'wb') as fw:
+        pickle.dump(soup, fw)
+    with open('list.pickle', 'rb') as fr:
+        res = pickle.load(fr)
+    return res
+
+def url_html(url:str) -> BeautifulSoup:
+    '''
+    url을 입력받으면 html을 출력해주는 함수입니다.
+    '''
+    url = urlopen(url)
     soup = BeautifulSoup(url, 'html.parser')
     return soup
 
-print(type(url_html('https://stackoverflow.com/questions/32957708/python-pickle-error-unicodedecodeerror')))
+print(url_html("https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=okkam76&logNo=221609687351"))
+# print((url_html('https://stackoverflow.com/questions/32957708/python-pickle-error-unicodedecodeerror')))
 
 # def asd(movie_code):   
 #     review = []
