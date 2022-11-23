@@ -29,10 +29,11 @@ def asd():
         #     return False
         time.sleep(0.5)  
         
-with open("영화이름.pickle","wb") as fw:
-    pickle.dump(asd(), fw)
+hi = [1, 2, 3]
+with open("test.pickle","wb") as fw:
+    pickle.dump(hi, fw)
 
-with open("영화이름.pickle","rb") as fr:
+with open("test.pickle","rb") as fr:
     data1234 = pickle.load(fr)
 print(data1234)
 
