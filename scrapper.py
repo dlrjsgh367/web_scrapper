@@ -19,8 +19,8 @@ def mcode_list(): # 네이버 최근영화목록의 영화코드를 리스트로
 
 def asd():   
     review = []
-    for page in range(1):
-        movie_code = '49945'
+    movie_code = input("영화코드를 입력하세요 : ")
+    for page in range(10):
         url = urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={movie_code}&target=after&page={page}')
         soup = BeautifulSoup(url, 'html.parser')
         review = soup.find('tbody').text 
@@ -29,12 +29,12 @@ def asd():
         #     return False
         time.sleep(0.5)  
         
-with open("data.pickle","wb") as fw:
+with open("영화이름.pickle","wb") as fw:
     pickle.dump(asd(), fw)
 
-with open("data.pickle","rb") as fr:
-    data = pickle.load(fr)
-print(data)
+with open("영화이름.pickle","rb") as fr:
+    data1234 = pickle.load(fr)
+print(data1234)
 
 
 
