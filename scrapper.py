@@ -5,24 +5,6 @@ import pickle
 import sys
 sys.setrecursionlimit(10000)
 
-def add(a: int, b: int) -> int: 
-    return a+b
-
-result = add(3, 3.4)
-# print(result)  # 6.4 출력
-
-def test(a = 'a', b = 1, c = None):
-    """
-    test 함수입니다.
-        Args:
-            a ``str``: a value
-            b ``int``: b value
-            c ``str``: c value
-        Retruns:
-            None
-    """
-    pass
-test()
 
 
 def mcode_list():
@@ -38,30 +20,92 @@ def mcode_list():
         if code is not None:
             line.append(code)    
     return line
+    
 
 def save():
     '''
-    지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 list.pickle 폴더에 저장하는 함수입니다.
+    지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
     '''
     url = urlopen('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49948&target=after')
     soup = BeautifulSoup(url, 'html.parser')
-
     with open('list.pickle', 'wb') as fw:
         pickle.dump(soup, fw)
     with open('list.pickle', 'rb') as fr:
         res = pickle.load(fr)
     return res
 
-def url_html(url:str) -> BeautifulSoup:
+def url_request(url:str) -> BeautifulSoup:
     '''
     url을 입력받으면 html을 출력해주는 함수입니다.
     '''
-    url = urlopen(url)
-    soup = BeautifulSoup(url, 'html.parser')
-    return soup
+    response = urlopen(url)
+    return response
+# print(url_request("https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page=300"))
+def asd(mcode):
+    page = 1
+    while True:
+        review_data = []
+        url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
+        response = url_request(url_review_page)
+        soup = BeautifulSoup(response,'html.parser')
+        #find_all : 지정한 태그의 내용을 모두 찾아 리스트로 반환
+        reviews = soup.find_all("td",{"class":"title"})
+        for review in reviews:
+            sentence = review.find("a",{"class":"report"}).get("onclick").split("', '")[2]
+            if sentence != "":
+                movie = review.find("a",{"class":"movie color_b"}).get_text()
+                score = review.find("em").get_text()
+                review_data.append([int(score),sentence])
+        finall = soup.select_one("#old_content > div.paging > div > a.pg_next")
+        if finall is None:
+            break
+        page += 1
+        print((review_data))
+        time.sleep(0.5)
+    with open(f'{movie}.pickle', 'wb') as fw:
+        pickle.dump((review_data), fw)
+    return print(response)
+asd(49948)
 
-print(url_html("https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=okkam76&logNo=221609687351"))
-# print((url_html('https://stackoverflow.com/questions/32957708/python-pickle-error-unicodedecodeerror')))
+print(time.time())
+# 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 
+# 로컬타임과 UTC타임의 차이점
+#old_content > div.paging > div > span
+#old_content > div.paging > div > a.pg_next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# print(url_request("https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=okkam76&logNo=221609687351"))
 
 # def asd(movie_code):   
 #     review = []
