@@ -4,7 +4,40 @@ import time
 import pickle
 import sys
 sys.setrecursionlimit(10000)
+import functools
+from threading import Thread
 
+def timeout(timeout):
+    def deco(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            res = [Exception('function [%s] timeout [%s seconds] exceeded!' % (func.__name__, timeout))]
+            # 모든 timeout 데코레이터 사용한 메서드에 res 초기값을 error로 초기화
+            def newFunc():
+                try:
+                    res[0] = func(*args, **kwargs)
+                    #res[0] : api 데이터, 메서드를 실행시켜서 값을 저장
+                except Exception as e:
+                    print("오류발생")
+                    res[0] = e
+                    print("res[0] except", res[0]) #함수 자체가 실행이 안 되는 오류 처리
+            t = Thread(target=newFunc)
+            t.daemon = True
+            try:
+                t.start()
+                t.join(timeout)
+            except Exception as je:
+                print ('error starting thread')
+                raise je
+            ret = res[0]
+            # print("ret", ret)
+            print("ret 타입", type(ret))
+            if isinstance(ret, BaseException):
+                print("오류 발생")
+                raise ret
+            return ret
+        return wrapper
+    return deco
 
 
 def mcode_list():
@@ -24,18 +57,25 @@ def mcode_list():
     with open("mcode.txt", "w") as fw:
         fw.write(str(result))
 
-mcode_list()
+# mcode_list()
+
+# def save():
+#     '''
+#     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
+#     '''
+#     url = urlopen('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49948&target=after')
+#     soup = BeautifulSoup(url, 'html.parser')
+#     with open('list.pickle', 'wb') as fw:
+#         pickle.dump(soup, fw)
 
 def save(bs4):
     '''
     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
     '''
-    url = urlopen('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49948&target=after')
-    soup = BeautifulSoup(url, 'html.parser')
     with open('list.pickle', 'wb') as fw:
-        pickle.dump(soup, fw)
-    return True
-
+        pickle.dump(bs4, fw)
+# save('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49948&target=after')
+# @timeout(10)
 def url_request(url:str) -> BeautifulSoup:
     '''
     url을 입력받으면 html을 출력해주는 함수입니다.
@@ -45,7 +85,8 @@ def url_request(url:str) -> BeautifulSoup:
 
 # print(url_request("https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page=300"))
 
-def asd(mcode):
+# @timeout(10)
+def parsing(mcode):
     page = 1
     review_data = []
     while True:
@@ -65,10 +106,27 @@ def asd(mcode):
             break
         page += 1
         time.sleep(0.5)
-    with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
+        
+    # result = '\n'.join(map(str, review_data))
+        
+    # result = ''.join(map(str, review_data))
+    review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))
+    review_data= '\n'.join(review_data)
+    with open(f'{movie}.txt', "w", encoding="utf-8") as fw:
         fw.write(str(review_data))
-    return print(response)
-# asd(49948)
+
+    # result = "\n".join(map(str, review_data))
+    # with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
+    #     fw.write(result)
+        
+    # with open('review_page.pickle', 'wb') as fw:
+    #     pickle.dump(result, fw)
+    save(url_review_page)
+    # with open("review_page.pickle", "rb") as fr:
+    #     data = pickle.load(fr)
+    # print(data)
+    return print(type(response))
+parsing(134891)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
