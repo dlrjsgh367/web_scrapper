@@ -15,14 +15,18 @@ def mcode_list():
     soup = BeautifulSoup(url, 'html.parser')
     soup = soup.select('#current_movie > option')
     line = []
+       
     for val in soup:
         code = val.get('value')
         if code is not None:
             line.append(code)    
-    return line
-    
+    result = "\n".join(line)
+    with open("mcode.txt", "w") as fw:
+        fw.write(str(result))
 
-def save():
+mcode_list()
+
+def save(bs4):
     '''
     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
     '''
@@ -30,9 +34,7 @@ def save():
     soup = BeautifulSoup(url, 'html.parser')
     with open('list.pickle', 'wb') as fw:
         pickle.dump(soup, fw)
-    with open('list.pickle', 'rb') as fr:
-        res = pickle.load(fr)
-    return res
+    return True
 
 def url_request(url:str) -> BeautifulSoup:
     '''
@@ -40,11 +42,13 @@ def url_request(url:str) -> BeautifulSoup:
     '''
     response = urlopen(url)
     return response
+
 # print(url_request("https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page=300"))
+
 def asd(mcode):
     page = 1
+    review_data = []
     while True:
-        review_data = []
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         response = url_request(url_review_page)
         soup = BeautifulSoup(response,'html.parser')
@@ -60,19 +64,19 @@ def asd(mcode):
         if finall is None:
             break
         page += 1
-        print((review_data))
         time.sleep(0.5)
-    with open(f'{movie}.pickle', 'wb') as fw:
-        pickle.dump((review_data), fw)
+    with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
+        fw.write(str(review_data))
     return print(response)
-asd(49948)
+# asd(49948)
 
-print(time.time())
-# 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 
+# print(time.time())
+# 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
 # 로컬타임과 UTC타임의 차이점
+# UTC  1972년 1월 1일부터 시행된 국제 표준시이며, 1970년 1월 1일 자정을 0 밀리초로 설정하여 기준을 삼아 그 후로 시간의 흐름을 밀리초로 계산한다.
+# 로컬 현지시각
 #old_content > div.paging > div > span
 #old_content > div.paging > div > a.pg_next
-
 
 
 
