@@ -9,6 +9,34 @@ from threading import Thread
 import datetime
 import os
 
+
+# s = datetime.datetime.now()
+# print(s)
+# s = "%04d-%02d-%02d %02:%02d:%02d" % (now.tm_year, now.tm_mon
+    # , now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
+
+def get_time():
+    now = time.localtime()
+    s = "%04d-%02d-%02d %02d시%02d분" % (now.tm_year, now.
+        tm_mon, now.tm_mday, now.tm_hour, now.tm_min)
+    return s
+
+def get_today():
+    now = time.localtime()
+    s = "%04d-%02d-%02d" % (now.tm_year, now.
+        tm_mon, now.tm_mday)
+    return s
+get_today()
+
+def make_folder(folder_name):
+    if not os.path.isdir(folder_name):
+        os.mkdir(folder_name)
+
+# root_dir = "C:/Users/HAMA/code/web_scrapper/data"
+# today = get_today()
+# work_dir = root_dir + "/" + today
+
+
 def timeout(timeout):
     def deco(func):
         @functools.wraps(func)
@@ -74,8 +102,10 @@ def save(bs4):
     '''
     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
     '''
-    with open('list.pickle', 'wb') as fw:
+    time = get_time()
+    with open(f'{time}.pickle', 'wb') as fw:    
         pickle.dump(bs4, fw)
+        
 @timeout(10)
 def url_request(url:str) -> BeautifulSoup:
     '''
@@ -89,6 +119,9 @@ def url_request(url:str) -> BeautifulSoup:
 def parsing(mcode):
     page = 1
     review_data = []
+    root_dir = "C:/Users/HAMA/code/web_scrapper/data"
+    today = get_today()
+    work_dir = root_dir + "/" + today
     while True:
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         response = url_request(url_review_page)
@@ -106,13 +139,15 @@ def parsing(mcode):
             break
         page += 1
         time.sleep(0.5)
+    make_folder(work_dir)
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))     #result = "\n".join(map(str, review_data))
     review_data = '\n'.join(review_data)                                            #with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
-    with open(f'{movie}.txt', "w", encoding="utf-8") as fw:                             #fw.write(result)
+    with open(f'C:/Users/HAMA/code/web_scrapper/data/{today}/{movie}.txt', "w", encoding="utf-8") as fw:                             #fw.write(result)
         fw.write(str(review_data))    
     save(url_review_page)
-    return print(type(response))
-# parsing(49948)
+    # return print(type(response))
+    return response
+parsing(49948)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
@@ -122,40 +157,14 @@ def parsing(mcode):
 #old_content > div.paging > div > span
 #old_content > div.paging > div > a.pg_next
 
-s = datetime.datetime.now()
-# print(s)
-
-now = time.localtime()
-s = "%04d-%02d-%02d %02d:%02d:%02d" % (now.tm_year, now.tm_mon
-    , now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
-# print(s)
-
-def get_today():
-    s = "%04d-%02d-%02d" % (now.tm_year, now.
-        tm_mon, now.tm_mday)
-    return s
-# get_today()
-
-def make_folder(folder_name):
-    if not os.path.isdir(folder_name):
-        os.mkdir(folder_name)
-
-root_dir = "C:/Users/HAMA/code/web_scrapper/data"
-today = get_today()
-work_dir = root_dir + "/" + today
-
-make_folder(work_dir)
 
 
 
 
 
 
-
-
-
-
-
+# with open("2022-11-29 15시27분.pickle","rb",) as fr:
+#     data = pickle.load(fr)
 
 
 
