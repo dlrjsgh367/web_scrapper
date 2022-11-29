@@ -104,14 +104,6 @@ def mcode_list():
 #     with open('list.pickle', 'wb') as fw:
 #         pickle.dump(soup, fw)
 
-# def save(bs4):
-#     '''
-#     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
-#     '''
-#     time = get_time()
-#     with open(f'{time}.pickle', 'wb') as fw:    
-#         pickle.dump(bs4, fw)
-
 def save(bs4):
     '''
     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
@@ -195,117 +187,6 @@ parsing(218468)
 
 
 
-
-
-
-
-# print(url_request("https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=okkam76&logNo=221609687351"))
-
-# def asd(movie_code):   
-#     review = []
-#     review_data=[]
-#     need_reviews_cnt = 1000
-#     for page in range(need_reviews_cnt):
-#         url = urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={movie_code}&target=after&page={page}')
-#         soup = BeautifulSoup(url, 'html.parser')
-#         reviews = soup.find_all("td",{"class":"title"})
-#         for review in reviews:
-#             sentence = review.find("a",{"class":"report"}).get("onclick").split("', '")[2]
-#             if sentence != "":
-#                 movie = review.find("a",{"class":"movie color_b"}).get_text()
-#                 review_data.append([movie,sentence])
-#                 need_reviews_cnt-= 1
-#                 time.sleep(0.5)
-#         if need_reviews_cnt < 0:
-#             break
-#     return review_data
-
-        # with open('list.pickle', 'w', encoding="utf8") as fw:
-#     pickle.dump(asd(49945), fw)
-# with open("list.pickle","r", encoding="UtF-8") as fr:
-#     data = pickle.load(fr)
-# print(data)
-
-
-
-# movie_code = '49945'
-# url = urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={movie_code}&target=after&page=1')
-# soup = BeautifulSoup(url, 'html.parser')
-# # td_list = soup.find_all("td", class_="title")
-# td_list = soup.find_all("td",{"class":"title"})
-
-# # for td in td_list:
-#     print(td.find_all(class_="report"))
-        
-
-# print(soup.select_one('tbody > tr > td.title > a.report'))
-
-#old_content > table > tbody > tr:nth-child(1) > td.title
-#old_content > table > tbody > tr > td.title > a.report
-
-# review = []
-# for page in range(105):
-#     movie_code = '49945'
-#     url = urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={movie_code}&target=after&page={page}')
-#     soup = BeautifulSoup(url, 'html.parser')
-#     review = soup.find('tbody').text 
-#     if review != "":
-#         print False
-#     print(review)
-#     time.sleep(0.5)  
-    
-
-
-# movie = input("영화 코드를 입력하세요 : ")
-# url = urlopen(f'https://movie.naver.com/movie/bi/mi/basic.naver?code={movie}')
-# soup = BeautifulSoup(url, 'html.parser')
-# print(soup.find_all('td'))
-
-# movie_code = '49945'
-# url =  urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={movie_code}&target=after&page=1')
-# soup = BeautifulSoup(url, 'html.parser')
-# print(soup.select_one('#old_content > table > tbody'))
-
-# for page in range(1,500):
-#     url = f'https://movie.naver.com/movie/point/af/list.naver?&page={page}'
-#     soup = BeautifulSoup(url,'html.parser')
-#     #find_all : 지정한 태그의 내용을 모두 찾아 리스트로 반환
-#     reviews = soup.find_all('div',{'id':'old_content'})
-#     time.sleep(1)
-#     print(reviews)
-
-
-# for linebreak in soup.find_all('br'):
-#     print(linebreak.extract())
-
-    # print(soup.prettify())
-# hi = soup.find('p').find_all(text=True)
-# print(hi)
-
-# for linebreak in soup.find_all('br'):
-#     linebreak.extract()
-#     print(soup.prettify())    
-
-# # def test1():
-# for page in range(1,11):
-#     url = urlopen(f'https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page={page}')
-#     soup = BeautifulSoup(url, 'html.parser')
-#     reviews = soup.find_all("tbody")
-    
-    # for review in reviews:
-    #     sentence = review.find("a",{"class":"report"}.get("onclick"))
-    #     print(sentence)
-# with open("abc.pickle","wb") as fw:
-#     pickle.dump(test1(), fw)
-
-# with open("abc.pickle","rb") as fr:
-#     data1234 = pickle.load(fr)
-# print(data1234)
-
-
-
-
-    #old_content > table > tbody > tr:nth-child(1) > td.title
 
 
 
