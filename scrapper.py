@@ -147,7 +147,7 @@ def parsing(mcode):
     save(url_review_page)
     # return print(type(response))
     return response
-parsing(49948)
+parsing(49945)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
