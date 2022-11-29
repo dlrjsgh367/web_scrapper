@@ -6,6 +6,8 @@ import sys
 sys.setrecursionlimit(10000)
 import functools
 from threading import Thread
+import datetime
+import os
 
 def timeout(timeout):
     def deco(func):
@@ -110,7 +112,7 @@ def parsing(mcode):
         fw.write(str(review_data))    
     save(url_review_page)
     return print(type(response))
-parsing(49948)
+# parsing(49948)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
@@ -120,9 +122,29 @@ parsing(49948)
 #old_content > div.paging > div > span
 #old_content > div.paging > div > a.pg_next
 
+s = datetime.datetime.now()
+# print(s)
 
+now = time.localtime()
+s = "%04d-%02d-%02d %02d:%02d:%02d" % (now.tm_year, now.tm_mon
+    , now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
+# print(s)
 
+def get_today():
+    s = "%04d-%02d-%02d" % (now.tm_year, now.
+        tm_mon, now.tm_mday)
+    return s
+# get_today()
 
+def make_folder(folder_name):
+    if not os.path.isdir(folder_name):
+        os.mkdir(folder_name)
+
+root_dir = "C:/Users/HAMA/code/web_scrapper/data"
+today = get_today()
+work_dir = root_dir + "/" + today
+
+make_folder(work_dir)
 
 
 
