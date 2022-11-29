@@ -78,16 +78,18 @@ def mcode_list():
     soup = BeautifulSoup(url, 'html.parser')
     soup = soup.select('#current_movie > option')
     line = []
-       
     for val in soup:
         code = val.get('value')
         if code is not None:
-            line.append(code)    
-    result = "\n".join(line)
-    with open("mcode.txt", "w") as fw:
-        fw.write(str(result))
+            name = val.text
+            line.append([code,name])
+    # list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))        
+    line = list(map(lambda x: ' : '.join([str(x[0]),x[1]]), line))
+    line = "\n".join(line)
+    with open("mcode.txt", "w", encoding="utf-8") as fw:
+        fw.write(str(line))
 
-# mcode_list()
+mcode_list()
 
 # def save():
 #     '''
@@ -147,7 +149,7 @@ def parsing(mcode):
     save(url_review_page)
     # return print(type(response))
     return response
-parsing(49945)
+# parsing(49948)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
