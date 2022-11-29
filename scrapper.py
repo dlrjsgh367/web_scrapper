@@ -74,8 +74,7 @@ def save(bs4):
     '''
     with open('list.pickle', 'wb') as fw:
         pickle.dump(bs4, fw)
-# save('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49948&target=after')
-# @timeout(10)
+@timeout(10)
 def url_request(url:str) -> BeautifulSoup:
     '''
     url을 입력받으면 html을 출력해주는 함수입니다.
@@ -83,9 +82,8 @@ def url_request(url:str) -> BeautifulSoup:
     response = urlopen(url)
     return response
 
-# print(url_request("https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page=300"))
+# url_request("https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page=300")
 
-# @timeout(10)
 def parsing(mcode):
     page = 1
     review_data = []
@@ -106,27 +104,13 @@ def parsing(mcode):
             break
         page += 1
         time.sleep(0.5)
-        
-    # result = '\n'.join(map(str, review_data))
-        
-    # result = ''.join(map(str, review_data))
-    review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))
-    review_data= '\n'.join(review_data)
-    with open(f'{movie}.txt', "w", encoding="utf-8") as fw:
-        fw.write(str(review_data))
-
-    # result = "\n".join(map(str, review_data))
-    # with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
-    #     fw.write(result)
-        
-    # with open('review_page.pickle', 'wb') as fw:
-    #     pickle.dump(result, fw)
+    review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))     #result = "\n".join(map(str, review_data))
+    review_data = '\n'.join(review_data)                                            #with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
+    with open(f'{movie}.txt', "w", encoding="utf-8") as fw:                             #fw.write(result)
+        fw.write(str(review_data))    
     save(url_review_page)
-    # with open("review_page.pickle", "rb") as fr:
-    #     data = pickle.load(fr)
-    # print(data)
     return print(type(response))
-parsing(134891)
+parsing(49948)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
@@ -135,8 +119,6 @@ parsing(134891)
 # 로컬 현지시각
 #old_content > div.paging > div > span
 #old_content > div.paging > div > a.pg_next
-
-
 
 
 
