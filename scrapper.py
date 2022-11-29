@@ -26,7 +26,7 @@ def get_today():
     s = "%04d-%02d-%02d" % (now.tm_year, now.
         tm_mon, now.tm_mday)
     return s
-get_today()
+
 
 def make_folder(folder_name):
     if not os.path.isdir(folder_name):
@@ -78,18 +78,22 @@ def mcode_list():
     soup = BeautifulSoup(url, 'html.parser')
     soup = soup.select('#current_movie > option')
     line = []
+    root_dir = "C:/Users/HAMA/code/web_scrapper/data"
+    today = get_today()
+    work_dir = root_dir + "/" + today
+    today = get_today
     for val in soup:
         code = val.get('value')
         if code is not None:
-            name = val.text
-            line.append([code,name])
-    # list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))        
-    line = list(map(lambda x: ' : '.join([str(x[0]),x[1]]), line))
+            # name = val.text
+            line.append(code) #line.append([code,name])
+    # line = list(map(lambda x: ' : '.join([str(x[0]),x[1]]), line))
+    # make_folder(work_dir)
     line = "\n".join(line)
-    with open("mcode.txt", "w", encoding="utf-8") as fw:
+    with open(f"{work_dir}/mcode.txt", "w") as fw:
         fw.write(str(line))
 
-mcode_list()
+# mcode_list()
 
 # def save():
 #     '''
@@ -100,13 +104,24 @@ mcode_list()
 #     with open('list.pickle', 'wb') as fw:
 #         pickle.dump(soup, fw)
 
+# def save(bs4):
+#     '''
+#     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
+#     '''
+#     time = get_time()
+#     with open(f'{time}.pickle', 'wb') as fw:    
+#         pickle.dump(bs4, fw)
+
 def save(bs4):
     '''
     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
     '''
-    time = get_time()
-    with open(f'{time}.pickle', 'wb') as fw:    
-        pickle.dump(bs4, fw)
+    root_dir = "C:/Users/HAMA/code/web_scrapper/data"
+    today = get_today()
+    work_dir = root_dir + "/" + today
+    make_folder(work_dir)
+    with open(f'{work_dir}/list.pickle', 'wb') as fw:    
+        pickle.dump(bs4, fw)    
         
 @timeout(10)
 def url_request(url:str) -> BeautifulSoup:
@@ -141,15 +156,17 @@ def parsing(mcode):
             break
         page += 1
         time.sleep(0.5)
-    make_folder(work_dir)
+    # make_folder(work_dir)
+    save(url_review_page)
+    mcode_list()
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))     #result = "\n".join(map(str, review_data))
     review_data = '\n'.join(review_data)                                            #with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
-    with open(f'C:/Users/HAMA/code/web_scrapper/data/{today}/{movie}.txt', "w", encoding="utf-8") as fw:                             #fw.write(result)
+    with open(f'{work_dir}/{movie}.txt', "w", encoding="utf-8") as fw:                             #fw.write(result)
         fw.write(str(review_data))    
-    save(url_review_page)
+    
     # return print(type(response))
-    return response
-# parsing(49948)
+    # return response
+parsing(218468)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임

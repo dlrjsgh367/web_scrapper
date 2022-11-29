@@ -2,7 +2,6 @@ from threading import Thread
 import functools
 import time
 
-
 def timeout(timeout):
     def deco(func):
         @functools.wraps(func)
