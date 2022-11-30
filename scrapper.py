@@ -8,6 +8,7 @@ import functools
 from threading import Thread
 import datetime
 import os
+import sys
 
 
 # s = datetime.datetime.now()
@@ -30,7 +31,10 @@ def get_today():
 
 def make_folder(folder_name):
     if not os.path.isdir(folder_name):
-        os.mkdir(folder_name)
+        os.makedirs(folder_name, exist_ok=True)    
+    
+
+    
 
 # root_dir = "C:/Users/HAMA/code/web_scrapper/data"
 # today = get_today()
@@ -90,7 +94,7 @@ def mcode_list():
     # line = list(map(lambda x: ' : '.join([str(x[0]),x[1]]), line))
     # make_folder(work_dir)
     line = "\n".join(line)
-    with open(f"{work_dir}/mcode.txt", "w") as fw:
+    with open(f"{work_dir}/mcode.txt", "w", encoding="utf-8") as fw:
         fw.write(str(line))
 
 # mcode_list()
@@ -110,11 +114,17 @@ def save(bs4):
     '''
     root_dir = "C:/Users/HAMA/code/web_scrapper/data"
     today = get_today()
-    work_dir = root_dir + "/" + today
+    HTML_Folder = "HTML"
+    work_dir = root_dir + "/" + today + "/" + mcode_save + "/" + HTML_Folder 
+    
+    
+    # os.makedirs(work_dir, exist_ok=True)
     make_folder(work_dir)
-    with open(f'{work_dir}/list.pickle', 'wb') as fw:    
+    # bs4name = url_request
+    
+    with open(f'{work_dir}/임시.pickle', 'wb') as fw:    
         pickle.dump(bs4, fw)    
-        
+        #        데이터 폴더/날짜/영화제목코드폴더/HTML/피클저장
 @timeout(10)
 def url_request(url:str) -> BeautifulSoup:
     '''
@@ -126,11 +136,17 @@ def url_request(url:str) -> BeautifulSoup:
 # url_request("https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page=300")
 
 def parsing(mcode):
+    global mcode_save
+    mcode_save = []
     page = 1
     review_data = []
     root_dir = "C:/Users/HAMA/code/web_scrapper/data"
     today = get_today()
     work_dir = root_dir + "/" + today
+    
+
+        # mcode_save = list(map(str, mcode_save))
+        
     while True:
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         response = url_request(url_review_page)
@@ -140,25 +156,39 @@ def parsing(mcode):
         for review in reviews:
             sentence = review.find("a",{"class":"report"}).get("onclick").split("', '")[2]
             if sentence != "":
-                movie = review.find("a",{"class":"movie color_b"}).get_text()
+                # global movie  
+                # movie =  review.find("a",{"class":"movie color_b"}).get_text()
                 score = review.find("em").get_text()
                 review_data.append([int(score),sentence])
+                
         finall = soup.select_one("#old_content > div.paging > div > a.pg_next")
         if finall is None:
             break
         page += 1
         time.sleep(0.5)
+        # break
     # make_folder(work_dir)
+    if mcode not in mcode_save:
+        # mcode = list(str(mcode))
+            # mcode_save.append(mcode)
+            # mcode_save = mcode_save(map(str, mcode_save))
+            # mcode_save = list(map(str, mcode_save))
+            # print(mcode_save)
+        mcode_save = mcode
+        mcode_save = str(mcode_save)
+        # print(type(mcode_save))
     save(url_review_page)
     mcode_list()
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))     #result = "\n".join(map(str, review_data))
     review_data = '\n'.join(review_data)                                            #with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
-    with open(f'{work_dir}/{movie}.txt', "w", encoding="utf-8") as fw:                             #fw.write(result)
-        fw.write(str(review_data))    
+    with open(f'{work_dir}/{mcode_save}/review.txt', "w", encoding="utf8") as fw:                             #fw.write(result)
+        fw.write(str(review_data))
     
+        # "".join(mcode_save)
+    # return print(mcode_save)
     # return print(type(response))
     # return response
-parsing(218468)
+# parsing(218468)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
@@ -168,15 +198,16 @@ parsing(218468)
 #old_content > div.paging > div > span
 #old_content > div.paging > div > a.pg_next
 
+# currentpath = os.getcwd() 현재 경로 알려주는거
+# print(currentpath)
 
 
 
 
 
-
-# with open("2022-11-29 15시27분.pickle","rb",) as fr:
-#     data = pickle.load(fr)
-
+with open("C:/Users/HAMA/code/web_scrapper/data/2022-11-30/218468/HTML/임시.pickle","rb") as fr:
+    data = pickle.load(fr)
+print(data)
 
 
 

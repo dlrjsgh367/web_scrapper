@@ -19,7 +19,7 @@
     -----------------
         데이터 폴더/날짜/영화제목코드폴더/HTML/피클저장
         데이터 폴더/날짜/영화제목코드폴더/리뷰저장
-
+os.listdir() os.mkdir()
 피클의 이름은 입력받은 url로 (https://어쩌구어쩌구.pickle)
 https://ybworld.tistory.com/103 11월30일날 이거보세요
 https://data-make.tistory.com/170
