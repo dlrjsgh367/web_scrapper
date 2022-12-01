@@ -31,7 +31,7 @@ def get_today():
 
 def make_folder(folder_name):
     if not os.path.isdir(folder_name):
-        os.makedirs(folder_name, exist_ok=True)    
+        os.makedirs(folder_name)    
     
 
     
@@ -84,7 +84,9 @@ def mcode_list():
     line = []
     root_dir = "C:/Users/HAMA/code/web_scrapper/data"
     today = get_today()
-    work_dir = root_dir + "/" + today
+    work_dir = root_dir + "/" + today 
+    os.makedirs(work_dir, exist_ok=True)
+    mcode_name = "mcode.txt"
     today = get_today
     for val in soup:
         code = val.get('value')
@@ -94,7 +96,7 @@ def mcode_list():
     # line = list(map(lambda x: ' : '.join([str(x[0]),x[1]]), line))
     # make_folder(work_dir)
     line = "\n".join(line)
-    with open(f"{work_dir}/mcode.txt", "w", encoding="utf-8") as fw:
+    with open(f"{work_dir}/{mcode_name}", "w", encoding="utf-8") as fw:
         fw.write(str(line))
 
 # mcode_list()
@@ -115,14 +117,14 @@ def save(bs4):
     root_dir = "C:/Users/HAMA/code/web_scrapper/data"
     today = get_today()
     HTML_Folder = "HTML"
-    work_dir = root_dir + "/" + today + "/" + mcode_save + "/" + HTML_Folder 
-    
+    work_dir = root_dir + "/" + today + "/" + mcode_save + "/" + HTML_Folder
     
     # os.makedirs(work_dir, exist_ok=True)
+    # os.makedirs(pickle_name, exist_ok=True)
     make_folder(work_dir)
     # bs4name = url_request
     
-    with open(f'{work_dir}/임시.pickle', 'wb') as fw:    
+    with open(f'{work_dir}/{pickle_name}.pickle', 'wb') as fw:    
         pickle.dump(bs4, fw)    
         #        데이터 폴더/날짜/영화제목코드폴더/HTML/피클저장
 @timeout(10)
@@ -136,59 +138,60 @@ def url_request(url:str) -> BeautifulSoup:
 # url_request("https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=49945&target=after&page=300")
 
 def parsing(mcode):
+    url_review_page_list = []
     global mcode_save
     mcode_save = []
+    global pickle_name
     page = 1
     review_data = []
     root_dir = "C:/Users/HAMA/code/web_scrapper/data"
     today = get_today()
-    work_dir = root_dir + "/" + today
-    
-
-        # mcode_save = list(map(str, mcode_save))
-        
+    work_dir = root_dir + "/" + today        
     while True:
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         response = url_request(url_review_page)
         soup = BeautifulSoup(response,'html.parser')
+        if url_review_page not in url_review_page_list:
+            url_review_page_list.append(url_review_page)
+            # test = list(map(lambda x: ', '.join(x[0],x[1]), test))
+            # test = '\n'.join(test)
+        # review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))
         #find_all : 지정한 태그의 내용을 모두 찾아 리스트로 반환
         reviews = soup.find_all("td",{"class":"title"})
+        # if reviews == "":
+        #     print("작성된 리뷰가 없습니다.")
+        #     break
         for review in reviews:
             sentence = review.find("a",{"class":"report"}).get("onclick").split("', '")[2]
+            
             if sentence != "":
                 # global movie  
                 # movie =  review.find("a",{"class":"movie color_b"}).get_text()
                 score = review.find("em").get_text()
                 review_data.append([int(score),sentence])
+           
                 
         finall = soup.select_one("#old_content > div.paging > div > a.pg_next")
         if finall is None:
             break
+        
         page += 1
+        # url_review_page + str(page)
+        
+        pickle_name = page
+        pickle_name = str(pickle_name)
         time.sleep(0.5)
         # break
-    # make_folder(work_dir)
     if mcode not in mcode_save:
-        # mcode = list(str(mcode))
-            # mcode_save.append(mcode)
-            # mcode_save = mcode_save(map(str, mcode_save))
-            # mcode_save = list(map(str, mcode_save))
-            # print(mcode_save)
         mcode_save = mcode
         mcode_save = str(mcode_save)
-        # print(type(mcode_save))
-    save(url_review_page)
+    save(url_review_page_list)
     mcode_list()
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))     #result = "\n".join(map(str, review_data))
     review_data = '\n'.join(review_data)                                            #with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
-    with open(f'{work_dir}/{mcode_save}/review.txt', "w", encoding="utf8") as fw:                             #fw.write(result)
-        fw.write(str(review_data))
-    
-        # "".join(mcode_save)
-    # return print(mcode_save)
-    # return print(type(response))
-    # return response
-# parsing(218468)
+    with open(f'{work_dir}/{mcode_save}/review.txt', "w", encoding="utf8") as f:                            #fw.write(result)
+        f.write(str(review_data))
+# parsing(195973)
 
 # print(time.time())
 # 이포크타임이 UTC 타임인가, 로컬타임인가 알아보세요 UTC타임
@@ -205,7 +208,7 @@ def parsing(mcode):
 
 
 
-with open("C:/Users/HAMA/code/web_scrapper/data/2022-11-30/218468/HTML/임시.pickle","rb") as fr:
+with open(f"C:/Users/HAMA/code/web_scrapper/data/2022-12-01/{mcode_save}/HTML/{pickle_name}.pickle","rb") as fr:
     data = pickle.load(fr)
 print(data)
 
