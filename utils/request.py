@@ -2,6 +2,8 @@ import functools
 from threading import Thread
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
+from utils.util import *
+from utils.scrapper import *
 
 def timeout(timeout):
     def deco(func):

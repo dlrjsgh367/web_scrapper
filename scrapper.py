@@ -153,9 +153,8 @@ def parsing(mcode):
         response = url_request(url_review_page)
         
         soup = BeautifulSoup(response,'html.parser')
-        # if response not in url_review_page_list:
-        #     url_review_page_list.append(response)
-            
+        if response not in url_review_page_list:
+            url_review_page_list.append(response)
             # test = list(map(lambda x: ', '.join(x[0],x[1]), test))
             # test = '\n'.join(test)
         # review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))
@@ -175,11 +174,11 @@ def parsing(mcode):
         pickle_name = page
         pickle_name = str(pickle_name)
         time.sleep(0.5)
-        break
+        # break
     if mcode not in mcode_save:
         mcode_save = mcode
         mcode_save = str(mcode_save)
-    save(response)
+    save(url_review_page_list)
     mcode_list()
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))     #result = "\n".join(map(str, review_data))
     review_data = '\n'.join(review_data)                                            #with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
@@ -204,7 +203,7 @@ parsing(49948)
 
 with open(f"C:/Users/HAMA/code/web_scrapper/data/2022-12-01/{mcode_save}/HTML/{pickle_name}.pickle","rb") as fr:
     data = pickle.load(fr)
-print(data)
+print((data))
 
 
 

@@ -92,9 +92,13 @@ def parsing(mcode):
     if mcode not in mcode_save:
         mcode_save = mcode
         mcode_save = str(mcode_save)
-    save(response)
+    save(response.read())
     mcode_list()
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))     #result = "\n".join(map(str, review_data))
     review_data = '\n'.join(review_data)                                            #with open(f'{movie}.txt', 'w', encoding="UTF-8") as fw:
     with open(f'{work_dir}/{mcode_save}/review.txt', "w", encoding="utf8") as f:                            #fw.write(result)
         f.write(str(review_data))
+parsing(49948)
+with open(f"C:/Users/HAMA/code/web_scrapper/data/2022-12-01/{mcode_save}/HTML/{pickle_name}.pickle","rb") as fr:
+    data = pickle.load(fr)
+print(data)
