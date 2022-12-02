@@ -2,7 +2,6 @@
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 import time
-import pickle
 import sys
 sys.setrecursionlimit(10000)
 import os
