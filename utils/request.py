@@ -45,3 +45,5 @@ def url_request(url:str):
     if response.status == 200:
         print("정상 응답")
     return response
+
+    # 으아
