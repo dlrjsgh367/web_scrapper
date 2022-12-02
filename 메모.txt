@@ -28,3 +28,15 @@ https://ponyozzang.tistory.com/437 에서
 
 피클의 이름은 입력받은 페이지의 숫자로 하기
 
+HTML 폴더 안에 피클 파일을 페이지 명으로 하나씩 생성하기
+ex)
+1.pickle
+2.pickle
+3.pickle
+
+.
+.
+.
+100.pickle
+
+모듈화 및 정리 git add

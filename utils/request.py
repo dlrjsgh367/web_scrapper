@@ -2,8 +2,6 @@ import functools
 from threading import Thread
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
-from utils.util import *
-from utils.scrapper import *
 
 def timeout(timeout):
     def deco(func):
@@ -38,7 +36,7 @@ def timeout(timeout):
     return deco
 
 @timeout(10)
-def url_request(url:str) -> BeautifulSoup:
+def url_request(url:str):
     '''
     url을 입력받으면 html을 출력해주는 함수입니다.
     '''
