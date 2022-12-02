@@ -12,10 +12,11 @@ def parsing_mcode_list():
     """
     네이버 최근영화목록의 영화코드를 리스트로 리턴하는 함수입니다.
     """
+   
     # 디렉토리 설정
     data_dir = "./data"
     today = get_today()
-    make_folder(os.path.join(data_dir,today))
+    make_folder(data_dir,today)
     
     # url 요청
     url = urlopen('https://movie.naver.com/movie/point/af/list.naver?&page=1')
@@ -43,7 +44,7 @@ def parsing_reviews(mcode):
     '''
     page = 1
     review_data = []
-    data_dir = "C:/Users/HAMA/code/web_scrapper/data"
+    data_dir = "./data"
     today = get_today()
     
     # 어떤 영화(mcode)의 모든 리뷰페이지 가져오기
@@ -51,26 +52,34 @@ def parsing_reviews(mcode):
         # url 요청
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         response = url_request(url_review_page)
-        save(response.read(),mcode, page)
         soup = BeautifulSoup(response,'html.parser')
+        save(soup,mcode, page)
         # 파싱
-        reviews = soup.find_all("td",{"class":"title"})
-        for review in reviews:
-            sentence = review.find("a",{"class":"report"}).get("onclick").split("', '")[2]
-            if sentence != "":
-                # movie =  review.find("a",{"class":"movie color_b"}).get_text()
-                score = review.find("em").get_text()
-                review_data.append([int(score),sentence])
-        finall = soup.select_one("#old_content > div.paging > div > a.pg_next")
+        try:
+            reviews = soup.find_all("td",{"class":"title"})
+            print(reviews)
+            for review in reviews:
+                sentence = review.find("a",{"class":"report"}).get("onclick").split("', '")[2]
+                if sentence != "":
+                    # movie =  review.find("a",{"class":"movie color_b"}).get_text()
+                    score = review.find("em").get_text()
+                    review_data.append([int(score),sentence])
+                    print(review_data)
+            finall = soup.select("#old_content > div.paging > div > a.pg_next")
 
-        # 만약에 파싱후 얻을 내용이 없는 경우(맨 마지막 페이지의 경우) break
-        if finall is None:
-            break
+            # 만약에 파싱후 얻을 내용이 없는 경우(맨 마지막 페이지의 경우) break
+            if finall is None:
+                print("마지막 페이지 입니다.")
+                break
+        except Exception as e:
+
+            print("파싱 에러")
+            print(e)
 
         # 잠시 쉬고 다음페이지로 넘어가기
         time.sleep(0.5)
         page += 1
-
+        break
     # 얻은 리뷰를 저장
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))   
     review_data = '\n'.join(review_data)

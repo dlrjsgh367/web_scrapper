@@ -27,7 +27,7 @@ def timeout(timeout):
                 raise je
             ret = res[0]
             # print("ret", ret)
-            print("ret 타입", type(ret))
+            #print("ret 타입", type(ret))
             if isinstance(ret, BaseException):
                 print("오류 발생")
                 raise ret
@@ -42,4 +42,6 @@ def url_request(url:str):
     '''
 
     response = urlopen(url)
+    if response.status == 200:
+        print("정상 응답")
     return response
