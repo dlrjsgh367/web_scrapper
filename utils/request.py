@@ -1,6 +1,6 @@
 import functools
 from threading import Thread
-# from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 
 def timeout(timeout):

@@ -28,12 +28,12 @@ def parsing_mcode_list():
         code = val.get('value')
         if code is not None:
             mcode_list.append(code) #line.append([code,name])
-    mcode_list = "\n".join(mcode_list)
+    mcode_list_str = "\n".join(mcode_list)
 
     # 파싱 결과 저장
     mcode_name = "mcode.txt"
     with open(os.path.join(data_dir,today,mcode_name), "w", encoding="utf-8") as fw:
-        fw.write(str(mcode_list))
+        fw.write(str(mcode_list_str))
     return mcode_list
     
 
