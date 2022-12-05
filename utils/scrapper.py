@@ -52,17 +52,16 @@ def parsing_reviews(mcode):
     # 어떤 영화(mcode)의 모든 리뷰페이지 가져오기
     while True:
         # url 요청
-        url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
-        response = url_request(url_review_page)
-        soup = BeautifulSoup(response,'html.parser')
-        make_folder(data_dir,today,mcode,HTML_Folder)
         pickle_name = f"{page}.pickle"
+        make_folder(data_dir,today,mcode,HTML_Folder)
+        url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
+        save_dir = os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name)
+        response = url_request(url_review_page, save_dir)
+        soup = BeautifulSoup(response,'html.parser')
         
         # HTML_Folder = "HTML"
         # print(f"{mcode}의 리뷰페이지를 {data_dir}/{today}/{mcode}/{HTML_Folder} 에 가져오고 있습니다")
-        save_dir = os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name)
-        save(soup,save_dir)
-        
+                
         # 파싱
         try:
             reviews = soup.find_all("td",{"class":"title"})
@@ -87,14 +86,14 @@ def parsing_reviews(mcode):
         if finall is None:
             print("마지막 페이지 입니다.")
             break
-        # break
+        break
 
     # 얻은 리뷰를 저장
 
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))   
     review_data = '\n'.join(review_data)
-    # with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f:
-    #     f.write(str(review_data))
-    with open(f"{data_dir}/{today}/{mcode}/review.txt", "w", encoding="utf8") as f:
+    with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f:
         f.write(str(review_data))
+    # with open(f"{data_dir}/{today}/{mcode}/review.txt", "w", encoding="utf8") as f:
+    #     f.write(str(review_data))
     # return print(1>0)
