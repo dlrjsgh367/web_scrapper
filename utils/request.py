@@ -2,7 +2,8 @@ import functools
 from threading import Thread
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
-
+import pickle
+import os
 def timeout(timeout):
     def deco(func):
         @functools.wraps(func)
@@ -46,4 +47,16 @@ def url_request(url:str):
         print("정상 응답")
     return response
 
+def save(request,dir):
+    '''
+    지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.
+    '''
+    file_name = dir.split('\\')[-1]
+    file_dir = '\\'.join(dir.split('\\')[:-1])
+    if file_name in os.listdir(file_dir):
+        print(f"{file_name} 은 이미 저장 되어있습니다.")
+    else:
+        with open(dir, 'wb') as fw:    
+            pickle.dump(request, fw)
+            print(f"{file_name} 을 정상적으로 저장했습니다.")
     # 으아

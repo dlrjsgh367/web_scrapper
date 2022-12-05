@@ -16,7 +16,7 @@ def main():
         print(f"{mcode}를 파싱하고 있습니다. ")
         parsing_reviews(mcode)
 def asd():
-    with open("./data/2022-12-05/195973/HTML/120.pickle", "rb") as rb:
+    with open("./data/2022-12-05/195973/HTML/1.pickle", "rb") as rb:
         asd = pickle.load(rb)
     print(asd)
 

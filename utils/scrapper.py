@@ -7,6 +7,7 @@ sys.setrecursionlimit(10000)
 import os
 from utils.util import get_today, save, make_folder
 from utils.request import url_request
+import pickle
 
 def parsing_mcode_list():
     """
@@ -30,7 +31,6 @@ def parsing_mcode_list():
         if code is not None:
             mcode_list.append(code) #line.append([code,name])
     mcode_list_str = "\n".join(mcode_list)
-
     # 파싱 결과 저장
     mcode_name = "mcode.txt"
     with open(os.path.join(data_dir,today,mcode_name), "w", encoding="utf-8") as fw:
@@ -42,17 +42,26 @@ def parsing_reviews(mcode):
     '''
     지정한 영화코드의 모든 리뷰페이지를 가져오는 함수입니다.
     '''
+    
     page = 1
     review_data = []
     data_dir = "./data"
     today = get_today()
-    
+    HTML_Folder = "HTML"
+   
     # 어떤 영화(mcode)의 모든 리뷰페이지 가져오기
     while True:
         # url 요청
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         response = url_request(url_review_page)
         soup = BeautifulSoup(response,'html.parser')
+        make_folder(data_dir,today,mcode,HTML_Folder)
+        pickle_name = f"{page}.pickle"
+        
+        # HTML_Folder = "HTML"
+        # print(f"{mcode}의 리뷰페이지를 {data_dir}/{today}/{mcode}/{HTML_Folder} 에 가져오고 있습니다")
+        save_dir = os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name)
+        save(soup,save_dir)
         
         # 파싱
         try:
@@ -63,25 +72,29 @@ def parsing_reviews(mcode):
                     # movie = review.find("a",{"class":"movie color_b"}).get_text() 영화 이름 뽑는 변수
                     score = review.find("em").get_text()
                     review_data.append([int(score),sentence])      
-                          
+
         except Exception as e:
             print("파싱 에러")
             print(e)
 
         # 잠시 쉬고 다음페이지로 넘어가기
-        save(soup,mcode, page)
+        
+        
+        # 만약에 파싱후 얻을 내용이 없는 경우(맨 마지막 페이지의 경우) break
         time.sleep(0.5)
         page += 1
-
-        # 만약에 파싱후 얻을 내용이 없는 경우(맨 마지막 페이지의 경우) break
         finall = soup.find(class_='pg_next')
         if finall is None:
             print("마지막 페이지 입니다.")
             break
         # break
+
     # 얻은 리뷰를 저장
 
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))   
     review_data = '\n'.join(review_data)
-    with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f:
+    # with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f:
+    #     f.write(str(review_data))
+    with open(f"{data_dir}/{today}/{mcode}/review.txt", "w", encoding="utf8") as f:
         f.write(str(review_data))
+    # return print(1>0)
