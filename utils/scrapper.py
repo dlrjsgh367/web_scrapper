@@ -53,34 +53,34 @@ def parsing_reviews(mcode):
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         response = url_request(url_review_page)
         soup = BeautifulSoup(response,'html.parser')
-        save(soup,mcode, page)
+        
         # 파싱
         try:
             reviews = soup.find_all("td",{"class":"title"})
-            print(reviews)
             for review in reviews:
                 sentence = review.find("a",{"class":"report"}).get("onclick").split("', '")[2]
                 if sentence != "":
-                    # movie =  review.find("a",{"class":"movie color_b"}).get_text()
+                    # movie = review.find("a",{"class":"movie color_b"}).get_text() 영화 이름 뽑는 변수
                     score = review.find("em").get_text()
-                    review_data.append([int(score),sentence])
-                    print(review_data)
-            finall = soup.select("#old_content > div.paging > div > a.pg_next")
-
-            # 만약에 파싱후 얻을 내용이 없는 경우(맨 마지막 페이지의 경우) break
-            if finall is None:
-                print("마지막 페이지 입니다.")
-                break
+                    review_data.append([int(score),sentence])      
+                          
         except Exception as e:
-
             print("파싱 에러")
             print(e)
 
         # 잠시 쉬고 다음페이지로 넘어가기
+        save(soup,mcode, page)
         time.sleep(0.5)
         page += 1
-        break
+
+        # 만약에 파싱후 얻을 내용이 없는 경우(맨 마지막 페이지의 경우) break
+        finall = soup.find(class_='pg_next')
+        if finall is None:
+            print("마지막 페이지 입니다.")
+            break
+        # break
     # 얻은 리뷰를 저장
+
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))   
     review_data = '\n'.join(review_data)
     with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f:

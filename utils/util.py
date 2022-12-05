@@ -35,6 +35,7 @@ def save(request, mcode, pickle_name):
         with open(os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name), 'wb') as fw:    
             pickle.dump(request, fw)    
             print(f"{pickle_name} 을 정상적으로 저장했습니다.")
+
     
     
 

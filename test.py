@@ -16,12 +16,12 @@ def main():
         print(f"{mcode}를 파싱하고 있습니다. ")
         parsing_reviews(mcode)
 def asd():
-    with open("C:/Users/HAMA/code/web_scrapper/data/2022-12-02/10020/HTML/1.pickle", "rb") as rb:
+    with open("./data/2022-12-05/195973/HTML/120.pickle", "rb") as rb:
         asd = pickle.load(rb)
-    print(BeautifulSoup(asd))
+    print(asd)
 
 if __name__ == "__main__": #국룰.
-    asd()
+    main()
 
 # url = urlopen('https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword=154986&target=after&page=14')
 # soup = BeautifulSoup(url, 'html.parser')
