@@ -4,6 +4,8 @@ from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 import pickle
 import os
+# from utils.scrapper import soup
+
 def timeout(timeout):
     def deco(func):
         @functools.wraps(func)
@@ -41,20 +43,26 @@ def url_request(url:str, dir=None):
     '''
     url을 입력받으면 html을 출력해주는 함수입니다.
     '''
-
-    response = urlopen(url)
-    if response.status == 200:
-        print("정상 응답")
-        if dir is None:
-            return response
-        else:
-            soup = BeautifulSoup(response, 'html.parser')
-            file_name = dir.split('\\')[-1]
-            file_dir = '\\'.join(dir.split('\\')[:-1])
-            if file_name in os.listdir(file_dir):
-                print(f"{file_name} 은 이미 저장 되어있습니다.")
+    file_name = dir.split('\\')[-1]
+    file_dir = '\\'.join(dir.split('\\')[:-1])
+    if file_name in os.listdir(file_dir):
+        with open(dir, 'rb') as fr:
+            soup = pickle.load(fr)
+        print(f"이미 저장된 {file_name} 을 불러왔습니다.")
+    else:
+        response = urlopen(url)
+        soup = BeautifulSoup(response,'html.parser')
+        if response.status == 200:
+            print("정상 응답")
+            if dir is None:
+                return soup
             else:
                 with open(dir, 'wb') as fw:    
                     pickle.dump(soup, fw)
                     print(f"{file_name} 을 정상적으로 저장했습니다.")
-    return response
+    return soup
+
+
+
+    # 세이브로드는 리퀘스트를 조금하려고 쓰는것이니
+    # 지금 코드에서 파일이 이미 있는 경우 리퀘스트하지않고 피클로드하도록 바꾸면 됩니다.

@@ -5,9 +5,9 @@ import time
 import sys
 sys.setrecursionlimit(10000)
 import os
-from utils.util import get_today, save, make_folder
+from utils.util import get_today, make_folder
 from utils.request import url_request
-import pickle
+
 
 def parsing_mcode_list():
     """
@@ -29,7 +29,7 @@ def parsing_mcode_list():
     for val in soup:
         code = val.get('value')
         if code is not None:
-            mcode_list.append(code) #line.append([code,name])
+            mcode_list.append(code)
     mcode_list_str = "\n".join(mcode_list)
     # 파싱 결과 저장
     mcode_name = "mcode.txt"
@@ -48,7 +48,6 @@ def parsing_reviews(mcode):
     data_dir = "./data"
     today = get_today()
     HTML_Folder = "HTML"
-   
     # 어떤 영화(mcode)의 모든 리뷰페이지 가져오기
     while True:
         # url 요청
@@ -56,8 +55,10 @@ def parsing_reviews(mcode):
         make_folder(data_dir,today,mcode,HTML_Folder)
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         save_dir = os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name)
-        response = url_request(url_review_page, save_dir)
-        soup = BeautifulSoup(response,'html.parser')
+        soup = url_request(url_review_page, save_dir)
+        
+        #soup = BeautifulSoup(response,'html.parser')
+
         
         # HTML_Folder = "HTML"
         # print(f"{mcode}의 리뷰페이지를 {data_dir}/{today}/{mcode}/{HTML_Folder} 에 가져오고 있습니다")
@@ -86,7 +87,7 @@ def parsing_reviews(mcode):
         if finall is None:
             print("마지막 페이지 입니다.")
             break
-        break
+        # break
 
     # 얻은 리뷰를 저장
 
@@ -94,6 +95,4 @@ def parsing_reviews(mcode):
     review_data = '\n'.join(review_data)
     with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f:
         f.write(str(review_data))
-    # with open(f"{data_dir}/{today}/{mcode}/review.txt", "w", encoding="utf8") as f:
-    #     f.write(str(review_data))
-    # return print(1>0)
+  
