@@ -1,10 +1,13 @@
+from urllib.request import urlopen
 import functools
 from threading import Thread
-from bs4 import BeautifulSoup
-from urllib.request import Request, urlopen
 import pickle
 import os
-# from utils.scrapper import soup
+import logging
+
+from bs4 import BeautifulSoup
+
+
 
 def timeout(timeout):
     def deco(func):
@@ -17,7 +20,6 @@ def timeout(timeout):
                     res[0] = func(*args, **kwargs)
                     #res[0] : api 데이터, 메서드를 실행시켜서 값을 저장
                 except Exception as e:
-                    print("오류발생")
                     res[0] = e
                     print("res[0] except", res[0]) #함수 자체가 실행이 안 되는 오류 처리
             t = Thread(target=newFunc)
@@ -32,14 +34,13 @@ def timeout(timeout):
             # print("ret", ret)
             #print("ret 타입", type(ret))
             if isinstance(ret, BaseException):
-                print("오류 발생")
                 raise ret
             return ret
         return wrapper
     return deco
 
-@timeout(10)
-def url_request(url:str, dir=None):
+
+def url_bs4(url:str, dir=None):
     '''
     url을 입력받으면 html을 출력해주는 함수입니다.
     '''
@@ -48,21 +49,37 @@ def url_request(url:str, dir=None):
     if file_name in os.listdir(file_dir):
         with open(dir, 'rb') as fr:
             soup = pickle.load(fr)
-        print(f"이미 저장된 {file_name} 을 불러왔습니다.")
+        # print(f"이미 저장된 {file_name} 을 불러왔습니다.")
+        logging.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
     else:
-        response = urlopen(url)
+        try:
+            response = url_request(url)
+        except Exception as e:
+            logging.warning(e)
+            return
+
         soup = BeautifulSoup(response,'html.parser')
-        if response.status == 200:
-            print("정상 응답")
-            if dir is None:
-                return soup
-            else:
-                with open(dir, 'wb') as fw:    
-                    pickle.dump(soup, fw)
-                    print(f"{file_name} 을 정상적으로 저장했습니다.")
+        if dir is None:
+            return soup
+        else:
+            with open(dir, 'wb') as fw:    
+                pickle.dump(soup, fw)
+                # print(f"{file_name} 을 정상적으로 저장했습니다.")
+                logging.info(f"{file_name} 을 정상적으로 저장했습니다.")
     return soup
 
+@timeout(10)
+def url_request(url):
+    response = urlopen(url)
+    if response.status == 200:
+        logging.info("정상 응답")
+    #elif response.status == .
 
 
+    return response
+
+
+print(urlopen)
     # 세이브로드는 리퀘스트를 조금하려고 쓰는것이니
     # 지금 코드에서 파일이 이미 있는 경우 리퀘스트하지않고 피클로드하도록 바꾸면 됩니다.
+

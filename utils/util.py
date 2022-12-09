@@ -1,8 +1,7 @@
-import os
+
 import time
-import pickle
-
-
+import logging
+import os
 
 def get_today():
     now = time.localtime()
@@ -16,10 +15,12 @@ def make_folder(*dir):
     folder_dir = os.path.join(*dir)
     if not os.path.isdir(folder_dir):
         os.makedirs(folder_dir)
-        print(f"{'/'.join(list(dir[:-1]))} 에 {dir[-1]} 폴더가 생성되었습니다.\n")
+        # print(f"{'/'.join(list(dir[:-1]))} 에 {dir[-1]} 폴더가 생성되었습니다.\n")
+        logging.info(f"{'/'.join(list(dir[:-1]))} 에 {dir[-1]} 폴더가 생성되었습니다.\n")
     else:
-        print(f"{'/'.join(list(dir[:-1]))} 에 {dir[-1]} 는 이미 존재하는 폴더입니다.\n")
-
+        # print(f"{'/'.join(list(dir[:-1]))} 에 {dir[-1]} 는 이미 존재하는 폴더입니다.\n")
+        logging.info(f"{'/'.join(list(dir[:-1]))} 에 {dir[-1]} 는 이미 존재하는 폴더입니다.\n")
+        
 # def save(request,dir):
 #     '''
 #     지정한 영화의 모든 리뷰페이지의 html을 bs4 객체로 받아서 "@@".pickle 폴더에 저장하는 함수입니다.

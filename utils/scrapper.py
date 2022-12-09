@@ -1,12 +1,15 @@
 
-from bs4 import BeautifulSoup
-from urllib.request import Request, urlopen
 import time
 import sys
 sys.setrecursionlimit(10000)
 import os
+import logging
+from urllib.request import urlopen
+
+from bs4 import BeautifulSoup
+
+from utils.request import url_bs4
 from utils.util import get_today, make_folder
-from utils.request import url_request
 
 
 def parsing_mcode_list():
@@ -55,8 +58,9 @@ def parsing_reviews(mcode):
         make_folder(data_dir,today,mcode,HTML_Folder)
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         save_dir = os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name)
-        soup = url_request(url_review_page, save_dir)
-        
+        soup = url_bs4(url_review_page, save_dir)
+        if soup is None:
+            break
         #soup = BeautifulSoup(response,'html.parser')
 
         
@@ -74,8 +78,10 @@ def parsing_reviews(mcode):
                     review_data.append([int(score),sentence])      
 
         except Exception as e:
-            print("파싱 에러")
-            print(e)
+            # print("파싱 에러")
+            logging.warning("파싱 에러")
+            # print(e)
+            logging.warning(e)
 
         # 잠시 쉬고 다음페이지로 넘어가기
         
@@ -85,9 +91,10 @@ def parsing_reviews(mcode):
         page += 1
         finall = soup.find(class_='pg_next')
         if finall is None:
-            print("마지막 페이지 입니다.")
+            # print("마지막 페이지 입니다.")
+            logging.info("마지막 페이지 입니다.")
             break
-        # break
+        break
 
     # 얻은 리뷰를 저장
 

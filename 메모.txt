@@ -40,3 +40,22 @@ ex)
 100.pickle
 
 모듈화 및 정리 git add
+
+if file_name in os.listdir(file_dir):
+        print(f"{file_name} 은 이미 저장 되어있습니다.")
+        with open(dir,"rb") as rb:
+            pickle.load(rb)
+
+User-Agent
+headers
+추가하기
+
+
+
+
+리퀘스트가 200이 아닐때
+400
+403
+404
+가 뜨는데 이거에 대한 대처하기
+https://nerogarret.tistory.com/59
