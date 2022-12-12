@@ -1,15 +1,21 @@
-FROM bs4/beautifulsoup4:4.11
+FROM python:3.10.8
 
-WORKDIR /usr/src
+# COPY utils /tmp
+# COPY requirements.txt /tmp
+# WORKDIR /tmp
+# RUN pip install -r requirements.txt
 
+# COPY utils /usr/src
+# WORKDIR /usr/src/app
+# COPY . .
 
-COPY requirements.txt
+# COPY . .
 
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install -r requirements.txt
+COPY utils/ /usr
+COPY requirements.txt /usr
+WORKDIR /usr
+RUN pip install -r requirements.txt
 
-COPY . .
+ENTRYPOINT ["python"]
 
-CMD ["test.py"]
-
-ENTRYPOINT ["python3"]
+CMD [ "test.py"]

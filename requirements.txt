@@ -1,5 +1,5 @@
 beautifulsoup4==4.11.1
 bs4==0.0.1
-certifi @ file:///C:/b/abs_ac29jvt43w/croot/certifi_1665076682579/work/certifi
+certifi==2022.12.7
 soupsieve==2.3.2.post1
 wincertstore==0.2
