@@ -44,8 +44,8 @@ def url_bs4(url:str, dir=None):
     '''
     url을 입력받으면 html을 출력해주는 함수입니다.
     '''
-    file_name = dir.split('\\')[-1]
-    file_dir = '\\'.join(dir.split('\\')[:-1])
+    file_name = dir.split('/')[-1]
+    file_dir = '/'.join(dir.split('/')[:-1])
     if file_name in os.listdir(file_dir):
         with open(dir, 'rb') as fr:
             soup = pickle.load(fr)
