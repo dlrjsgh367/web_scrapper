@@ -14,10 +14,10 @@ def main():
         # logging.info(f"{mcode}을 파싱하고 있습니다.")
         parsing_reviews(mcode)
         
-def asd():
-    with open("./data/2022-12-06/195973/HTML/1.pickle", "rb") as rb:
-        asd = pickle.load(rb)
-    print(asd)
+# def asd():
+#     with open("./data/2022-12-06/195973/HTML/1.pickle", "rb") as rb:
+#         asd = pickle.load(rb)
+#     print(asd)
 
 if __name__ == "__main__": #국룰.
     main()

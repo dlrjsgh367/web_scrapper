@@ -1,0 +1,30 @@
+# version: "3"
+# services:
+#   ex2:
+#     container_name: ex2
+#     build: .
+#     # restart: always
+#     working_dir: /usr/src
+#     command: bash -c
+#       "cd /usr/src
+#       && python /usr/src/test.py"
+#     volumes:
+#       - ./test_data:/usr/src/data
+version: "3"
+services:
+  ex2:
+    container_name: ex1
+    image: test1
+    working_dir: /usr/src
+    volumes:
+      - type: bind
+        source: ./utils
+        target: /usr/src/utils
+      - type: bind
+        source: ./test.py
+        target: /usr/src/test.py
+      - ./data:/usr/src/data
+    command: bash -c
+      "cd /usr/src
+      && python /usr/src/test.py"
+    
