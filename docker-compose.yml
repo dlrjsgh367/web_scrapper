@@ -17,32 +17,3 @@ services:
       "cd /usr/src
       && python /usr/src/main.py"
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# dockerfile에서 copy를 써야만 원하는 결과가 나오는것
-# ''' 
-# version: "3"
-# services:
-#   ex2:
-#     container_name: ex2
-#     build: .
-#     # restart: always
-#     working_dir: /usr/src
-#     command: bash -c
-#       "cd /usr/src
-#       && python /usr/src/test.py"
-#     volumes:
-#       - ./test_data:/usr/src/data
-# '''

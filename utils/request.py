@@ -7,8 +7,6 @@ import logging
 
 from bs4 import BeautifulSoup
 
-
-
 def timeout(timeout):
     def deco(func):
         @functools.wraps(func)
@@ -38,7 +36,6 @@ def timeout(timeout):
             return ret
         return wrapper
     return deco
-
 
 def url_bs4(url:str, dir=None):
     '''
@@ -77,8 +74,6 @@ def url_request(url):
 
 
     return response
-
-
 print(urlopen)
     
 
