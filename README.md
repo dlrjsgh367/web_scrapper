@@ -1,11 +1,8 @@
 # Web Scrapper - dlrjsgh367
 
 
-# web_scrapper
-> utils
->> scrapper 네이버 최근
- 그 
-
+# web_scrapper 
+docker를 이용하여 web_scrapper 사용하기. 
 
 ## 도커 이미지 만들기
 ``` docker
