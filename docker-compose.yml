@@ -1,9 +1,9 @@
 #dockerfile에서 copy를 쓰지않고 bind mount를 이용해서 원하는 결과를 얻음
 version: "3"
 services:
-  ex2:
-    container_name: naver_movie
-    image: naver_movie_scrapper
+  web_scrapper:
+    container_name: naver_movie_scrapper
+    image: test
     working_dir: /usr/src
     volumes:
       - type: bind
