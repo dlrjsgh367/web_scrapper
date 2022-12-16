@@ -1,13 +1,15 @@
 # web_scrapper  
 
-- web_scrapper는 어떤 동작을 하나요?
+## web_scrapper는 어떤 동작을 하나요?
   > ㅁㄴㅇㅁㄴㅇㅁ
 
-- 사용법 2가지  
-  + 파이썬  
-  * 도커
-  
-# 파이썬
+## 사용법 2가지  
+### 파이썬  
+### 도커  
+
+
+
+## 파이썬
 ### 파이썬으로 web_scrapper를 실행해봅시다.
 올려둔 파일중에 requirements.txt 가 있는데요. 이 파일은
 web_scrapper를 실행할때 요구되는 라이브러리들을 안에 담아 두고있습니다. 
@@ -16,12 +18,14 @@ pip install -r requirements.txt
 ```
 위에 커맨드를 입력하면 requirements.txt 안에 있는 라이브러리들이 설치됩니다.
 
+이제 터미널에 python main.py 입력
 
 
 
 
-# 도커
-## 도커 이미지 만들기
+
+## 도커
+### 도커 이미지 만들기
 ``` docker
 docker build -t test .
 ```
