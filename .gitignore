@@ -1,3 +1,5 @@
 data/
 *.pickle
 *.pyc
+메모.txt
+test.py

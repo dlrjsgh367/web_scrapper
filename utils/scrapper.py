@@ -61,11 +61,6 @@ def parsing_reviews(mcode):
         soup = url_bs4(url_review_page, save_dir)
         if soup is None:
             break
-        #soup = BeautifulSoup(response,'html.parser')
-
-        
-        # HTML_Folder = "HTML"
-        # print(f"{mcode}의 리뷰페이지를 {data_dir}/{today}/{mcode}/{HTML_Folder} 에 가져오고 있습니다")
                 
         # 파싱
         try:
@@ -97,7 +92,6 @@ def parsing_reviews(mcode):
         break
 
     # 얻은 리뷰를 저장
-
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))   
     review_data = '\n'.join(review_data)
     with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f:

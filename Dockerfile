@@ -1,6 +1,34 @@
 FROM python:3.10.8
 
 
+RUN python3 -m pip install beautifulsoup4==4.11.1 \
+ && python3 -m pip install bs4==0.0.1 \
+ && python3 -m pip install certifi==2022.12.7 \
+ && python3 -m pip install soupsieve==2.3.2.post1 \
+ && python3 -m pip install wincertstore==0.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # COPY utils/request.py /usr/src/request.py
 # COPY utils/scrapper.py /usr/src/scrapper.py
 # COPY utils/util.py /usr/src/util.py
@@ -25,11 +53,12 @@ FROM python:3.10.8
 
 # COPY requirements.txt /usr/src/requirements.txt
 # RUN python3 -m pip install -r /usr/src/requirements.txt \
-RUN python3 -m pip install beautifulsoup4==4.11.1 \
- && python3 -m pip install bs4==0.0.1 \
- && python3 -m pip install certifi==2022.12.7 \
- && python3 -m pip install soupsieve==2.3.2.post1 \
- && python3 -m pip install wincertstore==0.2
+
+# RUN python3 -m pip install beautifulsoup4==4.11.1 \
+#  && python3 -m pip install bs4==0.0.1 \
+#  && python3 -m pip install certifi==2022.12.7 \
+#  && python3 -m pip install soupsieve==2.3.2.post1 \
+#  && python3 -m pip install wincertstore==0.2
 
 # COPY utils/request.py /usr/src/utils/request.py
 # COPY utils/scrapper.py /usr/src/utils/scrapper.py
