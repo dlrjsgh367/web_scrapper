@@ -1,6 +1,3 @@
-# Web Scrapper - dlrjsgh367
-
-
 # web_scrapper 
 docker를 이용하여 web_scrapper 사용하기. 
 
