@@ -1,8 +1,18 @@
-# web_scrapper 
-docker를 이용하여 web_scrapper 사용하기. 
+# web_scrapper  
 
-# 읽으세요
-안녕하세요
+- web_scrapper는 어떤 동작을 하는가?  
+  > ㅁㄴㅇㅁㄴㅇㅁ
+
+- 사용법 2가지  
+  + 파이썬  
+  * 도커
+  
+# 파이썬
+파이썬으로 web_scrapper를 실행해보자.
+
+#
+
+# 도커
 
 
 ## 도커 이미지 만들기
