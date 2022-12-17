@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 위에 커맨드를 입력하면 requirements.txt 안에 있는 라이브러리들이 설치됩니다.
 
-이제 터미널에 python main.py 입력
+이제 터미널에 python main.py 입력하면 web_scrapper를 실행할수 있을겁니다.
 
 
 
