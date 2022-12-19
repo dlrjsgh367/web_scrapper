@@ -4,6 +4,9 @@ import logging
 import os
 
 def get_today():
+    '''
+    설명 : 오늘날짜를 리턴하는 함수입니다.
+    '''
     now = time.localtime()
     s = "%04d-%02d-%02d" % (now.tm_year, now.
         tm_mon, now.tm_mday)
@@ -12,6 +15,10 @@ def get_today():
 
 
 def make_folder(*dir):
+    '''
+    설명 : 폴더를 생성하는 함수입니다. 폴더 생성을 성공하면 폴더가 생성되었다고 출력
+    이미 폴더가 생성 되어있다면 이미 존재하는 폴더인것만 알려주고 다른 동작은 취하지 않습니다.
+    '''
     folder_dir = os.path.join(*dir)
     if not os.path.isdir(folder_dir):
         os.makedirs(folder_dir)

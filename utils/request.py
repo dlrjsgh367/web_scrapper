@@ -8,6 +8,10 @@ import logging
 from bs4 import BeautifulSoup
 
 def timeout(timeout):
+    '''
+    timeout 데코레이터를 설정해주고, 메서드 실행시간이 지정한 시간을 지나면 raise를 통해 강제로 에러를 발생시켜 pass 해줍니다.
+    url_request 함수에 데코레이터로 timeout 10초를 걸어주고, request(실행시간) 10초가 넘으면 에러를 발생 시켜 pass 합니다.
+    '''
     def deco(func):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
@@ -39,7 +43,15 @@ def timeout(timeout):
 
 def url_bs4(url:str, dir=None):
     '''
-    url을 입력받으면 html을 출력해주는 함수입니다.
+    파라미터를 2개 받는데, 첫번째는 url, 2번째는 dir(경로)입니다. 아래 나오는 scrapper에서 사용됩니다.
+
+    file_name : dir을 "/" 기준으로 나눠서 맨 마지막에 있는 dir을 의미합니다.
+    "/" 기준으로 나눈 dir의 맨 마지막에 있는것은 pickle_name 입니다.
+    pickle_name은 scrapper에 있는 save_dir에서 확인할수 있습니다.
+    
+    file_dir : 맨 마지막 dir을 제외하고 모든 dir을 "/" 기준으로 나눈뒤 "/" 가 있는 dir끼리 합칩니다. 
+    file_dir의 값은 data_dir/today/mcode/HTML_Folder/pickle_name에서
+    맨 마지막 dir을 제외 했으니 data_dir/today/mcode/HTML_Folder 가 되겠습니다. 
     '''
     file_name = dir.split('/')[-1]
     file_dir = '/'.join(dir.split('/')[:-1])
@@ -50,7 +62,7 @@ def url_bs4(url:str, dir=None):
         logging.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
     else:
         try:
-            response = url_request(url)
+            response = url_request(url) #url_request 사용됨 .
         except Exception as e:
             logging.warning(e)
             return
@@ -67,6 +79,14 @@ def url_bs4(url:str, dir=None):
 
 @timeout(10)
 def url_request(url):
+    '''
+    웹 사이트에 리퀘스트를 보내 정상값(200)이면
+    logging.info("정상 응답")
+
+    함수 동작이 끝나면 response 값을 return합니다.
+
+    url_request 함수는 url_bs4 함수에 사용되었습니다.
+    '''
     response = urlopen(url)
     if response.status == 200:
         logging.info("정상 응답")
