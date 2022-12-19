@@ -246,6 +246,7 @@ def make_folder(*dir):
 ### 파이썬으로 web_scrapper를 실행해봅시다.
 올려둔 파일중에 requirements.txt 가 있는데요. 이 파일은
 web_scrapper를 실행할때 요구되는 라이브러리들을 안에 담아 두고있습니다. 
+현재는 web_scrapper를 실행할때 필요한 라이브러리 설치가 안되어있는데요.
 ```
 pip install -r requirements.txt
 ```
