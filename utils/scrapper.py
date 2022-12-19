@@ -15,6 +15,7 @@ from utils.util import get_today, make_folder
 def parsing_mcode_list():
     """
     네이버 최근영화목록의 영화코드를 리스트로 리턴하는 함수입니다.
+    # 파싱 에서 soup은 select 메소드를 이용하여 현재상영중인 영화목록의 select를 가져온것입니다.
     """
    
     # 디렉토리 설정
@@ -43,7 +44,7 @@ def parsing_mcode_list():
 
 def parsing_reviews(mcode):
     '''
-    지정한 영화코드의 모든 리뷰페이지를 가져오는 함수입니다.
+    지정한 영화코드의 모든 리뷰페이지를 파싱하는 함수입니다.
     '''
     
     page = 1
