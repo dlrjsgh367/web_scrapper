@@ -42,7 +42,6 @@ mcode(현재상영중인 영화목록코드).txt
 
 
 ### 2. 도커  
-#### 도커 컴포즈 이용하기
 #### 도커 파일
 도커 파일 안에는 web_scrapper를 실행할때 요구하는 라이브러리들이 있습니다.
 ```docker
@@ -55,6 +54,8 @@ RUN python3 -m pip install beautifulsoup4==4.11.1 \
  && python3 -m pip install soupsieve==2.3.2.post1 \
  && python3 -m pip install wincertstore==0.2
 ```
+
+#### 도커 컴포즈 이용하기
 도커 컴포즈에 build를 이용하여 도커파일에 있는 라이브러리가 설치 되도록 작성해줍니다.
 ``` docker
 vers: "3"
