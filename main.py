@@ -1,4 +1,7 @@
 from utils.scrapper import parsing_mcode_list, parsing_reviews 
+import logging
+# logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(format='%(asctime)s %(message)s')
 
 def main():
     '''

@@ -4,13 +4,13 @@ import sys
 sys.setrecursionlimit(10000)
 import os
 import logging
+
 from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
 
 from utils.request import url_bs4
 from utils.util import get_today, make_folder
-
 
 def parsing_mcode_list():
     """

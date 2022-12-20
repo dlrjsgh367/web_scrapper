@@ -51,15 +51,16 @@ def url_bs4(url:str, dir=None):
     
     file_dir : 맨 마지막 dir을 제외하고 모든 dir을 "/" 기준으로 나눈뒤 "/" 가 있는 dir끼리 합칩니다. 
     file_dir의 값은 data_dir/today/mcode/HTML_Folder/pickle_name에서
-    맨 마지막 dir을 제외 했으니 data_dir/today/mcode/HTML_Folder 가 되겠습니다. 
+    맨 마지막 dir을 제외 했으니 data_dir/today/mcode/HTML 이 되겠습니다. 
     '''
-    file_name = dir.split('/')[-1]
-    file_dir = '/'.join(dir.split('/')[:-1])
+    file_name = dir.split('\\')[-1]
+    file_dir = '\\'.join(dir.split('\\')[:-1])
     if file_name in os.listdir(file_dir):
         with open(dir, 'rb') as fr:
             soup = pickle.load(fr)
-        # print(f"이미 저장된 {file_name} 을 불러왔습니다.")
         logging.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
+        # print(f"이미 저장된 {file_name} 을 불러왔습니다.")
+       
     else:
         try:
             response = url_request(url) #url_request 사용됨 .
@@ -75,7 +76,7 @@ def url_bs4(url:str, dir=None):
                 pickle.dump(soup, fw)
                 # print(f"{file_name} 을 정상적으로 저장했습니다.")
                 logging.info(f"{file_name} 을 정상적으로 저장했습니다.")
-    return soup
+        return soup
 
 @timeout(10)
 def url_request(url):
