@@ -2,10 +2,13 @@
 version: "3"
 services:
   web_scrapper:
-    container_name: naver_movie_scrapper
+    container_name: naver_movie
     build: .
     working_dir: /usr/src
     volumes:
+      - type: bind
+        source: ./base_logger.py
+        target: /usr/src/base_logger.py
       - type: bind
         source: ./utils
         target: /usr/src/utils

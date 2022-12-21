@@ -1,5 +1,6 @@
 data/
 test.py
 메모.txt
+base_logger.py
 *.pickle
 *.pyc
