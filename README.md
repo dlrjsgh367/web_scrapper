@@ -1,14 +1,28 @@
 # Web scrapper
-## web_scrapper는 어떤 동작을 하나요?
+
+## 목차
+web_scrapper  
+* 개요
+* 사용법 2가지
+   * [파이썬](#파이썬)
+   * [도커](#도커)
+
+
+
+## 개요
   > 1. 네이버 영화 사이트에 현재상영중인 영화목록에 영화코드를 모두 가져옵니다.
   > 2. ./data/오늘날짜/영화코드/HTML폴더를 생성합니다.   
   > ./data/오늘날짜 폴더를 생성하고 1번에서 가져온 영화코드를 이름으로 폴더를 생성한 뒤 영화코드폴더에 HTML 폴더를 생성합니다.
-  > 3. 리뷰 시작페이지 ~ 종료페이지 의 html을 .pickle 로 저장한뒤 HTML 폴더에 저장합니다.  리뷰는 pickle 저장이 끝나면 영화코드 폴더에 저장됩니다.  
+  > 3. 리뷰 시작페이지 ~ 종료페이지 의 html을 .pickle 로 저장한뒤 HTML 폴더에 저장합니다. 리뷰는 pickle 저장이 끝나면 영화코드 폴더에 저장됩니다.  
+  > 4. request, response strategy
+    - 10초동안 응답이 없을 경우 다음 작업으로 넘어갑니다. 로그 파일에서 확인할 수 있습니다.
+    - 
  
 
 
-## 사용법 2가지    
-### 1. 파이썬
+## 사용법 2가지
+---
+### 파이썬
 #### 파이썬으로 web_scrapper를 실행해봅시다.
 올려둔 파일중에 requirements.txt 가 있는데요. 이 파일은
 web_scrapper를 실행할때 요구되는 라이브러리들을 안에 담아 두고있습니다. 
@@ -22,10 +36,25 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-파싱 시작
-![image](https://user-images.githubusercontent.com/118237164/208344026-084d0947-0fce-43dc-8a72-2528ff99c2bd.png)
-파싱 종료
-![image](https://user-images.githubusercontent.com/118237164/208344128-30dc3db6-2d67-4b13-a3b3-c7eb97d58a40.png)
+
+```
+├── dir1
+│   ├── file11.ext
+│   └── file12.ext
+├── dir2
+│   ├── file21.ext
+│   ├── file22.ext
+│   └── file23.ext
+├── dir3
+
+web_scrapper
+├── main.py
+└── data
+    └── 오늘날짜
+          ├── 
+          └── mcode.txt
+        
+```
 
 성공적으로 영화코드, 영화코드로 폴더 생성, 영화리뷰, 영화코드와 리뷰를 가져온 url의 HTML.pickle까지 저장이 되었습니다.
 
@@ -41,7 +70,7 @@ mcode(현재상영중인 영화목록코드).txt
 
 
 
-### 2. 도커  
+### 도커  
 #### 도커 파일
 도커 파일 안에는 web_scrapper를 실행할때 요구하는 라이브러리들이 있습니다.
 ```docker
@@ -103,6 +132,18 @@ mcode(현재상영중인 영화목록코드).txt
 ![image](https://user-images.githubusercontent.com/118237164/208343039-405d54f9-988c-4f28-8d8e-5a4abffc94d8.png)
 
 프로젝트 시작일 : 2022-11-15
+
+- [Web scrapper](#web-scrapper)
+  * [목차](#--)
+  * [web_scrapper는 어떤 동작을 하나요?](#web-scrapper-------------)
+  * [사용법 2가지](#----2--)
+    + [1. 파이썬](#1----)
+      - [파이썬으로 web_scrapper를 실행해봅시다.](#------web-scrapper--------)
+    + [2. 도커](#2---)
+      - [도커 파일](#-----)
+      - [도커 컴포즈 이용하기](#-----------)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 
