@@ -1,7 +1,6 @@
 
 import time
 import logging
-
 import os
 
 logger = logging.getLogger(__name__)
@@ -14,6 +13,16 @@ def get_today():
     s = "%04d-%02d-%02d" % (now.tm_year, now.
         tm_mon, now.tm_mday)
     return s
+
+def get_today2():
+    '''
+    설명 : 오늘날짜를 리턴하는 함수입니다.
+    '''
+    now = time.localtime()
+    s = "%04d-%02d-%02d %02dː%02dː%02d" % (now.tm_year, now.
+        tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
+    return s
+
 
 
 

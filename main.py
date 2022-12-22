@@ -2,11 +2,11 @@ import logging
 import os
 
 from utils.scrapper import parsing_mcode_list, parsing_reviews
-from utils.util import get_today
+from utils.util import get_today2
 
 
 logger = logging.getLogger(__name__)
-today = get_today()
+today = get_today2()
 log_dir = "./data/logs"
 
 def main():
@@ -19,7 +19,7 @@ def main():
     if not os.path.isdir(folder_dir):
         os.makedirs(folder_dir)
 
-    logging.basicConfig(format="%(localtime)s %(levelname)s [%(name)s] [%(filename)s:%(lineno)d] - %(message)s", level=logging.INFO)
+    logging.basicConfig(format="%(asctime)s %(levelname)s [%(name)s] [%(filename)s:%(lineno)d] - %(message)s", level=logging.INFO)
     
     f_handler = logging.FileHandler(f"./data/logs/{today}.log", "a", encoding="utf-8")
     f_handler.setLevel(logging.DEBUG)

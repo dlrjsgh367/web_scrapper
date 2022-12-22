@@ -6,8 +6,8 @@ services:
     build: .
     working_dir: /usr/src
     volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
+      # - /etc/localtime:/etc/localtime:ro
+      # - /etc/timezone:/etc/timezone:ro
       - type: bind
         source: ./utils
         target: /usr/src/utils
