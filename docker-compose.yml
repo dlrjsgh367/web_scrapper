@@ -1,3 +1,26 @@
+# #dockerfile에서 copy를 쓰지않고 bind mount를 이용해서 원하는 결과를 얻음
+# version: "3"
+# services:
+#   web_scrapper:
+#     container_name: naver_movie
+#     build: .
+#     working_dir: /usr/src
+#     volumes:
+#       # - /etc/localtime:/etc/localtime:ro
+#       # - /etc/timezone:/etc/timezone:ro
+#       - type: bind
+#         source: ./utils
+#         target: /usr/src/utils
+#       - type: bind
+#         source: ./main.py
+#         target: /usr/src/main.py
+#       - ./data:/usr/src/data
+#     command: bash -c
+#       "cd /usr/src
+#       && python main.py"
+
+
+# 시험용 내일 지워
 #dockerfile에서 copy를 쓰지않고 bind mount를 이용해서 원하는 결과를 얻음
 version: "3"
 services:
@@ -9,12 +32,12 @@ services:
       # - /etc/localtime:/etc/localtime:ro
       # - /etc/timezone:/etc/timezone:ro
       - type: bind
-        source: ./utils
-        target: /usr/src/utils
-      - type: bind
         source: ./main.py
         target: /usr/src/main.py
+      - type: bind
+        source: ./utils
+        target: /usr/src/utils
       - ./data:/usr/src/data
     command: bash -c
       "cd /usr/src
-      && python /usr/src/main.py"
+      && python main.py"
