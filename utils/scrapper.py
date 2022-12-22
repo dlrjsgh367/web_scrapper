@@ -11,7 +11,8 @@ from bs4 import BeautifulSoup
 
 from utils.request import url_bs4
 from utils.util import get_today, make_folder
-from base_logger import mylogger
+
+logger = logging.getLogger(__name__)
 
 def parsing_mcode_list():
     """
@@ -76,11 +77,11 @@ def parsing_reviews(mcode):
 
         except Exception as e:
             # print("파싱 에러")
-            # mylogger.warning("파싱 에러")
-            logging.warning("파싱 에러")
+            # logging.warning("파싱 에러")
+            logger.warning("파싱 에러")
             # print(e)
-            # mylogger.warning(e)
-            logging.warning(e)
+            # logging.warning(e)
+            logger.warning(e)
 
         # 잠시 쉬고 다음페이지로 넘어가기
         
@@ -91,8 +92,8 @@ def parsing_reviews(mcode):
         finall = soup.find(class_='pg_next')
         if finall is None:
             # print("마지막 페이지 입니다.")
-            # mylogger.info("마지막 페이지 입니다.")
-            logging.info("마지막 페이지 입니다.")
+            # logging.info("마지막 페이지 입니다.")
+            logger.info("마지막 페이지 입니다.")
             break
         break
 

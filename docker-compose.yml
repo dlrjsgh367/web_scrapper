@@ -6,9 +6,8 @@ services:
     build: .
     working_dir: /usr/src
     volumes:
-      - type: bind
-        source: ./base_logger.py
-        target: /usr/src/base_logger.py
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
       - type: bind
         source: ./utils
         target: /usr/src/utils
@@ -19,4 +18,3 @@ services:
     command: bash -c
       "cd /usr/src
       && python /usr/src/main.py"
-    

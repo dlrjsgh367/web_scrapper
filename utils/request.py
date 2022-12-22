@@ -4,9 +4,11 @@ from threading import Thread
 import pickle
 import os
 import logging
-from base_logger import mylogger
+
 from bs4 import BeautifulSoup
 
+
+logger = logging.getLogger(__name__)
 
 def timeout(timeout):
     '''
@@ -60,8 +62,8 @@ def url_bs4(url:str, dir=None):
     if file_name in os.listdir(file_dir):
         with open(dir, 'rb') as fr:
             soup = pickle.load(fr)
-        # mylogger.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
-        logging.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
+        # logging.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
+        logger.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
 
         # print(f"이미 저장된 {file_name} 을 불러왔습니다.")
        
@@ -69,8 +71,8 @@ def url_bs4(url:str, dir=None):
         try:
             response = url_request(url) #url_request 사용됨 .
         except Exception as e:
-            # mylogger.warning(e)
-            logging.warning(e)
+            # logging.warning(e)
+            logger.warning(e)
             return
 
         soup = BeautifulSoup(response,'html.parser')
@@ -80,8 +82,8 @@ def url_bs4(url:str, dir=None):
             with open(dir, 'wb') as fw:    
                 pickle.dump(soup, fw)
                 # print(f"{file_name} 을 정상적으로 저장했습니다.")
-                # mylogger.info(f"{file_name} 을 정상적으로 저장했습니다.")
-                logging.info(f"{file_name} 을 정상적으로 저장했습니다.")
+                # logging.info(f"{file_name} 을 정상적으로 저장했습니다.")
+                logger.info(f"{file_name} 을 정상적으로 저장했습니다.")
 
         return soup
 
@@ -97,8 +99,8 @@ def url_request(url):
     '''
     response = urlopen(url)
     if response.status == 200:
-        # mylogger.info("정상 응답")
-        logging.info("정상 응답")
+        # logging.info("정상 응답")
+        logger.info("정상 응답")
     #elif response.status == .
 
 
