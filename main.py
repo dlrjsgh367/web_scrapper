@@ -8,6 +8,8 @@ from utils.util import get_today2
 logger = logging.getLogger(__name__)
 today = get_today2()
 log_dir = "./data/logs"
+logging.basicConfig(format="%(asctime)s %(levelname)s [%(name)s] [%(filename)s:%(lineno)d] - %(message)s", level=logging.INFO)
+
 
 def main():
     '''
@@ -29,14 +31,19 @@ def main():
     root_logger = logging.getLogger()
     root_logger.addHandler(f_handler)
 
-    # 현재 시점에서 최신 영화 리스트를 받아서 저장하고 가져오기
-    print("네이버 최근영화목록을 가져오고 있습니다.")
-    mcode_list = parsing_mcode_list()
+   
     
+    
+    # 현재 시점에서 최신 영화 리스트를 받아서 저장하고 가져오기
+    print("네이버 최근영화목록을 가져오고 있습니다.", flush=True)
+    mcode_list = parsing_mcode_list()
     # 최신 영화 리스트에서 영화마다 리뷰를 받아서 저장하기
     for mcode in mcode_list:
-        print(f"{mcode}을 파싱하고 있습니다.")
+        
+        print(f"{mcode}을 파싱하고 있습니다.", flush=True)
         parsing_reviews(mcode)  
+    
+
 
 if __name__ == "__main__": #국룰.
     main()
