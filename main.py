@@ -1,9 +1,14 @@
 import logging
 import os
+import argparse
 
 from utils.scrapper import parsing_mcode_list, parsing_reviews
 from utils.util import get_today2
 
+parser = argparse.ArgumentParser()
+
+parser.add_argument("-t","--test", help="테스트중입니다ㅏㅏㅏㅏㅏ",action="store_true")
+args = parser.parse_args()  
 
 logger = logging.getLogger(__name__)
 today = get_today2()
@@ -17,6 +22,10 @@ def main():
     for문을 이용해 mcode_list 안에있는 모든 영화코드들을 parsing_reviews가 읽을수 있도록
     작성되었습니다.
     '''
+    if args.test:
+        pass
+
+
     folder_dir = os.path.join(log_dir)
     if not os.path.isdir(folder_dir):
         os.makedirs(folder_dir)

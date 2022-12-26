@@ -4,11 +4,17 @@ from threading import Thread
 import pickle
 import os
 import logging
+import argparse
 
 from bs4 import BeautifulSoup
 
 
 logger = logging.getLogger(__name__)
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-t","--test", help="테스트중입니다ㅏㅏㅏㅏㅏ",action="store_true")
+args = parser.parse_args()  
+
 
 def timeout(timeout):
     '''
@@ -60,8 +66,11 @@ def url_bs4(url:str, dir=None):
     file_name = dir.split('/')[-1]
     file_dir = '/'.join(dir.split('/')[:-1])
     if file_name in os.listdir(file_dir):
+        # if args.test:
         with open(dir, 'rb') as fr:
             soup = pickle.load(fr)
+        # else:
+        #     quit()
         # logging.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
         logger.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
 
