@@ -11,10 +11,10 @@ from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
-# parser = argparse.ArgumentParser()
-# parser.add_argument("-t","--test", help="테스트중입니다ㅏㅏㅏㅏㅏ",action="store_true")
-# args = parser.parse_args()  
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-f","--fdname",type=str,help="폴더 이름을 정합니다.")
+args = parser.parse_args()
 
 def timeout(timeout):
     '''
@@ -66,7 +66,7 @@ def url_bs4(url:str, dir=None):
     file_name = dir.split('/')[-1]
     file_dir = '/'.join(dir.split('/')[:-1])
     if file_name in os.listdir(file_dir):
-        # if args.test:
+        # if not args.fdname:
         with open(dir, 'rb') as fr: #######################################################################
             soup = pickle.load(fr)
         # else:

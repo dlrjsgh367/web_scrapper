@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-f","--fdname", help="폴더 이름을 정합니다.")
+parser.add_argument("-f","--fdname",type=str,help="폴더 이름을 정합니다.")
 args = parser.parse_args()
 
 def parsing_mcode_list():
@@ -74,7 +74,11 @@ def parsing_reviews(mcode):
     while True:
         # url 요청
         pickle_name = f"{page}.pickle"
-        make_folder(data_dir,today,mcode,HTML_Folder)
+        if not args.fdname:
+            make_folder(data_dir,today,mcode,HTML_Folder)
+        else:
+            make_folder(data_dir,foldername_dir,mcode,HTML_Folder)
+
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         save_dir = os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name)
         arg_dir = os.path.join(data_dir,foldername_dir,mcode,HTML_Folder,pickle_name)

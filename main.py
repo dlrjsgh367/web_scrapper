@@ -25,9 +25,9 @@ def main():
     for문을 이용해 mcode_list 안에있는 모든 영화코드들을 parsing_reviews가 읽을수 있도록
     작성되었습니다.
     '''
-    arg_dir = os.path.join(foldername_dir)
-    if args.fdname:
-        os.makedirs(arg_dir)
+    # arg_dir = os.path.join(foldername_dir)
+    # if args.fdname:
+    #     os.makedirs(arg_dir)
         
 
     folder_dir = os.path.join(log_dir)
