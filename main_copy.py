@@ -20,8 +20,8 @@ logging.basicConfig(format="%(asctime)s %(levelname)s [%(name)s] [%(filename)s:%
 #             soup = pickle.load(fr)
 # path = "./data/2022-12-27"            
 # file_list = os.listdir(path)
-# print(file_list)
-
+# print(file_list) ##
+ 
 def str2bool(v):
     if isinstance(v, bool):
        return v
