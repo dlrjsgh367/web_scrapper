@@ -11,9 +11,9 @@ from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
-parser = argparse.ArgumentParser()
-parser.add_argument("-t","--test", help="테스트중입니다ㅏㅏㅏㅏㅏ",action="store_true")
-args = parser.parse_args()  
+# parser = argparse.ArgumentParser()
+# parser.add_argument("-t","--test", help="테스트중입니다ㅏㅏㅏㅏㅏ",action="store_true")
+# args = parser.parse_args()  
 
 
 def timeout(timeout):
@@ -67,7 +67,7 @@ def url_bs4(url:str, dir=None):
     file_dir = '/'.join(dir.split('/')[:-1])
     if file_name in os.listdir(file_dir):
         # if args.test:
-        with open(dir, 'rb') as fr:
+        with open(dir, 'rb') as fr: #######################################################################
             soup = pickle.load(fr)
         # else:
         #     quit()
@@ -88,7 +88,7 @@ def url_bs4(url:str, dir=None):
         if dir is None:
             return soup
         else:
-            with open(dir, 'wb') as fw:    
+            with open(dir, 'wb') as fw:    #######################################################################
                 pickle.dump(soup, fw)
                 # print(f"{file_name} 을 정상적으로 저장했습니다.")
                 # logging.info(f"{file_name} 을 정상적으로 저장했습니다.")

@@ -1,10 +1,10 @@
 import logging
 import os
 import argparse
+import pickle
 
 from utils.scrapper import parsing_mcode_list, parsing_reviews
 from utils.util import get_today2
-
 
 
 logger = logging.getLogger(__name__)
@@ -12,12 +12,38 @@ today = get_today2()
 log_dir = "./data/logs"
 logging.basicConfig(format="%(asctime)s %(levelname)s [%(name)s] [%(filename)s:%(lineno)d] - %(message)s", level=logging.INFO)
 
-parser = argparse.ArgumentParser()
-parser.add_argument("-f","--fdname", help="폴더 이름을 정합니다.")
-args = parser.parse_args()
+# dir = dir.replace("\\", "/")
+#     file_name = dir.split('/')[-1]
+#     file_dir = '/'.join(dir.split('/')[:-1])
+#     if file_name in os.listdir(file_dir):
+#         with open(dir, 'rb') as fr:
+#             soup = pickle.load(fr)
+# path = "./data/2022-12-27"            
+# file_list = os.listdir(path)
+# print(file_list)
 
-foldername_dir = f"./data/{args.fdname}"
+def str2bool(v):
+    if isinstance(v, bool):
+       return v
+    
+    if v.lower() in ('yes', 'True', 't', 'y', '1'):
+        # return True
+        folder_dir = os.path.join(asd)
+        if not os.path.isdir(folder_dir):
+            with open(dir, 'rb') as fr:
+                hihi = pickle.load(fr)
+            return hihi
+    elif v.lower() in ('no', 'False', 'f', 'n', '0'):
+        pass
 
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
+def file_parser(input_file, output_file=''):
+    print(f'Processing {input_file}')
+    print('Finished processing')
+    if output_file:
+        print(f'Creating {output_file}')
 
 def main():
     '''
@@ -25,10 +51,8 @@ def main():
     for문을 이용해 mcode_list 안에있는 모든 영화코드들을 parsing_reviews가 읽을수 있도록
     작성되었습니다.
     '''
-    arg_dir = os.path.join(foldername_dir)
-    if args.fdname:
-        os.makedirs(arg_dir)
-        
+    
+
 
     folder_dir = os.path.join(log_dir)
     if not os.path.isdir(folder_dir):
@@ -59,4 +83,8 @@ def main():
 
 
 if __name__ == "__main__": #국룰.
+    
+    parser = argparse.ArgumentParser(description='test')
+    parser.add_argument('-b', '--boolean_flag', help='boolean flag', default=False, type=str2bool)
+    args = parser.parse_args()
     main()

@@ -41,8 +41,5 @@ def make_folder(*dir):
         # logging.info(f"{'/'.join(list(dir[:-1]))} 에 {dir[-1]} 는 이미 존재하는 폴더입니다.\n")
         
 
-            
 
 
-    
-    

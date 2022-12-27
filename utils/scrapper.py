@@ -4,6 +4,7 @@ import sys
 sys.setrecursionlimit(10000)
 import os
 import logging
+import argparse
 
 from urllib.request import urlopen
 
@@ -11,8 +12,13 @@ from bs4 import BeautifulSoup
 
 from utils.request import url_bs4
 from utils.util import get_today, make_folder
-
+# from main import parser
 logger = logging.getLogger(__name__)
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-f","--fdname", help="폴더 이름을 정합니다.")
+args = parser.parse_args()
 
 def parsing_mcode_list():
     """
@@ -23,8 +29,13 @@ def parsing_mcode_list():
     # 디렉토리 설정
     data_dir = "./data"
     today = get_today()
-    make_folder(data_dir,today)
-    
+    foldername_dir = f"{args.fdname}"
+    # arg_dir = os.path.join(foldername_dir)
+    if not args.fdname:
+        make_folder(data_dir,today)
+    else:
+        make_folder(data_dir,foldername_dir)
+
     # url 요청
     url = urlopen('https://movie.naver.com/movie/point/af/list.naver?&page=1')
     soup = BeautifulSoup(url, 'html.parser')
@@ -39,8 +50,12 @@ def parsing_mcode_list():
     mcode_list_str = "\n".join(mcode_list)
     # 파싱 결과 저장
     mcode_name = "mcode.txt"
-    with open(os.path.join(data_dir,today,mcode_name), "w", encoding="utf-8") as fw:
-        fw.write(str(mcode_list_str))
+    if not args.fdname:
+        with open(os.path.join(data_dir,today,mcode_name), "w", encoding="utf-8") as fw: #######################################################################
+            fw.write(str(mcode_list_str))
+    else:
+        with open(os.path.join(data_dir,foldername_dir,mcode_name), "w", encoding="utf-8") as fw: #######################################################################
+            fw.write(str(mcode_list_str))
     return mcode_list
     
 
@@ -54,6 +69,7 @@ def parsing_reviews(mcode):
     data_dir = "./data"
     today = get_today()
     HTML_Folder = "HTML"
+    foldername_dir = f"{args.fdname}"
     # 어떤 영화(mcode)의 모든 리뷰페이지 가져오기
     while True:
         # url 요청
@@ -61,7 +77,11 @@ def parsing_reviews(mcode):
         make_folder(data_dir,today,mcode,HTML_Folder)
         url_review_page = f"https://movie.naver.com/movie/point/af/list.naver?st=mcode&sword={mcode}&target=after&page={page}"
         save_dir = os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name)
-        soup = url_bs4(url_review_page, save_dir)
+        arg_dir = os.path.join(data_dir,foldername_dir,mcode,HTML_Folder,pickle_name)
+        if not args.fdname:
+            soup = url_bs4(url_review_page, save_dir)
+        else:
+            soup = url_bs4(url_review_page, arg_dir)
         if soup is None:
             break
                 
@@ -100,6 +120,11 @@ def parsing_reviews(mcode):
     # 얻은 리뷰를 저장
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))   
     review_data = '\n'.join(review_data)
-    with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f:
-        f.write(str(review_data))
+    if not args.fdname:
+        with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f: #######################################################################
+            f.write(str(review_data))
+    else:
+        with open(os.path.join(data_dir,foldername_dir,mcode,'review.txt'), "w", encoding="utf8") as f: #######################################################################
+            f.write(str(review_data))
+
   
