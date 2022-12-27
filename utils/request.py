@@ -62,15 +62,18 @@ def url_bs4(url:str, dir=None):
     file_dir의 값은 data_dir/today/mcode/HTML_Folder/pickle_name에서
     맨 마지막 dir을 제외 했으니 data_dir/today/mcode/HTML 이 되겠습니다. 
     '''
+   
+    # test = "test.txt"
+
+    
     dir = dir.replace("\\", "/")
     file_name = dir.split('/')[-1]
+    test_dir = dir.split('/')[-3]
     file_dir = '/'.join(dir.split('/')[:-1])
+    helpme = test_dir + "test.txt"
     if file_name in os.listdir(file_dir):
-        # if not args.fdname:
         with open(dir, 'rb') as fr: #######################################################################
             soup = pickle.load(fr)
-        # else:
-        #     quit()
         # logging.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
         logger.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
 
@@ -93,6 +96,13 @@ def url_bs4(url:str, dir=None):
                 # print(f"{file_name} 을 정상적으로 저장했습니다.")
                 # logging.info(f"{file_name} 을 정상적으로 저장했습니다.")
                 logger.info(f"{file_name} 을 정상적으로 저장했습니다.")
+        test_list = []
+    # for url1 in url:
+        if url not in test_list:
+            test_list.append(url)
+        test_str = "\n".join(test_list)
+        with open("./test.txt", "w", encoding="utf-8") as fw:##########################################
+            fw.write(str(test_str))
 
         return soup
 
@@ -117,3 +127,5 @@ def url_request(url):
 print(urlopen)
     
 
+# def pickle_url_dir(url:str):
+#     with open():

@@ -20,6 +20,11 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-f","--fdname",type=str,help="폴더 이름을 정합니다.")
 args = parser.parse_args()
 
+# def pickle_url_dir():
+    
+
+
+
 def parsing_mcode_list():
     """
     네이버 최근영화목록의 영화코드를 리스트로 리턴하는 함수입니다.
@@ -88,7 +93,7 @@ def parsing_reviews(mcode):
             soup = url_bs4(url_review_page, arg_dir)
         if soup is None:
             break
-                
+        
         # 파싱
         try:
             reviews = soup.find_all("td",{"class":"title"})

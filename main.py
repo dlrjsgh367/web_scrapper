@@ -60,3 +60,6 @@ def main():
 
 if __name__ == "__main__": #국룰.
     main()
+
+# 기존에는 [ python main.py ] 를 입력해서 실행하면 ./data/오늘날짜/영화코드폴더/HTMl 로 폴더가 생성되었는데, 
+# argparse 를 이용해서 인자 [ python main.py -f "폴더명" ] 를 입력하면 ./data/폴더명/영화코드폴더/HTMl 로 폴더가 생성 되게 하는것을 성공하였다.  
