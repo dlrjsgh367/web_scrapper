@@ -70,7 +70,7 @@ def url_bs4(url:str, dir=None):
     file_name = dir.split('/')[-1]
     test_dir = dir.split('/')[-3]
     file_dir = '/'.join(dir.split('/')[:-1])
-    helpme = test_dir + "test.txt"
+    # helpme = test_dir + "test.txt"
     if file_name in os.listdir(file_dir):
         with open(dir, 'rb') as fr: #######################################################################
             soup = pickle.load(fr)
@@ -101,7 +101,7 @@ def url_bs4(url:str, dir=None):
         if url not in test_list:
             test_list.append(url)
         test_str = "\n".join(test_list)
-        with open("./test.txt", "w", encoding="utf-8") as fw:##########################################
+        with open("./test.txt", "w", encoding="utf-8") as fw:########################################## 1
             fw.write(str(test_str))
 
         return soup
