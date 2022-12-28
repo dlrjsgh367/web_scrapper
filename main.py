@@ -1,6 +1,9 @@
 import logging
 import os
 import argparse
+import pickle
+
+from bs4 import BeautifulSoup
 
 from utils.scrapper import parsing_mcode_list, parsing_reviews
 from utils.util import get_today2
@@ -56,8 +59,11 @@ def main():
         print(f"{mcode}을 파싱하고 있습니다.", flush=True)
         parsing_reviews(mcode)  
     
-
-
+# def asd():
+#     with open("C:/Users/HAMA/code/web_scrapper/data/2022-12-28/194841/HTML/2.pickle", "rb") as pp:
+#         # pp = BeautifulSoup(pp)
+#         data = pickle.load(pp)
+#     print(data)
 if __name__ == "__main__": #국룰.
     main()
 

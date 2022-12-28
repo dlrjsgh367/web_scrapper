@@ -131,24 +131,17 @@ def parsing_reviews(mcode):
     # pickle_url_dir(url_review_page,save_dir)
 
     # 얻은 리뷰를 저장
-    
+    with open(os.path.join(data_dir,today,'pickle_test_good.txt'), "w", encoding="utf8") as f:
+        f.write(str([url_review_page,save_dir]))
     review_data = list(map(lambda x: ', '.join([str(x[0]),x[1]]), review_data))   
     review_data = '\n'.join(review_data)
     
     if not args.fdname:
         with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f: #######################################################################
             f.write(str(review_data))
-        # with open(os.path.join(data_dir,today,'pickle_test_good.txt'), "w", encoding="utf8") as f:
-        #     f.write(str(url_review_page))
-        # pickle_url_dir(url_review_page,save_dir)
     else:
         with open(os.path.join(data_dir,foldername_dir,mcode,'review.txt'), "w", encoding="utf8") as f: #######################################################################
             f.write(str(review_data))
-        # with open(os.path.join(data_dir,today,'pickle_test_good.txt'), "w", encoding="utf8") as f:
-        #     f.write(str(url_review_page))
-        # pickle_url_dir(url_review_page,arg_dir)
-
-    
     
 
 

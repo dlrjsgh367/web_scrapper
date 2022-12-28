@@ -68,17 +68,16 @@ def url_bs4(url:str, dir=None):
     
     dir = dir.replace("\\", "/")
     file_name = dir.split('/')[-1]
-    test_dir = dir.split('/')[-3]
     file_dir = '/'.join(dir.split('/')[:-1])
-    # helpme = test_dir + "test.txt"
+    # picke_url_or_dir = '/'.join(dir.split('/')[:-3])
     if file_name in os.listdir(file_dir):
         with open(dir, 'rb') as fr: #######################################################################
             soup = pickle.load(fr)
-        # logging.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
         logger.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
-
         # print(f"이미 저장된 {file_name} 을 불러왔습니다.")
-       
+        # with open(f"{picke_url_or_dir}/pickle_url_or_dir.txt", "w", encoding="UTF-8") as f:
+        #         f.write(str([url,dir]))
+        #         logger.info("pickle 파일의 url과 dir을 저장했습니다.")
     else:
         try:
             response = url_request(url) #url_request 사용됨 .
@@ -96,14 +95,10 @@ def url_bs4(url:str, dir=None):
                 # print(f"{file_name} 을 정상적으로 저장했습니다.")
                 # logging.info(f"{file_name} 을 정상적으로 저장했습니다.")
                 logger.info(f"{file_name} 을 정상적으로 저장했습니다.")
-        test_list = []
-    # for url1 in url:
-        if url not in test_list:
-            test_list.append(url)
-        test_str = "\n".join(test_list)
-        with open("./test.txt", "w", encoding="utf-8") as fw:########################################## 1
-            fw.write(str(test_str))
-
+                pickle_url_dir(url, dir)
+            # with open(f"{picke_url_or_dir}/pickle_url_or_dir.txt", "w", encoding="UTF-8") as f:
+            #     f.write(str([url,dir]))
+            #     logger.info("pickle 파일의 url과 dir을 저장했습니다.")
         return soup
 
 @timeout(10)
@@ -127,5 +122,24 @@ def url_request(url):
 print(urlopen)
     
 
-# def pickle_url_dir(url:str):
-#     with open():
+def pickle_url_dir(url:str, dir=None):
+    dir = dir.replace("\\", "/")
+    picke_url_or_dir = '/'.join(dir.split('/')[:-3])
+    with open(f"{picke_url_or_dir}/pickle_test.txt", "a", encoding="utf8") as f:
+        list1 = []
+        list1.append(([url,dir]))
+        # list1 = list(map(lambda x: ', '.join([str(x)]), list1)) 
+        list1 = list(map(lambda x: ', '.join([str(x[0]),x[1]]), list1)) 
+        list1 = '\n'.join(list1)  
+        # list1 = list(map(lambda x: ', '.join([str(x[0]),x[1]])), list1) 
+        f.write(str(list1) + "\n")
+        
+        # a = (url,dir)
+        #     # a = list(map(lambda x: './'.join([str(x[0]),x[1]]), a)) 
+        # a = a.strip("./")
+        # a = '\n'.join(a)  
+
+        # f.write(str(a))
+        # f.write(dir+ "\n")
+        logger.info("txt 저장댐")
+
