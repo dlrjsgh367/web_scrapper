@@ -128,7 +128,6 @@ def pickle_url_dir(url:str, dir=None):
     with open(f"{picke_url_or_dir}/pickle_test.txt", "a", encoding="utf8") as f:
         list1 = []
         list1.append(([url,dir]))
-        # list1 = list(map(lambda x: ', '.join([str(x)]), list1)) 
         list1 = list(map(lambda x: ', '.join([str(x[0]),x[1]]), list1)) 
         list1 = '\n'.join(list1)  
         f.write(str(list1) + "\n")
