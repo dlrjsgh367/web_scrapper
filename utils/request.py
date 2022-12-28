@@ -131,7 +131,6 @@ def pickle_url_dir(url:str, dir=None):
         # list1 = list(map(lambda x: ', '.join([str(x)]), list1)) 
         list1 = list(map(lambda x: ', '.join([str(x[0]),x[1]]), list1)) 
         list1 = '\n'.join(list1)  
-        # list1 = list(map(lambda x: ', '.join([str(x[0]),x[1]])), list1) 
         f.write(str(list1) + "\n")
         
         # a = (url,dir)
