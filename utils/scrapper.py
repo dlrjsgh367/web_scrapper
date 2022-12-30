@@ -130,7 +130,6 @@ def parsing_reviews(mcode):
             logger.info("마지막 페이지 입니다.")
             break
         break
-    # pickle_url_dir(url_review_page,save_dir)
 
     # 얻은 리뷰를 저장
     
@@ -140,15 +139,10 @@ def parsing_reviews(mcode):
     if not args.fdname:
         with open(os.path.join(data_dir,today,mcode,'review.txt'), "w", encoding="utf8") as f: #######################################################################
             f.write(str(review_data))
-        # with open(os.path.join(data_dir,today,'pickle_test_good.txt'), "w", encoding="utf8") as f:
-        #     f.write(str(url_review_page))
-        # pickle_url_dir(url_review_page,save_dir)
     else:
         with open(os.path.join(data_dir,foldername_dir,mcode,'review.txt'), "w", encoding="utf8") as f: #######################################################################
             f.write(str(review_data))
-        # with open(os.path.join(data_dir,today,'pickle_test_good.txt'), "w", encoding="utf8") as f:
-        #     f.write(str(url_review_page))
-        # pickle_url_dir(url_review_page,arg_dir)
+
 
     
     

@@ -72,19 +72,27 @@ def url_bs4(url:str, dir=None):
     
     dir = dir.replace("\\", "/")
     file_name = dir.split('/')[-1]
-    # file_dir = '/'.join(dir.split('/')[:-1])
+    file_dir = '/'.join(dir.split('/')[:-1])
     picke_url_or_dir = '/'.join(dir.split('/')[:-3])
-    with open(f"{picke_url_or_dir}/pickle_test.txt", "r") as f:            
+    pickle_test_txt = "pickle_test.txt"
+    #"""
+    with open(f"{picke_url_or_dir}/{pickle_test_txt}", "r") as f:            
         data = f.readlines()
         data = list(map(url_dir_decompse, data))
         asd = list(filter(lambda x: x[0]==url, data)) # x[0]과 data(리스트) 안에 있는 url이 같다면. 
-    if asd: # 만약에 asd가 선언 되었다면
-        with open(asd[0][1], 'rb') as fr: # asd의 index [0][1]을 불러온다 
-            soup = pickle.load(fr)
-        # with open(dir, 'rb') as fr:
-        #     soup1 = pickle.load(fr)
+    if asd: # asd(.txt 파일 안에는 x[0]과 url_bs4의 매개변수 url이 같다면. x[0]==url )
+        if asd[1] is None:
+            False
+        else:
+            # pickle_url_dir(url, dir)
+
+            with open(asd[0][1], 'rb') as fr: # asd의 index [0][1]을 불러온다 
+                soup = pickle.load(fr)
             logger.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
-    else:
+    #"""
+    # if False:
+    #     pass
+    else:#asd(.txt 파일 안에는 x[0]과 url_bs4의 매개변수 url이 다르다면. x[0]!=url )
         try:
             response = url_request(url) #url_request 사용됨 .
         except Exception as e:
@@ -135,8 +143,8 @@ def pickle_url_dir(url:str, dir=None):
         f.write(str(list1) + "\n")
         # f.write(str(list1))
 
-
         logger.info("txt 저장댐")
+    
 
 
 # 지금은 dir 안에 파일이 있는지 확인해서 있으면 해당 피클을 불러왔는데, url_dir.txt 파일 안에 url이 있으면 매칭 되는 dir을 로드하는 것으로 바꾸기.
