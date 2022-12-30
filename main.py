@@ -21,6 +21,7 @@ args = parser.parse_args()
 
 foldername_dir = f"./data/{args.fdname}"
 
+# test_pickle = "./data/hello_apple/pickle_test.txt
 
 def main():
     '''
@@ -32,7 +33,6 @@ def main():
     # if args.fdname:
     #     os.makedirs(arg_dir)
         
-
     folder_dir = os.path.join(log_dir)
     if not os.path.isdir(folder_dir):
         os.makedirs(folder_dir)

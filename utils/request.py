@@ -50,6 +50,12 @@ def timeout(timeout):
         return wrapper
     return deco
 
+def url_dir_decompse(s):
+    s = s.replace("\n","").split()
+    u, d = s[0], s[1:]
+    d = " ".join(d)
+    return [u, d]
+
 def url_bs4(url:str, dir=None):
     '''
     파라미터를 2개 받는데, 첫번째는 url, 2번째는 dir(경로)입니다. 아래 나오는 scrapper에서 사용됩니다.
@@ -62,22 +68,22 @@ def url_bs4(url:str, dir=None):
     file_dir의 값은 data_dir/today/mcode/HTML_Folder/pickle_name에서
     맨 마지막 dir을 제외 했으니 data_dir/today/mcode/HTML 이 되겠습니다. 
     '''
-   
-    # test = "test.txt"
 
     
     dir = dir.replace("\\", "/")
     file_name = dir.split('/')[-1]
-    file_dir = '/'.join(dir.split('/')[:-1])
-    # picke_url_or_dir = '/'.join(dir.split('/')[:-3])
-    if file_name in os.listdir(file_dir):
-        with open(dir, 'rb') as fr: #######################################################################
+    # file_dir = '/'.join(dir.split('/')[:-1])
+    picke_url_or_dir = '/'.join(dir.split('/')[:-3])
+    with open(f"{picke_url_or_dir}/pickle_test.txt", "r") as f:            
+        data = f.readlines()
+        data = list(map(url_dir_decompse, data))
+        asd = list(filter(lambda x: x[0]==url, data)) # x[0]과 data(리스트) 안에 있는 url이 같다면. 
+    if asd: # 만약에 asd가 선언 되었다면
+        with open(asd[0][1], 'rb') as fr: # asd의 index [0][1]을 불러온다 
             soup = pickle.load(fr)
-        logger.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
-        # print(f"이미 저장된 {file_name} 을 불러왔습니다.")
-        # with open(f"{picke_url_or_dir}/pickle_url_or_dir.txt", "w", encoding="UTF-8") as f:
-        #         f.write(str([url,dir]))
-        #         logger.info("pickle 파일의 url과 dir을 저장했습니다.")
+        # with open(dir, 'rb') as fr:
+        #     soup1 = pickle.load(fr)
+            logger.info(f"이미 저장된 {file_name} 을 불러왔습니다.")
     else:
         try:
             response = url_request(url) #url_request 사용됨 .
@@ -93,12 +99,8 @@ def url_bs4(url:str, dir=None):
             with open(dir, 'wb') as fw:    #######################################################################
                 pickle.dump(soup, fw)
                 # print(f"{file_name} 을 정상적으로 저장했습니다.")
-                # logging.info(f"{file_name} 을 정상적으로 저장했습니다.")
                 logger.info(f"{file_name} 을 정상적으로 저장했습니다.")
-                pickle_url_dir(url, dir)
-            # with open(f"{picke_url_or_dir}/pickle_url_or_dir.txt", "w", encoding="UTF-8") as f:
-            #     f.write(str([url,dir]))
-            #     logger.info("pickle 파일의 url과 dir을 저장했습니다.")
+                # pickle_url_dir(url, dir)
         return soup
 
 @timeout(10)
@@ -128,16 +130,13 @@ def pickle_url_dir(url:str, dir=None):
     with open(f"{picke_url_or_dir}/pickle_test.txt", "a", encoding="utf8") as f:
         list1 = []
         list1.append(([url,dir]))
-        list1 = list(map(lambda x: ', '.join([str(x[0]),x[1]]), list1)) 
+        list1 = list(map(lambda x: ' '.join([str(x[0]),x[1]]), list1)) 
         list1 = '\n'.join(list1)  
         f.write(str(list1) + "\n")
-        
-        # a = (url,dir)
-        #     # a = list(map(lambda x: './'.join([str(x[0]),x[1]]), a)) 
-        # a = a.strip("./")
-        # a = '\n'.join(a)  
+        # f.write(str(list1))
 
-        # f.write(str(a))
-        # f.write(dir+ "\n")
+
         logger.info("txt 저장댐")
 
+
+# 지금은 dir 안에 파일이 있는지 확인해서 있으면 해당 피클을 불러왔는데, url_dir.txt 파일 안에 url이 있으면 매칭 되는 dir을 로드하는 것으로 바꾸기.

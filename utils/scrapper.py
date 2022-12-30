@@ -91,8 +91,10 @@ def parsing_reviews(mcode):
         save_dir = os.path.join(data_dir,today,mcode,HTML_Folder,pickle_name)
         arg_dir = os.path.join(data_dir,foldername_dir,mcode,HTML_Folder,pickle_name)
         if not args.fdname:
+            pickle_url_dir(url_review_page,save_dir)
             soup = url_bs4(url_review_page, save_dir)
         else:
+            pickle_url_dir(url_review_page,arg_dir)
             soup = url_bs4(url_review_page, arg_dir)
         if soup is None:
             break

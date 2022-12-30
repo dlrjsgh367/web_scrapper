@@ -41,4 +41,4 @@ services:
      
       - ./data:/usr/src/data
     command: bash -c
-      "python /usr/src/main.py"
+      "python /usr/src/main.py -f 도커컴포즈-테스트"
