@@ -2,7 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import xml
 
-def search_result(type, Keyward):
+from urllib import parse
+
+def search_result(type, Keyword):
+    # result_list = []
     # url 주소
     url = "http://kportal.kipris.or.kr/kportal/resulta.do"
 
@@ -21,7 +24,6 @@ def search_result(type, Keyward):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
         "X-Requested-With": "XMLHttpRequest"
     }
-
     # data 값
     data = {
     "next": f"{type}",
@@ -34,19 +36,33 @@ def search_result(type, Keyward):
     "FROM": "SEARCH",
     "searchInTransKorToEng": "N",
     "searchInTransEngToKor": "N",
-    "row": "30",
+    "row": "5",
     "page": "1",
-    "queryText": f"{Keyward}",
-    "expression": f"{Keyward}",
+    "queryText": f"{Keyword}",
+    "expression": f"{Keyword}",
     }
 
     # response
     res = requests.post(url, headers=headers, data=data)
 
-    soup = BeautifulSoup(res.text, "lxml")
-
-    with open("./search_result.xml", "w" ,encoding="utf8") as f:
-        f.write(str(soup))
-
+    soup = BeautifulSoup(res.text, "html.parser")
+    result = soup.find_all("article")
+    for item in result:
+        print(f"특허명   : {item.find('tlv').text}")
+        print(f"IPC      : {item.find('ipv').text}")
+        print(f"출원인   : {item.find('apv').text}")
+        print(f"출원번호 : {item.find('vdkvgwkey').text}")
+        print(f"출원일자 : {item.find('adv').text}")
+        print(f"등록번호 : {item.find('gnv').text}")
+        print(f"등록일자 : {item.find('gdv').text}")
+        print(f"공개번호 : {item.find('onv').text}")
+        print(f"공개일자 : {item.find('odv').text}")
+        print(f"대리인   : {item.find('agv').text}")
+        print(f"발명자   : {item.find('inv').text}")
+        print("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ")
+    # with open("search_result.xml", "w", encoding='utf8') as f:
+    #     f.write(str(result))
+    
 if __name__ == "__main__":
-    search_result(type="patentList", Keyward="치킨")
+    search_result(type="patentList", Keyword="AI+그림")
+

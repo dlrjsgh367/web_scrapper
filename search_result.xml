@@ -1,769 +1,121 @@
-<?xml version="1.0" encoding="UTF-8"?><html><body><root>
-<flag>SUCCESS</flag>
-<message>&lt;![CDATA[null]]&gt;</message>
-<search>
-<searchkeyword>&lt;![CDATA[치킨]]&gt;</searchkeyword>
-<searchexpression>&lt;![CDATA[치킨]]&gt;</searchexpression>
-<searchfound>5301</searchfound>
-<searchextend>N</searchextend>
-<highlightkeyword>TL%3D%EC%B9%98%ED%82%A8%7CTLE%3D%EC%B9%98%ED%82%A8%7CAB%3D%EC%B9%98%ED%82%A8%7CCL%3D%EC%B9%98%ED%82%A8</highlightkeyword>
-<page>
-<searchpage>1</searchpage>
-<numperpage>30</numperpage>
-<totalpage>177</totalpage>
-</page>
-<articles>
-<article>
-<vdkvgwkey>1020170090723</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font>무 제조방법 (Manufacturing method of pickled radish)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨무 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Manufacturing method of pickled radish]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 19/20')" title="새창으로 열림">A23L 19/20</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 19/10')" title="새창으로 열림">A23L 19/10</a> <font title="A23L 19/20|A23L 19/10|A23L 29/30|A23L 23/00|A23L 27/10"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[서병옥 정재선]]&gt;</apv>
-<gnv>&lt;![CDATA[1018327140000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20180221]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명에 따른 <font color="red"><b>치킨</b></font>무는 천연화합물 및 고리화합물을 포함함으로써, 콜레스테롤의 흡수를 저해하여 다이어트에 도움을 줄 수 있다. 또한, 본 발명에 따른 <font color="red"><b>치킨</b></font>무는 따뜻한 성질을 지니는 약초 추출물을 포함함으로써, 무의 찬 성질을 보완해 줄 수 있어, 찬 성질이 몸에 맞지 않는 사람이 <font color="red"><b>치킨</b></font>무를 섭취하게 되는 경우 배탈이 나지 않도록 하고, 설사를 예방해 줄 수 있어 건강에 유익하다.]]&gt;</abv>
-<adv>&lt;![CDATA[20170718]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[서병옥 정재선 서정하 서정호]]&gt;</inv>
-<agv>&lt;![CDATA[안재열]]&gt;</agv>
+[<article>
+<vdkvgwkey>1020220155905</vdkvgwkey>
+<tlv><![CDATA[<font color='red'><b>AI</b></font>를 이용한 실종자/수배자 추적을 위한 객체 인식 시스템 (Object Recognition System for Tracking Missing Person/Wanted Person Using <font color='red'><b>AI</b></font>)]]></tlv>
+<ttl><![CDATA[AI를 이용한 실종자/수배자 추적을 위한 객체 인식 시스템]]></ttl>
+<tlt><![CDATA[Object Recognition System for Tracking Missing Person/Wanted Person Using <font color='red'><b>AI</b></font>]]></tlt>
+<prv><![CDATA[null]]></prv>
+<lst><![CDATA[A]]></lst>
+<lst_txt><![CDATA[공개]]></lst_txt>
+<status><![CDATA[공개]]></status>
+<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06V 10/74')" title="새창으로 열림">G06V 10/74</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06V 10/774')" title="새창으로 열림">G06V 10/774</a> <font title="G06V 10/74|G06V 10/774|G06V 20/52|G06Q 50/26|G06N 3/045"> .... </font>]]></ipv>
+<apv><![CDATA[이동윤 윤성호 최가인 이영원]]></apv>
+<gnv><![CDATA[ ]]></gnv>
+<gdv><![CDATA[ ]]></gdv>
+<abv><![CDATA[본 발명은 객체 인식 시스템의 관한 것으로서, 실종자와 수배자를 판단하고 경찰에 데이터를 전달하는 것을 목적으로 한다. 즉, 본 발명은 객체 인식 시스템의 관한 것으로서, 더욱 상세하게는 <font color='red'><b>AI</b></font>를 이용한 실종자/수배자 추적을 위한 객체인식 시스템에 있어, 사진 및 <font color='red'><b>그림</b></font>을 통해 실종자 수배자 정보 입력부, 카메라 촬영부, 학습 <font color='red'><b>AI</b></font>를 통해 실종자 및 수배자 정보와 카메라 촬영부의 촬영된 사진과 비교하여 동일성을 추출하는 제어부, 상기 분석을 통해 찾아낸 실종자/수배자에 데이터를 경찰측에 전송하는 데이터 전송부, 상기 전송된 데이터를 수신받아 저장하는 수신 데이터 저장 서버를 특징으로 한다.]]></abv>
+<adv><![CDATA[20221119]]></adv>
+<onv><![CDATA[1020230026973]]></onv>
+<odv><![CDATA[20230227]]></odv>
+<inv><![CDATA[이동윤 윤성호 최가인 이영원]]></inv>
+<agv><![CDATA[ ]]></agv>
 <img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
-<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
+<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020220155905]]></src>
+<alt><![CDATA[AI를 이용한 실종자/수배자 추적을 위한 객체 인식 시스템의 도면]]></alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020210012721</vdkvgwkey>
-<tlv>&lt;![CDATA[발효 배터 <font color="red"><b>치킨</b></font> 및 그 제조방법 (Fermenting Batter Chicken and Method of Preparing the Same)]]&gt;</tlv>
-<ttl>&lt;![CDATA[발효 배터 치킨 및 그 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Fermenting Batter Chicken and Method of Preparing the Same]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[A]]&gt;</lst>
-<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
-<status>&lt;![CDATA[공개]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 7/157')" title="새창으로 열림">A23L 7/157</a> <font title="A23L 13/50|A23L 7/157|A23L 7/104|A23L 5/10|A23P 20/10"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[주식회사 퓨처키친]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은, (a) 물 40 내지 70 중량%에 발효 스타터 7 내지 18 중량%를 가하여 녹인 후, 밀가루 12 내지 24 중량%, 산화전분 8 내지 16 중량% 및 이스트 1 내지 10 중량%를 가하여 배터(batter)를 제조하는 단계; (b) 상기 배터를 15 내지 30℃에서 20 내지 60분간 발효시켜 발효 배터를 제조하는 단계; (c) 상기 발효 배터를 닭고기에 도포하는 단계; 및 (d) 상기 발효 배터가 도포된 닭고기를 기름에 튀기는 단계;를 포함하여 색다른 식감과 고소한 풍미를 가지는 발효 배터 <font color="red"><b>치킨</b></font> 및 그 제조방법에 관한 것이다.]]&gt;</abv>
-<adv>&lt;![CDATA[20210129]]&gt;</adv>
-<onv>&lt;![CDATA[1020220109560]]&gt;</onv>
-<odv>&lt;![CDATA[20220805]]&gt;</odv>
-<inv>&lt;![CDATA[한대헌 김진욱 임규진]]&gt;</inv>
-<agv>&lt;![CDATA[이준성]]&gt;</agv>
+<judgementtextfg><![CDATA[N]]></judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020210091526</vdkvgwkey>
+<tlv><![CDATA[<font color='red'><b>AI</b></font> 기반 <font color='red'><b>그림</b></font>을 이용한 부모와 아동이 자체 제작하는 내<font color='red'><b>그림</b></font> 동화책 제작 시스템 및 이의 방법 (System of making my own picture book by parents and children using <font color='red'><b>ai</b></font>-based pictures and method for the same)]]></tlv>
+<ttl><![CDATA[AI 기반 그림을 이용한 부모와 아동이 자체 제작하는 내그림　동화책 제작 시스템 및 이의 방법]]></ttl>
+<tlt><![CDATA[System of making my own picture book by parents and children using <font color='red'><b>ai</b></font>-based pictures and method for the same]]></tlt>
+<prv><![CDATA[null]]></prv>
+<lst><![CDATA[A]]></lst>
+<lst_txt><![CDATA[공개]]></lst_txt>
+<status><![CDATA[공개]]></status>
+<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06Q 50/22')" title="새창으로 열림">G06Q 50/22</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G16H 20/70')" title="새창으로 열림">G16H 20/70</a> <font title="G06Q 50/22|G16H 20/70|G06F 40/10|G06Q 10/02|G06T 11/60|G06T 7/90"> .... </font>]]></ipv>
+<apv><![CDATA[이성옥]]></apv>
+<gnv><![CDATA[ ]]></gnv>
+<gdv><![CDATA[ ]]></gdv>
+<abv><![CDATA[일 실시예에 따른 <font color='red'><b>그림</b></font>을 이용한 아동심리치유방법은 회원가입단계; 원하는 심리치유기간에 따라 다양하게 상담구독기간을 선택하는 상담구독기간선택단계; 선택된 상기 상담구독기간에 따라 상이한 비용을 결제하는 결제단계; 및 선택된 상기 상담구독기간에 따른 상이한 서비스제공단계를 포함한다.]]></abv>
+<adv><![CDATA[20210713]]></adv>
+<onv><![CDATA[1020230011013]]></onv>
+<odv><![CDATA[20230120]]></odv>
+<inv><![CDATA[이성옥]]></inv>
+<agv><![CDATA[기림특허법인]]></agv>
 <img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
-<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
+<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020210091526]]></src>
+<alt><![CDATA[AI 기반 그림을 이용한 부모와 아동이 자체 제작하는 내그림　동화책 제작 시스템 및 이의 방법의 도면]]></alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020170102998</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font>의 제조방법 (Manufacturing method of chicken)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨의 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Manufacturing method of chicken]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 5/10')" title="새창으로 열림">A23L 5/10</a> ]]&gt;</ipv>
-<apv>&lt;![CDATA[양승민]]&gt;</apv>
-<gnv>&lt;![CDATA[1019602820000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20190314]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 <font color="red"><b>치킨</b></font> 제조방법에 관한 것으로, 밀가루 대신 찹쌀가루에 양파, 마늘, 파, 파프리카, 생강, 레몬, 파인애플, 굴소스를 혼합한 <font color="red"><b>치킨</b></font>파우더 반죽을 이용하여 바삭하면서 맛과 풍미가 좋고 영양가가 높은 <font color="red"><b>치킨</b></font>의 제조방법에 관한 것이다. 본 발명 <font color="red"><b>치킨</b></font>의 제조방법은 닭고기를 세척 후 일정크기로 절단하여 염지액에 20~30분 동안 염지하는 단계(S10) 상기 염지된 닭고기를 5~10℃의 저온에서 20~24시간 숙성시키는 단계(S20); 양파, 마늘, 파, 파프리카, 생강, 레몬, 파인애플을 분쇄 후 찹쌀가루, 옥수수전분, 감자전분, 굴소스와 함께 고르게 혼합하여 <font color="red"><b>치킨</b></font>파우더 반죽을 제조하는 단계(S30); 상기 숙성된 닭고기에 상기 <font color="red"><b>치킨</b></font>파우더 반죽을 입히는 단계(S40); <font color="red"><b>치킨</b></font>파우더 반죽을 입힌 닭고기를 150~180℃의 온도로 5~8분간 전용유에서 튀겨내는 단계(S50)로 이루어지는 것을 특징으로 한다.]]&gt;</abv>
-<adv>&lt;![CDATA[20170814]]&gt;</adv>
-<onv>&lt;![CDATA[1020190018260]]&gt;</onv>
-<odv>&lt;![CDATA[20190222]]&gt;</odv>
-<inv>&lt;![CDATA[양승민]]&gt;</inv>
-<agv>&lt;![CDATA[민병오]]&gt;</agv>
+<judgementtextfg><![CDATA[N]]></judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020190141546</vdkvgwkey>
+<tlv><![CDATA[Arm pelion, Treasure Data 연동을 통한 <font color='red'><b>AI</b></font> 스마트팜플랫폼 구축 시스템 (<font color='red'><b>AI</b></font> Smart Farm Platform Implementation System through the Connection of Arm pelion and Treasure Data)]]></tlv>
+<ttl><![CDATA[Arm pelion, Treasure Data 연동을 통한 AI 스마트팜플랫폼 구축 시스템]]></ttl>
+<tlt><![CDATA[<font color='red'><b>AI</b></font> Smart Farm Platform Implementation System through the Connection of Arm pelion and Treasure Data]]></tlt>
+<prv><![CDATA[null]]></prv>
+<lst><![CDATA[J]]></lst>
+<lst_txt><![CDATA[거절]]></lst_txt>
+<status><![CDATA[거절]]></status>
+<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06Q 50/02')" title="새창으로 열림">G06Q 50/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A01G 9/24')" title="새창으로 열림">A01G 9/24</a> ]]></ipv>
+<apv><![CDATA[(주)스마트팜센터]]></apv>
+<gnv><![CDATA[ ]]></gnv>
+<gdv><![CDATA[ ]]></gdv>
+<abv><![CDATA[스마트팜 영역에서 환경복합관제모니터링 시스템은 많이 개발되어 사용되고 있는데 범용 플랫폼이 없어 기존 사용자들에게 어려움이 있었다. 새롭게 개발된 Arm pelion과 TreasureData 연동 프로그램을 활용한 스마트팜플랫폼은 이러한 어려움을 해결하고 생산과 소비를 예측할 수 있는 빅데이터 활용 <font color='red'><b>AI</b></font>(인공지능)의 플랫폼으로서 기존의 관제모니터링 시스템의 한계를 극복할 새로운 도구를 개발한 것이다. [<font color='red'><b>그림</b></font>] <font color='red'><b>AI</b></font>에 의한 재배 최적화]]></abv>
+<adv><![CDATA[20191107]]></adv>
+<onv><![CDATA[1020210055279]]></onv>
+<odv><![CDATA[20210517]]></odv>
+<inv><![CDATA[조만호]]></inv>
+<agv><![CDATA[ ]]></agv>
 <img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
-<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
+<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020190141546]]></src>
+<alt><![CDATA[Arm pelion, Treasure Data 연동을 통한 AI 스마트팜플랫폼 구축 시스템의 도면]]></alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020100124080</vdkvgwkey>
-<tlv>&lt;![CDATA[양파가 첨가된 양념<font color="red"><b>치킨</b></font>소스와 그 제조방법 (The sauce for chicken)]]&gt;</tlv>
-<ttl>&lt;![CDATA[양파가 첨가된 양념치킨소스와 그 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[The sauce for chicken]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 23/00')" title="새창으로 열림">A23L 23/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 27/10')" title="새창으로 열림">A23L 27/10</a> ]]&gt;</ipv>
-<apv>&lt;![CDATA[여영주]]&gt;</apv>
-<gnv>&lt;![CDATA[1012377160000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20130221]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 양파가 첨가된 양념<font color="red"><b>치킨</b></font>소스와 그 제조방법에 관한 것으로서, 더욱 상세하게는 레몬농축액 0.94중량%, 양파 53.1중량%, 야채착즙액 0.27중량%, 백색설탕 6.43중량%, 갈색설탕 8.85중량%, 식초 9.29중량%, 소금 6.06중량%, L-글루타민산나트륨 0.02중량%, 다시마분말 0.01중량%, 후추 0.89중량%, 레몬향 0.08중량%, 정제수 14.06 중량%를 혼합하여 양파소스를 제조하는 양파소스 제조과정과; 그 제조된 양파소스 33중량%, 할라피뇨 2.5중량%, 토마토 16중량%, 양파 10중량%, 레드파프리카 12중량%, 옐로우파프리카 12중량%, 오이 12중량%, 할라피뇨 국물 2.5중량%를 준비하고, 준비된 할라피뇨, 토마토, 양파 레드파프리카, 옐로우파프리카, 오이를 0.5cm의 크기로 절단한 후 절단된 재료와 양파소스, 할라피뇨국물을 믹싱볼에 투입하여 혼합한 후 상온에서 24시간 동안 숙성시켜 양념<font color="red"><b>치킨</b></font>소스를 제조하는 <font color="red"><b>치킨</b></font>소스제조과정; 으로 구성한 것을 특징으로 한다. 본 발명에 의하면, 양념<font color="red"><b>치킨</b></font>소스의 단맛을 설탕에 의존하지 않고 첨부되는 양파, 토마토, 파프리카와 같은 천연재료로 부터 얻을 수 있게되어 소비자의 건강증진에 도움을 줄 수 있고, 양파향이 은은하게 배어나오면서도 할라피뇨의 매운맛이 남아있어 매우 독특한 양념<font color="red"><b>치킨</b></font>의 맛을 제공할 수 있는 효과를 기대할 수 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20101207]]&gt;</adv>
-<onv>&lt;![CDATA[1020120063062]]&gt;</onv>
-<odv>&lt;![CDATA[20120615]]&gt;</odv>
-<inv>&lt;![CDATA[여영주]]&gt;</inv>
-<agv>&lt;![CDATA[권혁철]]&gt;</agv>
+<judgementtextfg><![CDATA[N]]></judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020220156504</vdkvgwkey>
+<tlv><![CDATA[<font color='red'><b>그림</b></font> 색채 분석 방법 및 시스템 (Method and System of <font color='red'><b>AI</b></font>-based Image Color Analysis)]]></tlv>
+<ttl><![CDATA[그림 색채 분석 방법 및 시스템]]></ttl>
+<tlt><![CDATA[Method and System of <font color='red'><b>AI</b></font>-based Image Color Analysis]]></tlt>
+<prv><![CDATA[null]]></prv>
+<lst><![CDATA[R]]></lst>
+<lst_txt><![CDATA[등록]]></lst_txt>
+<status><![CDATA[등록]]></status>
+<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A61B 5/16')" title="새창으로 열림">A61B 5/16</a>]]></ipv>
+<apv><![CDATA[주식회사 아이스크림아트]]></apv>
+<gnv><![CDATA[1025022100000]]></gnv>
+<gdv><![CDATA[20230216]]></gdv>
+<abv><![CDATA[본 발명은 온/오프라인상에서 입력되는 사용자인 아동이 그린 <font color='red'><b>그림</b></font> 데이터의 객체에 적용된 색채를 분석할 수 있는 <font color='red'><b>그림</b></font> 색채 분석 방법 및 시스템에 관한 것으로, 본 발명의 일 실시예에 따른 <font color='red'><b>그림</b></font> 색채 분석 방법은,a) 아동인 사용자가 입력 모듈을 이용하여 <font color='red'><b>그림</b></font> 데이터를 입력하는 단계; b) 분석 모듈의 데이터 서버가 상기 입력 모듈에 입력된 <font color='red'><b>그림</b></font> 데이터를 인공지능 서버로 전송하며, 상기 인공지능 서버가 상기 <font color='red'><b>그림</b></font> 데이터 내 배경 이미지를 제거하는 단계; c) 상기 인공지능 서버가 <font color='red'><b>그림</b></font> 데이터의 분석을 통해 상기 <font color='red'><b>그림</b></font> 데이터로부터 색채를 추출하여 결과 데이터를 생성하는 단계; d) 피드백 생성 모듈이 상기 인공지능 서버에서 생성된 결과 데이터를 피드백 대시보드에 출력하여 관리자에게 상기 결과 데이터를 제공하는 단계; 및 e) 상기 피드백 생성 모듈이 상기 피드백 대시보드에 출력된 결과 데이터를 상기 사용자의 학부모가 구비한 단말로 전송하며, 상기 단말이 상기 결과 데이터를 시각 피드백의 형태로 출력하여 상기 학부모에게 제공하는 단계;를 포함하고, 상기 결과 데이터는, 상기 인공지능 서버가 학습된 인공지능 알고리즘을 통해 생성하는 색채 사용 정도, 색채 특성 분포도 및 워드클라우드일 수 있다.]]></abv>
+<adv><![CDATA[20221121]]></adv>
+<onv><![CDATA[ ]]></onv>
+<odv><![CDATA[ ]]></odv>
+<inv><![CDATA[강재구 안문주]]></inv>
+<agv><![CDATA[특허법인 아이퍼스]]></agv>
 <img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020100124080]]&gt;</src>
-<alt>&lt;![CDATA[양파가 첨가된 양념치킨소스와 그 제조방법의 도면]]&gt;</alt>
+<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020220156504]]></src>
+<alt><![CDATA[그림 색채 분석 방법 및 시스템의 도면]]></alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020030009964</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font>양념 (Spicy-chicken)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨양념]]&gt;</ttl>
-<tlt>&lt;![CDATA[Spicy-chicken]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[F]]&gt;</lst>
-<lst_txt>&lt;![CDATA[소멸]]&gt;</lst_txt>
-<status>&lt;![CDATA[소멸]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 23/00')" title="새창으로 열림">A23L 23/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <font title="A23L 23/00|A23L 13/50|A23L 13/40"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[장관순]]&gt;</apv>
-<gnv>&lt;![CDATA[1004965070000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20050613]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 포도당 0.0001 ~ 1g, M.S.G 0.0001 ~ 1g, 비타민C 0.0001 ~ 1g, 양파 2 ~ 6g, 케첩 8 ~ 15g, 마요네즈 5 ~ 10g, 간장 3 ~ 7g, 정제수 0.0001 ~ 2g, 물엿 40 ~ 70g, 세이보리가루 0.0001 ~ 1g, 세이찌가루 0.0001 ~ 1g, 큐민가루 0.0001 ~ 1g, 마늘가루 0.0001 ~ 1g, 양파가루 0.0001 ~ 1g, 글로부가루 0.0001 ~ 1g, 올스파이스오일 0.0001 ~ 1g, 글로부오일 0.0001 ~ 1g, 계피오일 0.0001 ~ 1g, 구연산 0.0001 ~ 1g, 잔탄검 0.0001 ~ 1g, 덱스트린 2.005 ~ 6.482g, 마늘 1.497 ~ 9.037g, 고춧가루 0.536 ~ 4.222g, 계피가루 0.001 ~ 1.407g, 흑후추가루 0.0001 ~ 1.407g, 생강가루 0.0001 ~ 1g, 파프리카 0.0001 ~ 1g, 코리안더가루 0.0001 ~ 1g, 겨자가루 0.0001 ~ 1g로 조성됨을 특징으로 하는 <font color="red"><b>치킨</b></font>양념에 관한 것이다. 양념튀김, <font color="red"><b>치킨</b></font>튀김, 튀김, 파우더]]&gt;</abv>
-<adv>&lt;![CDATA[20030218]]&gt;</adv>
-<onv>&lt;![CDATA[1020040074366]]&gt;</onv>
-<odv>&lt;![CDATA[20040825]]&gt;</odv>
-<inv>&lt;![CDATA[장관순]]&gt;</inv>
-<agv>&lt;![CDATA[송재욱]]&gt;</agv>
+<judgementtextfg><![CDATA[N]]></judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020210004472</vdkvgwkey>
+<tlv><![CDATA[감성지능 교육 <font color='red'><b>AI</b></font> 스피커 시스템 (Emotional Intelligence Education <font color='red'><b>AI</b></font> Speaker System)]]></tlv>
+<ttl><![CDATA[감성지능 교육 AI 스피커 시스템]]></ttl>
+<tlt><![CDATA[Emotional Intelligence Education <font color='red'><b>AI</b></font> Speaker System]]></tlt>
+<prv><![CDATA[null]]></prv>
+<lst><![CDATA[R]]></lst>
+<lst_txt><![CDATA[등록]]></lst_txt>
+<status><![CDATA[등록]]></status>
+<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'H04R 1/02')" title="새창으로 열림">H04R 1/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G10L 17/02')" title="새창으로 열림">G10L 17/02</a> <font title="H04R 1/02|G10L 17/02|G06F 18/00|G10L 13/00|G06Q 50/10|G06Q 50/20"> .... </font>]]></ipv>
+<apv><![CDATA[안형찬]]></apv>
+<gnv><![CDATA[1023461580000]]></gnv>
+<gdv><![CDATA[20211228]]></gdv>
+<abv><![CDATA[본 발명은 감성지능 교육 <font color='red'><b>AI</b></font> 스피커 시스템에 관한 것으로서, 어린 자녀의 감정을 신속하게 파악하여 부모에게 전달할 수 있도록 하여 부모로 하여금 자녀에게 보다 신속한 감정 대응이 가능하게 되고, 이에 따른 자녀의 감성지능을 향상시키는 효과를 나타내기 위한 것이다. 이를 실현하기 위한 본 발명은, 외부 소리를 감지하는 음성 감지부(10)와; 카메라를 통한 주변의 신체 움직임을 감지하는 동작 감지부(20)와; 소리 및 영상 데이터의 보관이 이루어지는 DB보관부(30)와; 상기 DB보관부(30)에 저장된 소리 데이터의 선택적인 외부 출력이 이루어지는 음성 출력부(40)와; 상기 DB보관부(30)에 저장된 영상 데이터의 선택적인 디스플레이가 이루어지는 영상 출력부(50)와; 상기 각 구성의 동작을 제어하는 제어부(60);를 포함하는 구성을 이루는 것을 특징으로 한다.]]></abv>
+<adv><![CDATA[20210113]]></adv>
+<onv><![CDATA[ ]]></onv>
+<odv><![CDATA[ ]]></odv>
+<inv><![CDATA[안형찬]]></inv>
+<agv><![CDATA[김영관]]></agv>
 <img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
-<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
+<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020210004472]]></src>
+<alt><![CDATA[감성지능 교육 AI 스피커 시스템의 도면]]></alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020130114098</vdkvgwkey>
-<tlv>&lt;![CDATA[새우<font color="red"><b>치킨</b></font>의 조리방법 (THE METHOD FOR COOKING THE CHICKEN INCLUDING A SHRIMP)]]&gt;</tlv>
-<ttl>&lt;![CDATA[새우치킨의 조리방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[THE METHOD FOR COOKING THE CHICKEN INCLUDING A SHRIMP]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 17/40')" title="새창으로 열림">A23L 17/40</a> <font title="A23L 13/50|A23L 17/40|A23L 13/70|A23L 5/10|A22C 21/00"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[(주)코리아델로스KD]]&gt;</apv>
-<gnv>&lt;![CDATA[1013892740000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20140421]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 후라잉한 계육에 후라잉한 새우를 넣고 향신채소(파,마늘,고추)와 함께 조리함으로써, 각종 향신채소가 후라잉한 계육 및 새우와 어우려지게 하여, <font color="red"><b>치킨</b></font>의 풍미 및 맛을 올려줌과 동시에, 균형잡힌 영양성분이 새우 <font color="red"><b>치킨</b></font> 자체에 포함되도록 하여, 남녀노소 누구나 새우<font color="red"><b>치킨</b></font>을 영양간식 또는 건강식품으로 즐길 수 있도록 하는 새우<font color="red"><b>치킨</b></font>의 조리방법에 관한 것이다. 본 발명에 따른 새우<font color="red"><b>치킨</b></font>의 조리방법은, 닭고기 계육을 일정 크기로 절단하는 절단단계, 닭고기의 육질 연육에 염과 향을 침투시키기 위하여 염지제를 배합하는 염지제 배합 단계, 배합한 염지제 성분이 닭고기의 육질 연육에 침투되도록 하는 염지단계, 염지가 이루어진 계육을 저온에서 12~24시간 숙성시키는 숙성단계, 상기 숙성된 계육에 프리믹스 튀김옷을 입혀 170~180℃사이에 후라잉하는 제1 후라잉 단계, 선별된 생알새우를 해동한 후 프리더스팅하는 프리더스팅 단계, 프리더스팅된 생알새우를 170~180℃ 사이에서 후라잉하는 제2 후라잉 단계, 향신채소를 준비 및 절단하는 향신채소 절단단계, 상기 절단된 향신채소를 고추씨맛기름과 함께 볶아주는 제3 후라잉 단계, 향신채소가 계육에 점착될 수 있도록 스킨소스를 공급하는 스킨소스 공급 단계 및 상기 후라잉된 계육, 생알새우 및 향신채소를 혼합한 다음, 90~120℃의 온도에서 후라잉하는 제4 후라잉 단계로 이루어진다. 본 발명에 의하면, <font color="red"><b>치킨</b></font>과 함께 유익한 영양성분을 포함하고 있는 새우와 향신채소(파, 마늘, 고추)를 함께 어우러지게 새우<font color="red"><b>치킨</b></font>을 조리함으로써, <font color="red"><b>치킨</b></font> 또는 새우의 풍미 및 맛을 증진시킴과 동시에, 부족한 영양성분을 새우 또는 향신채소 등을 통해 보강하고, 그 결과 남녀노소 누구나 새우<font color="red"><b>치킨</b></font>을 영양간식 또는 건강식품으로 즐길 수 있는 효과를 가진다.]]&gt;</abv>
-<adv>&lt;![CDATA[20130925]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[이길영]]&gt;</inv>
-<agv>&lt;![CDATA[정영수]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020130114098]]&gt;</src>
-<alt>&lt;![CDATA[새우치킨의 조리방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020190023095</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font>텐더용 닭고기 가공식품의 제조방법 및 이로 제조된 <font color="red"><b>치킨</b></font>텐더용 닭고기 가공식품 (METHOD FOR MANUFACTURING CHICKEN PROCESSED FOODS FOR CHICKEN TENDER AND CHICKEN PROCESSED FOODS FOR CHICKEN TENDER THEREOF)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨텐더용 닭고기 가공식품의 제조방법 및 이로 제조된 치킨텐더용 닭고기 가공식품]]&gt;</ttl>
-<tlt>&lt;![CDATA[METHOD FOR MANUFACTURING CHICKEN PROCESSED FOODS FOR CHICKEN TENDER AND CHICKEN PROCESSED FOODS FOR CHICKEN TENDER THEREOF]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/40')" title="새창으로 열림">A23L 13/40</a> <font title="A23L 13/50|A23L 13/40|A23L 13/70|A23L 3/36"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[(주)빅앤트피아이에스]]&gt;</apv>
-<gnv>&lt;![CDATA[1020490630000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20191120]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 닭안심살을 염지하고 숙성시켜 닭안심살의 영양성분의 손실을 방지할 뿐 아니라 닭안심살의 풍미와 식감을 향상시켜주고 닭안심살의 산패와 탈수를 방지하여 닭안심살의 유통기한을 늘릴 수 있는 <font color="red"><b>치킨</b></font>텐더용 닭고기 가공식품의 제조방법 및 이로 제조된 <font color="red"><b>치킨</b></font>텐더용 닭고기 가공식품에 관한 것이다. 본 발명은 닭안심살을 준비하는 원료준비단계와, 닭안심살을 준비하는 원료준비단계와, 양파, 사과, 마늘, 생강을 선별한 후 세척하여 준비하는 염지제재료준비단계와, 상기 준비된 양파, 사과, 마늘, 생강에 멸균우유, 청주, 후추분말, 소금을 혼합한 후 분쇄하여 염지제를 제조하는 염지제제조단계와, 베타믹스와 케이준 시즈닝을 준비하는 반죽재료준비단계와, 상기 준비된 베타믹스와 케이준 시즈닝을 포함한 반죽물을 제조하는 반죽물제조단계와, 상기 반죽물에 상기 준비된 닭안심살을 텀블링하는 텀블링단계와, 상기 텀블링된 닭안심살을 진공포장하는 진공포장단계를 포함하는 <font color="red"><b>치킨</b></font>텐더용 닭고기 가공식품의 제조방법에 있어서, 상기 염지제제조단계는, 상기 닭안심살의 감칠맛을 향상시키기 위한 우스터소스와, 상기 닭안심살의 균을 제거하고 상기 염지제 재료의 영양성분에 대한 닭안심살의 흡수율을 향상시키기 위한 매실원액 효소와, 상기 닭안심살의 감칠맛을 향상시키기 위한 글루탐산 나트륨을 더 혼합하고, 상기 멸균우유 100중량부에 대해 상기 양파 80 내지 120중량부, 상기 사과 23 내지 43중량부, 상기 마늘 1 내지 14중량부, 상기 생강 1 내지 14중량부, 상기 우스터소스 1 내지 15중량부, 상기 청주 1 내지 17중량부, 상기 매실원액 효소 1 내지 12중량부, 상기 후추분말 1 내지 3중량부, 상기 소금 1 내지 13중량부, 상기 글루탐산 나트륨 1 내지 13중량부를 혼합하고 분쇄하여 염지제를 제조하며, 상기 반죽물제조단계는, 상기 숙성된 염지제 100중량부에 대해 상기 준비된 베타믹스 40 내지 60중량부와 상기 준비된 케이준 시즈닝 1 내지 5중량부를 혼합하여 반죽물을 제조하며, 상기 텀블링단계는, 상기 제조된 반죽물 100중량부에 대해 상기 준비된 닭안심살 200 내지 400중량부를 텀블링하고, 상기 염지제제조단계와 상기 반죽재료준비단계 사이에는, 상기 염지제 내의 매실원액 효소가 발효되면서 나머지 염지제재료와 융합되도록 상기 제조된 염지제를 1℃ 내지 5℃에서 20 내지 30시간 동안 숙성시키는 염지제숙성단계를 포함하고, 상기 진공포장단계 이후에는, 상기 닭안심살의 산화와 탈수를 방지하기 위해 상기 진공포장된 닭안심살을 영하 35℃ 내지 영하 25℃에서 8 내지 15시간 동안 급속 냉동하는 급속냉동단계와, 상기 급속 냉동된 닭안심살을 영하 20℃ 내지 영하 10℃에서 20 내지 30시간 동안 상기 닭안심살에 상기 반죽물이 흡수되도록 숙성하는 냉동숙성단계를 포함하여 구성된다.]]&gt;</abv>
-<adv>&lt;![CDATA[20190227]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[신용호 김태홍]]&gt;</inv>
-<agv>&lt;![CDATA[특허법인아주]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020190023095]]&gt;</src>
-<alt>&lt;![CDATA[치킨텐더용 닭고기 가공식품의 제조방법 및 이로 제조된 치킨텐더용 닭고기 가공식품의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020160120997</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font>까스용 닭가슴살 성형틀 (Chicken breast mould for chicken cutlet)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨까스용 닭가슴살 성형틀]]&gt;</ttl>
-<tlt>&lt;![CDATA[Chicken breast mould for chicken cutlet]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23P 1/10')" title="새창으로 열림">A23P 1/10</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A47J 43/20')" title="새창으로 열림">A47J 43/20</a> <font title="A23P 1/10|A47J 43/20|A23L 13/50"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[이세희]]&gt;</apv>
-<gnv>&lt;![CDATA[1017624150000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20170721]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 <font color="red"><b>치킨</b></font>까스용 닭가슴살 성형틀에 관한 것으로서, 더욱 상세하게는 일정한 형태로 형성되는 몸체의 수용공간에 소정크기로 분쇄된 닭가슴살을 채운 뒤, 상기 몸체의 상부에 형성된 압축판을 이용하여 분쇄된 닭가슴살이 하나의 덩어리로 압축됨에 따라, 일정한 크기의 <font color="red"><b>치킨</b></font>까스를 제조할 수 있는 <font color="red"><b>치킨</b></font>까스용 닭가슴살 성형틀에 관한 것이다. 상기 과제를 해결하기 위한 본 발명의 <font color="red"><b>치킨</b></font>까스용 닭가슴살 성형틀은, 상부가 개방되고 내부에 수용공간이 형성되는 함체 형태로 형성되며, 측벽의 일측에 형성된 제 1힌지부를 중심으로 측면으로 개방이 이루어지는 몸체; 상기 몸체의 상부를 덮도록 형성되고 중심부에 삽입홀이 관통 형성되며, 일측에 형성된 제 2힌지부에 의해 상방으로 개방이 이루어지는 뚜껑; 상면에 고정 결합부가 형성되고, 상기 수용공간의 내부의 상면 하측에 구비되는 압축판; 및 하측 끝단부에 결합돌기가 형성되며, 상기 삽입홀을 관통하여 상기 결합돌기가 상기 고정 결합부에 삽입 결합되며 상기 압축판을 승하강시키는 압축봉을 포함하며, 상기 수용공간의 내부에 닭가슴살이 수용된 상태에서 상기 압축판을 하강시키면 상기 닭가슴살의 압축이 이루어지는 것을 특징으로 한다.]]&gt;</abv>
-<adv>&lt;![CDATA[20160921]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[최기범]]&gt;</inv>
-<agv>&lt;![CDATA[송인관]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020160120997]]&gt;</src>
-<alt>&lt;![CDATA[치킨까스용 닭가슴살 성형틀의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020180038715</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font> 시즈닝 가루 및 그 제조방법 (SEASONING POWDERS OF CHICKEN AND MANUFACTURING METHOD THEREOF)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨 시즈닝 가루 및 그 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[SEASONING POWDERS OF CHICKEN AND MANUFACTURING METHOD THEREOF]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 27/26')" title="새창으로 열림">A23L 27/26</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 27/00')" title="새창으로 열림">A23L 27/00</a> <font title="A23L 27/26|A23L 27/00|A23L 5/20"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[주식회사 아름터 (주)하이몰]]&gt;</apv>
-<gnv>&lt;![CDATA[1018534390000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20180424]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 <font color="red"><b>치킨</b></font> 시즈닝 가루 및 그 제조방법에 관한 것이다. 본 발명에 따른 <font color="red"><b>치킨</b></font> 시즈닝 가루는 <font color="red"><b>치킨</b></font> 맛 시즈닝 가루 25 내지 35 중량부, 핫 시즈닝 오일 0.5 내지 3.5 중량부, 빵가루 13 내지 17 중량부, 옥수수전분 5 내지 9 중량부, 전지분유 5 내지 9 중량부, 식물성 크림 3 내지 7 중량부, 유청분말 3 내지 7 중량부, 간장분말 3.5 내지 5.5 중량부, 쌀가루 3.5 내지 5.5 중량부, 정제소금 1.5 내지 3.5 중량부, 백설탕 1.5 내지 3.5 중량부, 스모크오일 1 내지 3 중량부, 난백파우더 1 내지 3 중량부, 토스티드 갈릭파우더 1 내지 3 중량부, 셀룰로오스 분말 1 내지 3 중량부, 젤란검 1 내지 3 중량부, 너트맥분말 1 내지 3 중량부, 스모크향 분말 1 내지 3 중량부, 분리대두단백 0.2 내지 0.6 중량부, 백후추 분말 0.2 내지 0.6 중량부, 새우추출 분말(상품명, 아이작 제조) 0.1 내지 0.5 중량부, 흑후추 분말 0.1 내지 0.5 중량부, FM023로스트갈릭서머론(상품명, 이레상사 제조) 0.1 내지 0.3 중량부 및 올레오레진파프리카 0.1 내지 0.3 중량부의 중량 비율로 배합되어 제조된다. 상기한 구성에 의해 본 발명은 <font color="red"><b>치킨</b></font> 특유의 잡냄새를 제거함과 동시에 풍미를 증진시킬 수 있고, 고소함과 바삭함이 증진되어 <font color="red"><b>치킨</b></font>의 맛과 향을 향상시키며 소비자의 기호도를 충족시킬 수 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20180403]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[강상옥 김진하]]&gt;</inv>
-<agv>&lt;![CDATA[특허법인메이저]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020180038715]]&gt;</src>
-<alt>&lt;![CDATA[치킨 시즈닝 가루 및 그 제조방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020190180140</vdkvgwkey>
-<tlv>&lt;![CDATA[블랙 알리오 <font color="red"><b>치킨</b></font> 및 그 제조방법 (Black aglio chicken and manufacturing method thereof)]]&gt;</tlv>
-<ttl>&lt;![CDATA[블랙 알리오 치킨 및 그 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Black aglio chicken and manufacturing method thereof]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[C]]&gt;</lst>
-<lst_txt>&lt;![CDATA[취하]]&gt;</lst_txt>
-<status>&lt;![CDATA[취하]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23P 20/12')" title="새창으로 열림">A23P 20/12</a> <font title="A23L 13/50|A23P 20/12|A23L 23/00|A23L 13/40"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[㈜아이더스코리아]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 닭에 향신료 기능과 같은 청고추 소스의 톡쏘는 매운맛과 간장의 깊고 진한 맛과 담백한 튀긴 마늘을 버무려서 이러한 맛이 스며들게 하여 닭의 비린내나 잡냄새없이 튀겨낸 닭에서 진한 간장의 향과 맛을 비롯하여 고소한 튀긴 마늘 맛이 나게 하고, 튀겨낸 후에 블랙 간장소스와 튀긴 마늘을 토핑하여 닭이 바삭하면서 담백하고 고소한 맛을 가질 수 있도록 하여 튀겨낸 닭에 향신료 기능과 같은 블랙 간장소스에 의한 독특한 향과 함께 튀긴 마늘이 버무러져 느끼하지 않으면서 닭의 부드러운 질감 및, 튀긴 마늘의 담백하면서도 고소한 맛이 조화를 이루게 한 블랙 알리오 <font color="red"><b>치킨</b></font> 및 그 제조방법에 관한 것으로, 생닭을 깨끗히 손질한 후 포장육의 포장지의 윗면을 가위로 개봉 후 다리에 뼈가 보이도록 가위를 이용해 Y 모양으로 칼집을 넣는 준비단계와; 자른 계육을 파우더 통에 넣어 텀블링 한 후 파우더를 털어 스킨이 위로 향하도록 그리드 위에 올려 주는 정형단계와; 물 분사시 너무 가까이에서 분사하여 <font color="red"><b>치킨</b></font> 파우더가 벗겨지지 않도록 주의하면서, 압축분무기를 이용해 <font color="red"><b>치킨</b></font>에 물을 골고루 뿌려준 후 210℃(습도30%)로 예열된 오븐에 라치오날 SCC의 경우 10분 30초, 그 외에는 11분간 조리하는 조리단계와; 오븐 조리가 완료 된 <font color="red"><b>치킨</b></font>을 175℃로 예열된 튀김기에서 1분 20초 동안 튀겨내는 튀김단계와; 믹싱볼에 블랙소스 150g을 가열하지 않고 버무려 담아 후라이드 <font color="red"><b>치킨</b></font>을 넣고 버무려 내는 믹싱단계와; 믹싱볼에 남아 있는 소스를 고열 스페츌라를 이용해 <font color="red"><b>치킨</b></font> 위에 소스를 부워 완성된 블랙 알리오 <font color="red"><b>치킨</b></font>을 담고 튀긴 마늘 10g 토핑 후 제공하는 완성단계;로 이루어진 것이다.]]&gt;</abv>
-<adv>&lt;![CDATA[20191231]]&gt;</adv>
-<onv>&lt;![CDATA[1020210086308]]&gt;</onv>
-<odv>&lt;![CDATA[20210708]]&gt;</odv>
-<inv>&lt;![CDATA[장성식]]&gt;</inv>
-<agv>&lt;![CDATA[서용구]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020190180140]]&gt;</src>
-<alt>&lt;![CDATA[블랙 알리오 치킨 및 그 제조방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020080027703</vdkvgwkey>
-<tlv>&lt;![CDATA[락수단을 갖는 <font color="red"><b>치킨</b></font>박스 (a chicken box)]]&gt;</tlv>
-<ttl>&lt;![CDATA[락수단을 갖는 치킨박스]]&gt;</ttl>
-<tlt>&lt;![CDATA[a chicken box]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B65D 5/66')" title="새창으로 열림">B65D 5/66</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B65D 5/36')" title="새창으로 열림">B65D 5/36</a> <font title="B65D 5/66|B65D 5/36|B65D 85/30"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[주식회사 대성지기 황봉길]]&gt;</apv>
-<gnv>&lt;![CDATA[1008956430000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20090423]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 <font color="red"><b>치킨</b></font>박스에 관한 것으로 특히 락수단을 사용하여 임의적인 개봉이 발생되는 것을 방지토록 한 것이고 락수단을 제거토록 하면 포장된 <font color="red"><b>치킨</b></font>이 완전하게 노출토록 한 것이다. 현재 대부분의 <font color="red"><b>치킨</b></font>박스는 임의 개봉을 방지하기 위하여 박스의 덮개에 단순한 끼움방식이나 걸이방식을 사용하여 락수단을 제공하고 있으나 이러한 락수단이 쉽게 해제되어 덮개가 임의적으로 개봉되어진다는 것이다. 또한 박스의 덮개의 기능을 갖게 되면서 손잡이의 기능을 동시에 갖도록 할 경우에는 박스의 연장된 측면에 절개홈을 형성하고, 상기 절개홈에 맞물림되도록 걸이홈을 형성하여 락수단의 제공은 물론 덮개의 기능과 손잡이의 고정수단을 제공하고 있는 것이다. 그러나 이러한 것의 단점은 손잡이를 하방으로 조금만 힘을 가하게 될 경우에는 아주 쉽게 락수단이 해제되어 덮개가 개봉되어지거나 손잡일 잡고 있을 경우에는 박스가 하방으로 처짐에 의하여 많은 문제점이 발생된다는 것이다. 따라서 본 발명에서는 박스의 연장된 측면에 형성된 절개홈이 접어지게 되면서 덮개과 맞물림되어지면서 끼움토록 함으로서 접어진 부분을 인위적으로 당김치 아니할 경우에는 절대로 덮개의 개봉이 발생되지 않토록 함으로서 종래의 문제점을 해결함은 물론 다양한 형상의 박스구현이 가능토록 한 것이다. 락수단. <font color="red"><b>치킨</b></font>박스. 손잡이. 임의개봉방지.]]&gt;</abv>
-<adv>&lt;![CDATA[20080326]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[황봉길]]&gt;</inv>
-<agv>&lt;![CDATA[황병도]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020080027703]]&gt;</src>
-<alt>&lt;![CDATA[락수단을 갖는 치킨박스의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020150091572</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font> 파우더 및 이를 이용한 <font color="red"><b>치킨</b></font>의 제조방법 (Chicken Power and Method of preparing fried chicken using thereof)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨 파우더 및 이를 이용한 치킨의 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Chicken Power and Method of preparing fried chicken using thereof]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 7/157')" title="새창으로 열림">A23L 7/157</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 11/00')" title="새창으로 열림">A23L 11/00</a> <font title="A23L 7/157|A23L 11/00|A23L 25/00|A23L 13/50|A23L 5/10"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[유재현]]&gt;</apv>
-<gnv>&lt;![CDATA[1017272240000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20170410]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 <font color="red"><b>치킨</b></font> 파우더 및 이를 이용한 <font color="red"><b>치킨</b></font>의 제조방법에 관한 것으로, 더욱 상세하게는 쌀가루, 콩가루, 견과류 분말, 변성전분을 포함하는 <font color="red"><b>치킨</b></font> 파우더를 제조하고, 이를 이용하여 닭을 베터링 및 브레딩함으로써 <font color="red"><b>치킨</b></font>을 제조하는 것을 특징으로 한다. 발명에 의하면, 식감, 관능성은 물론 영양가가 높은 <font color="red"><b>치킨</b></font>을 제공할 수 있는 장점이 있다. 또한, 수입에 의존하고 있는 밀가루를 쌀가루와 콩가루로 대체함으로써, 쌀과 콩의 소비를 촉진할 수 있는 장점이 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20150626]]&gt;</adv>
-<onv>&lt;![CDATA[1020170001492]]&gt;</onv>
-<odv>&lt;![CDATA[20170104]]&gt;</odv>
-<inv>&lt;![CDATA[유재현]]&gt;</inv>
-<agv>&lt;![CDATA[특허법인메이저]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020150091572]]&gt;</src>
-<alt>&lt;![CDATA[치킨 파우더 및 이를 이용한 치킨의 제조방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020190059486</vdkvgwkey>
-<tlv>&lt;![CDATA[쌀가루가 함유된 후라이드 <font color="red"><b>치킨</b></font>의 제조방법 (Manufacturing method of fried chicken containing rice flour)]]&gt;</tlv>
-<ttl>&lt;![CDATA[쌀가루가 함유된 후라이드 치킨의 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Manufacturing method of fried chicken containing rice flour]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[J]]&gt;</lst>
-<lst_txt>&lt;![CDATA[거절]]&gt;</lst_txt>
-<status>&lt;![CDATA[거절]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 7/10')" title="새창으로 열림">A23L 7/10</a> <font title="A23L 13/50|A23L 7/10|A23L 7/157|A23L 5/10|A23L 13/40|A23L 29/231|A23L 29/212|A23L 29/281|A23L 27/14"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[김경애]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 쌀가루가 함유된 후라이드 <font color="red"><b>치킨</b></font>의 제조방법에 관한 것으로, 닭고기에 점착성 코팅제를 묻히고, 스팀 분위기에서 가열하고, 쌀가루가 함유된 튀김옷을 입혀 튀기는 것에 의해 이루어진다. 본 발명에 따르면 수성 점착성 코팅제에 의해 튀김옷과 닭의 결착성이 향상되므로 <font color="red"><b>치킨</b></font>에서 얼룩이 억제되어 외관이 향상되며, 닭을 스팀 분위기에서 가열하는 전처리에 의해 뼈를 포함한 닭에서 골수가 응고되므로 핏물이 나타나지 않고 기름에 튀기는 시간이 단축되고 <font color="red"><b>치킨</b></font>에서 촉촉한 식감이 나타나며, 튀김옷에 습열처리된 쌀가루가 포함되어 상온에서 장시간 보관하여도 바삭한 식감이 유지되는 것이 가능해진다.]]&gt;</abv>
-<adv>&lt;![CDATA[20190521]]&gt;</adv>
-<onv>&lt;![CDATA[1020200134023]]&gt;</onv>
-<odv>&lt;![CDATA[20201201]]&gt;</odv>
-<inv>&lt;![CDATA[김경애]]&gt;</inv>
-<agv>&lt;![CDATA[박용민]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020190059486]]&gt;</src>
-<alt>&lt;![CDATA[쌀가루가 함유된 후라이드 치킨의 제조방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020190056546</vdkvgwkey>
-<tlv>&lt;![CDATA[상자접기 판재부를 구비한 <font color="red"><b>치킨</b></font>박스 (Chicken box with plate part for folding box)]]&gt;</tlv>
-<ttl>&lt;![CDATA[상자접기 판재부를 구비한 치킨박스]]&gt;</ttl>
-<tlt>&lt;![CDATA[Chicken box with plate part for folding box]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B65D 5/54')" title="새창으로 열림">B65D 5/54</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B65D 5/30')" title="새창으로 열림">B65D 5/30</a> <font title="B65D 5/54|B65D 5/30|B65D 5/42|B65D 5/66"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[김선일]]&gt;</apv>
-<gnv>&lt;![CDATA[1020349870000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20191015]]&gt;</gdv>
-<abv>&lt;![CDATA[상자접기 판재부를 구비한 <font color="red"><b>치킨</b></font>박스가 개시된다. 개시된 상자접기 판재부를 구비한 <font color="red"><b>치킨</b></font>박스는 종이재질로 이루어지며, <font color="red"><b>치킨</b></font>을 담는 박스본체와, 상기 박스본체의 개방된 상부를 덮는 박스덮개를 포함하도록 구성된 <font color="red"><b>치킨</b></font>박스에 있어서, 상기 박스덮개의 전체영역 중 일부분으로 구성되고 상기 박스덮개의 전체영역 중 나머지 부분으로부터 절취가능하도록 구성되어, 절취된 상태에서 뼈수거상자로 접기제작이 가능한 상자접기 판재부;를 포함하는 것을 특징으로 한다.]]&gt;</abv>
-<adv>&lt;![CDATA[20190514]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[김선일]]&gt;</inv>
-<agv>&lt;![CDATA[정창수]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020190056546]]&gt;</src>
-<alt>&lt;![CDATA[상자접기 판재부를 구비한 치킨박스의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020200180209</vdkvgwkey>
-<tlv>&lt;![CDATA[양파 바비큐 <font color="red"><b>치킨</b></font> 및 이의 제조방법 (Onion barbecue chicken and its manufacturing method)]]&gt;</tlv>
-<ttl>&lt;![CDATA[양파 바비큐 치킨 및 이의 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Onion barbecue chicken and its manufacturing method]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[A]]&gt;</lst>
-<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
-<status>&lt;![CDATA[공개]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 19/00')" title="새창으로 열림">A23L 19/00</a> <font title="A23L 13/50|A23L 19/00|A23P 20/25|A23L 23/00|A23L 5/10"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[주식회사 엠알케이]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 양파 바비큐 <font color="red"><b>치킨</b></font> 및 이의 제조방법에 관한 것으로, 특히 S1) 손질된 닭을 준비하는 단계; S2) 닭 내부에 양파를 채우고 여미는 단계; 및 S3) 양파가 내부에 채워진 닭을 바비큐 하는 단계;를 포함하는 양파 바비큐 <font color="red"><b>치킨</b></font>의 제조방법 및 상기 방법에 의하여 제조된 양파 바비큐 <font color="red"><b>치킨</b></font>에 관한 것이다. 본 발명에 따르면, 튀기지 않아 건강에 유리하며, 조리가 간편하며, 섭취가 용이하고, 영양이 보강되며, 닭의 노린내가 없으며, 육질이 부드러워 바비큐 <font color="red"><b>치킨</b></font>의 맛과 풍미가 개선된 양파 바비큐 <font color="red"><b>치킨</b></font>을 제공할 수 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20201221]]&gt;</adv>
-<onv>&lt;![CDATA[1020220089509]]&gt;</onv>
-<odv>&lt;![CDATA[20220628]]&gt;</odv>
-<inv>&lt;![CDATA[반신애]]&gt;</inv>
-<agv>&lt;![CDATA[특허법인원전 원영호]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020200180209]]&gt;</src>
-<alt>&lt;![CDATA[양파 바비큐 치킨 및 이의 제조방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020160038933</vdkvgwkey>
-<tlv>&lt;![CDATA[미네랄이 강화된 <font color="red"><b>치킨</b></font> 파우더 및 그 제조 방법 (CHICKEN POWDER WITH AN ENHANCED MINERAL AND MANUFACTURING METHOD THEREOF)]]&gt;</tlv>
-<ttl>&lt;![CDATA[미네랄이 강화된 치킨 파우더 및 그 제조 방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[CHICKEN POWDER WITH AN ENHANCED MINERAL AND MANUFACTURING METHOD THEREOF]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 7/10')" title="새창으로 열림">A23L 7/10</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 27/00')" title="새창으로 열림">A23L 27/00</a> <font title="A23L 7/10|A23L 27/00|A23L 1/304"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[김영문]]&gt;</apv>
-<gnv>&lt;![CDATA[1019297710000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20181211]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 닭 튀김용 <font color="red"><b>치킨</b></font> 파우더 및 그 제조 방법에 관한 것으로서, 보다 상세하게는 미네랄이 강화된 <font color="red"><b>치킨</b></font> 파우더 및 그 제조 방법에 관한 것이다. 본 발명에 따른 <font color="red"><b>치킨</b></font> 파우더는 밀가루와 전분 가루 및 양념을 포함하는 <font color="red"><b>치킨</b></font> 파우더 100 중량부에 5~10 중량부의 미네랄이 강화된 야채 또는 과일 가루를 포함하는 것을 특징으로 한다. 본 발명에 따른 <font color="red"><b>치킨</b></font> 파우더는 미네랄 성분이 강화되어 영향과 맛의 균형을 이룰 수 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20160331]]&gt;</adv>
-<onv>&lt;![CDATA[1020170112205]]&gt;</onv>
-<odv>&lt;![CDATA[20171012]]&gt;</odv>
-<inv>&lt;![CDATA[김영문 김기현]]&gt;</inv>
-<agv>&lt;![CDATA[박상훈]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020160038933]]&gt;</src>
-<alt>&lt;![CDATA[미네랄이 강화된 치킨 파우더 및 그 제조 방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020170047089</vdkvgwkey>
-<tlv>&lt;![CDATA[호두가루 닭가슴살을 이용한 <font color="red"><b>치킨</b></font>까스 제조방법 및 이에 의해 제조된 <font color="red"><b>치킨</b></font>까스 (Manufacturing Method of walnutpowder Chicken Cutlet and Chicken Cutlet)]]&gt;</tlv>
-<ttl>&lt;![CDATA[호두가루 닭가슴살을 이용한 치킨까스 제조방법 및 이에 의해 제조된 치킨까스]]&gt;</ttl>
-<tlt>&lt;![CDATA[Manufacturing Method of walnutpowder Chicken Cutlet and Chicken Cutlet]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[C]]&gt;</lst>
-<lst_txt>&lt;![CDATA[취하]]&gt;</lst_txt>
-<status>&lt;![CDATA[취하]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 5/10')" title="새창으로 열림">A23L 5/10</a> <font title="A23L 13/50|A23L 5/10|A23L 13/40|A23L 25/00"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[전한석]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 닭가슴살을 이용한 <font color="red"><b>치킨</b></font>까스 제조방법 및 이에 의해 제조된 <font color="red"><b>치킨</b></font>까스에 관한 것으로서 더욱 상세하게 설명하면 여러 첨가물을 혼합하여 알칼리성을 갖는 부재료를 제조하고 닭가슴살이 지닌 산성이 완화되도록 부재료가 닭가슴살에 혼합됨으로써 약산성을 띄는 <font color="red"><b>치킨</b></font>까스를 제조할 수 있는 닭가슴살을 이용한 <font color="red"><b>치킨</b></font>까스의 제조방법 및 이에 의해 제조된 <font color="red"><b>치킨</b></font>까스에 관한 것이다.상기 과제를 해결하기 위한 본 발명의 닭가슴살을 이용한 <font color="red"><b>치킨</b></font>까스 제조방법 및 이에 의해 제조된 <font color="red"><b>치킨</b></font>까스는 주재료인 닭가슴살을 분쇄하는 주재료 준비단계 덱스트린, 카제인나트륨, 정제염, 폴리인산나트륨, 메타인산나트륨, 글리신, 유당, 엑소펩티다아제 및 허브를 혼합하여 부재료를 생성하는 부재료 준비단계 상기 주재료와 부재료를 혼합하여 혼합물을 형성하는 혼합단계 상기 혼합물을 성형틀에서 일정 시간동안 압축하면서 성형 및 염지과정을 실시하는 성형단계 상기 성형된 닭가슴살을 절단하는 절단단계 및 상기 절단된 닭가슴살에 밀가루를 도포하고, 계란옷을 입힌 뒤, 빵가루를 도포하는 브레딩 단계를 포함하는 것을 특징으로 한다.]]&gt;</abv>
-<adv>&lt;![CDATA[20170412]]&gt;</adv>
-<onv>&lt;![CDATA[1020180114994]]&gt;</onv>
-<odv>&lt;![CDATA[20181022]]&gt;</odv>
-<inv>&lt;![CDATA[전한석]]&gt;</inv>
-<agv>&lt;![CDATA[ ]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020170047089]]&gt;</src>
-<alt>&lt;![CDATA[호두가루 닭가슴살을 이용한 치킨까스 제조방법 및 이에 의해 제조된 치킨까스의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020000073601</vdkvgwkey>
-<tlv>&lt;![CDATA[후라이드<font color="red"><b>치킨</b></font> 파우더 (Fried-chicken for powder)]]&gt;</tlv>
-<ttl>&lt;![CDATA[후라이드치킨 파우더]]&gt;</ttl>
-<tlt>&lt;![CDATA[Fried-chicken for powder]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[F]]&gt;</lst>
-<lst_txt>&lt;![CDATA[소멸]]&gt;</lst_txt>
-<status>&lt;![CDATA[소멸]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/00')" title="새창으로 열림">A23L 13/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 7/157')" title="새창으로 열림">A23L 7/157</a> <font title="A23L 13/00|A23L 7/157|A23L 23/00"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[장관순]]&gt;</apv>
-<gnv>&lt;![CDATA[1003718040000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20030128]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 소맥분 45~50중량부, 옥수수전분 38~42중량부, 정제염3~4중량부, L-글루타민산 나트륨 3~4중량부, 옥분 0.5중량부, 구아검 0.1중량부, 잔탄검 0.15중량부, 흑후추분0.5중량부, 백후추분 1.5중량부, 고추분 0.3중량부, 계피분 0.5중량부, 양파분0.4중량부, 마조람오일 0.02중량부, 유청분말 0.2중량부, 난황분말 0.5중량부, 분리대두단백 1.5중량부, 대두유 0.2중량부, 파프리카 올레오레진 0.01중량부, 캠시컴 올레오레진 0.05~ 0.06 중량부로 조성됨을 특징으로 하는 후라이드 <font color="red"><b>치킨</b></font> 파우더에 관한 것이다. 후라이드<font color="red"><b>치킨</b></font>, <font color="red"><b>치킨</b></font>파우더]]&gt;</abv>
-<adv>&lt;![CDATA[20001206]]&gt;</adv>
-<onv>&lt;![CDATA[1020010016368]]&gt;</onv>
-<odv>&lt;![CDATA[20010305]]&gt;</odv>
-<inv>&lt;![CDATA[장관순]]&gt;</inv>
-<agv>&lt;![CDATA[송재욱]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
-<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020050036793</vdkvgwkey>
-<tlv>&lt;![CDATA[한방 후라이드 <font color="red"><b>치킨</b></font>의 제조 방법 및 그 한방<font color="red"><b>치킨</b></font> (The chicken and method to product fried chicken of herbmedicine)]]&gt;</tlv>
-<ttl>&lt;![CDATA[한방 후라이드 치킨의 제조 방법 및 그 한방치킨]]&gt;</ttl>
-<tlt>&lt;![CDATA[The chicken and method to product fried chicken of herbmedicine]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[F]]&gt;</lst>
-<lst_txt>&lt;![CDATA[소멸]]&gt;</lst_txt>
-<status>&lt;![CDATA[소멸]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 5/10')" title="새창으로 열림">A23L 5/10</a> <font title="A23L 13/50|A23L 5/10|A23L 13/70"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[강우원 신남철]]&gt;</apv>
-<gnv>&lt;![CDATA[1006551790000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20061201]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 한방에서 사용하는 한약제를 분쇄하여 제작한 배터를 이용한 한방<font color="red"><b>치킨</b></font>에 관한 것으로 특히, 투입되는 한약제의 약효에 의해 성인병의 예방과 치료를 하여 건강유지를 위한 기능성 <font color="red"><b>치킨</b></font>을 제공함과 동시에 맛도 있고 영양도 좋은 음식으로도 사용되는 한방 후라이드 <font color="red"><b>치킨</b></font>의 제조 방법 및 그 한방<font color="red"><b>치킨</b></font>에 관한 것이다. 따라서 본 발명은 튀김 시 한약재를 사용한 배터를 입힘으로써 닭고기에 일종의 코팅을 하는 배터-딥(Batter-Dip)과정을 거쳐서 조리 시 기름이 스며들지 않고 닭고기의 수분을 보호하여 속은 촉촉하고 부드러우면서도 겉은 바삭바삭한 맛을 내여 맛을 극대화 하고 닭과 튀김 시에 발생하는 이취를 감소시킨다. 또한 튀김 공정중의 물리적 화학적 변화를 최소화 하고 <font color="red"><b>치킨</b></font>에 영양학적인 가치를 증대하며, 소아비만이나 성인병의 예방할 수 있을 것으로 생각되어지며, 또한 <font color="red"><b>치킨</b></font>전문점의 소득증대와 닭의 소비촉진을 증가 시킬 수 있을 것이고, 인스턴트 냉동식품(튀겨먹는식품)에 적용하여 유통기간의 연장에도 응용할 수 있을 것으로 판단된다. 백지, 황기, 당귀, 천궁, 계피, 한방배터, 염지제 등]]&gt;</abv>
-<adv>&lt;![CDATA[20050502]]&gt;</adv>
-<onv>&lt;![CDATA[1020060114741]]&gt;</onv>
-<odv>&lt;![CDATA[20061108]]&gt;</odv>
-<inv>&lt;![CDATA[강우원 문혜경 한진희 김종국]]&gt;</inv>
-<agv>&lt;![CDATA[류명현 우광제 안종철]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020050036793]]&gt;</src>
-<alt>&lt;![CDATA[한방 후라이드 치킨의 제조 방법 및 그 한방치킨의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020090114050</vdkvgwkey>
-<tlv>&lt;![CDATA[산야초를 이용한 <font color="red"><b>치킨</b></font>용 간장소스 제조방법 (Soy sauce manufacture method for chicken using wild plants)]]&gt;</tlv>
-<ttl>&lt;![CDATA[산야초를 이용한 치킨용 간장소스 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Soy sauce manufacture method for chicken using wild plants]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 23/00')" title="새창으로 열림">A23L 23/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 27/50')" title="새창으로 열림">A23L 27/50</a> ]]&gt;</ipv>
-<apv>&lt;![CDATA[(주)씨케이에프 푸드시스템]]&gt;</apv>
-<gnv>&lt;![CDATA[1011318240000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20120323]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 산야초를 이용한 <font color="red"><b>치킨</b></font>용 간장소스 제조방법에 관한 것으로서, 순간장 18리터에 짠맛을 순하게 중화시키기 위해 1차로 다진마늘 500g, 다진생강 500g, 물엿 10kg, 백설탕 6.75kg, 글루타민산 나트륨 400ml를 배합하여 1차 간장소스를 제조하는 단계; 민들레, 찔레, 칡, 솔잎, 산딸기, 참나리, 둥글레, 냉이, 더덕, 인진쑥, 씀바귀, 쑥, 삼주, 잔대, 뽕잎, 생강나무, 고들배기, 지치, 미나리, 도라지, 케일, 머루, 다래, 질경이, 두룹, 오이풀, 산돌배나무, 쇠뜨기, 개암나무, 쓴박하, 머우, 마타리, 취, 고사리, 고비, 원추리, 우산나물, 닭의 장풀 이상 38종의 산야초를 혼합하여 3년에서 4년간 자연숙성하여 엑기스를 추출하고, 추출된 엑기스 중 5.95 리터를 상기 1차 간장소스에 추가로 배합하여 2차 간장소스를 제조하는 단계; 2차 간장소스를 35~40일간 상온에서 숙성시켜 <font color="red"><b>치킨</b></font>용 간장소스를 완성하는 단계;로 이루어진 것을 특징으로 하는바, 튀겨 낸 닭의 누린내 제거와 느끼함을 최소화시키고, 뒷맛이 짜지 않으면서도 나트륨함량이 매우적고, 산야초의 유익한 성분으로 하여금 간장과의 조화된 다양한 맛의 제공과 함께 과당섭취를 줄일 수 있는 효과가 있다. 간장소스, <font color="red"><b>치킨</b></font>, 산야초, 숙성]]&gt;</abv>
-<adv>&lt;![CDATA[20091124]]&gt;</adv>
-<onv>&lt;![CDATA[1020110057587]]&gt;</onv>
-<odv>&lt;![CDATA[20110601]]&gt;</odv>
-<inv>&lt;![CDATA[조해상]]&gt;</inv>
-<agv>&lt;![CDATA[김영일]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
-<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020200183297</vdkvgwkey>
-<tlv>&lt;![CDATA[기능성이 증대된 닭뼈 추출물 및 이를 유효성분으로 포함하는 <font color="red"><b>치킨</b></font>스톡 조성물 (Chicken bone extract with enhanced functionality and chicken stock composition comprising the same as an active ingredient)]]&gt;</tlv>
-<ttl>&lt;![CDATA[기능성이 증대된 닭뼈 추출물 및 이를 유효성분으로 포함하는 치킨스톡 조성물]]&gt;</ttl>
-<tlt>&lt;![CDATA[Chicken bone extract with enhanced functionality and chicken stock composition comprising the same as an active ingredient]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[A]]&gt;</lst>
-<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
-<status>&lt;![CDATA[공개]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/30')" title="새창으로 열림">A23L 13/30</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/20')" title="새창으로 열림">A23L 13/20</a> <font title="A23L 13/30|A23L 13/20|C12J 1/00"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[충북대학교 산학협력단]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 기능성이 증대된 닭뼈 추출물 및 이를 유효성분으로 포함하는 <font color="red"><b>치킨</b></font>스톡 조성물에 관한 것으로, 더욱 자세하게는 저분자화 콜라겐 및 콘드로이친황산 함량이 증대됨으로써 관절염 개선 기능성을 갖는 닭뼈 추출물 및 이를 유효성분으로 포함하는 <font color="red"><b>치킨</b></font>스톡 조성물에 관한 것이다. 본 발명의 닭뼈 추출물의 제조방법은 닭뼈 등의 구성성분에 특정 pH 범위의 정제수를 가하여 추출물을 제조함으로써 저분자화된 콜라겐 및 콘드로이친황산의 함량을 효과적으로 증대시킬 수 있는바, 상기 방법을 통해 제조된 닭뼈 추출물은 기능성을 갖는 소스 조성물의 원료로 유용하게 사용될 수 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20201224]]&gt;</adv>
-<onv>&lt;![CDATA[1020220091992]]&gt;</onv>
-<odv>&lt;![CDATA[20220701]]&gt;</odv>
-<inv>&lt;![CDATA[최정석 박윤환 이상훈 김나희 문태연 박병건]]&gt;</inv>
-<agv>&lt;![CDATA[특허법인 남앤남]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020200183297]]&gt;</src>
-<alt>&lt;![CDATA[기능성이 증대된 닭뼈 추출물 및 이를 유효성분으로 포함하는 치킨스톡 조성물의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020210006978</vdkvgwkey>
-<tlv>&lt;![CDATA[후라이드 <font color="red"><b>치킨</b></font> 제조방법 (Recipe for a fried chicken)]]&gt;</tlv>
-<ttl>&lt;![CDATA[후라이드 치킨 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Recipe for a fried chicken]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[A]]&gt;</lst>
-<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
-<status>&lt;![CDATA[공개]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 7/157')" title="새창으로 열림">A23L 7/157</a> <font title="A23L 13/50|A23L 7/157|A23L 29/212|A23L 27/10|A23P 20/12|A23L 5/10|A23L 5/20|A23L 19/00|A23L 19/10|A23L 15/00"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[김기혁]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 후라이드 <font color="red"><b>치킨</b></font> 제조방법에 관한 것으로서 보다 상세하게는 튀김의 느끼함을 제거하면서 오랜 시간이 경과하여도 바삭함을 유지할 수 있고 약재를 사용함으로 영양소가 풍부하며 고기의 잡냄새를 제거하면서 풍미가 있도록 한 후라이드 <font color="red"><b>치킨</b></font> 제조방법에 관한 것인바, 본 발명은 후라이드 <font color="red"><b>치킨</b></font> 제조방법에 있어서, 밀가루, 전분, 정제소금, 전지분유, 포도당, 향미증진제, 천연향신료, 합성팽창제를 혼합하여 형성된 파우더를 준비하는 파우더준비공정과; 황기, 천궁, 오가피 헛개, 감초, 정제수(물)를 일정비율로 혼합하여 고온으로 일정시간 가열하여 수획된 한약액을 준비하는 반죽액준비공정과; 상기 파우더준비공정과 반죽액준비공정의 수행으로 얻어진 파우더와 한약액을 혼합하여 튀김용 반죽을 만드는 베이스제조공정과; 계육을 일정한 크기로 절단하고 핏물을 제거한 계육을 상기 베이스제조공정에 의해 만들어진 튀김용 반죽이 담겨있는 용기에 넣고 계육의 표면에 튀김용 반죽을 묻혀 일정한 두께의 튀김옷을 입히는 가봉공정과; 상기 튀김옷의 표면에 중력분을 묻히는 스프레드공정과; 상기 스프레드공정 수행 후 중력분이 표면에 뿌려 묻혀진 계육을 대두유에 넣고 튀기는 튀김공정에 의해 제조되는 것에 그 특징이 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20210118]]&gt;</adv>
-<onv>&lt;![CDATA[1020220104535]]&gt;</onv>
-<odv>&lt;![CDATA[20220726]]&gt;</odv>
-<inv>&lt;![CDATA[김기혁]]&gt;</inv>
-<agv>&lt;![CDATA[유환열]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
-<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020140090608</vdkvgwkey>
-<tlv>&lt;![CDATA[비어 <font color="red"><b>치킨</b></font> 구이기 (Beer chicken roasting machine)]]&gt;</tlv>
-<ttl>&lt;![CDATA[비어 치킨 구이기]]&gt;</ttl>
-<tlt>&lt;![CDATA[Beer chicken roasting machine]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A47J 37/04')" title="새창으로 열림">A47J 37/04</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A47J 37/07')" title="새창으로 열림">A47J 37/07</a> <font title="A47J 37/04|A47J 37/07|A47J 37/06"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[한삼연]]&gt;</apv>
-<gnv>&lt;![CDATA[1014976060000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20150224]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 비어 <font color="red"><b>치킨</b></font> 구이기를 제공하는 것을 목적으로 하는 것으로, 본 발명의 구성은 내부에 가열 챔버(11)를 구비한 구이기 본체(10); 복수개의 상하 방향 서포트 바아(22)에 복수개의 회전판(24)이 지지되어 상하 방향으로 나란하게 배치되며 지지축에 의해 상기 구이기 구이기 본체(10)에 회전 가능하게 직립 설치되며 상기 회전판(24)에는 내부에 맥주 저장조를 구비한 <font color="red"><b>치킨</b></font> 홀더(4)가 거치되는 회전판 모듈(20); 상기 회전판 모듈(20)을 회전시키도록 상기 구이기 본체(10)에 설치된 회전 구동부(30); 상기 회전판 모듈(20)의 상기 회전판(24)에 거치된 구이 대상물의 가열을 위한 열을 발생시키는 버너 어셈블리를 포함하는 것을 특징으로 한다.]]&gt;</abv>
-<adv>&lt;![CDATA[20140717]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[한삼연]]&gt;</inv>
-<agv>&lt;![CDATA[최중일]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020140090608]]&gt;</src>
-<alt>&lt;![CDATA[비어 치킨 구이기의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020220008375</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font>용 양념 소스의 제조방법 및 그 방법에 의한 양념 소스 (Method for producing seasoning sauce for chicken and seasoning sauce produced by the method)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨용 양념 소스의 제조방법 및 그 방법에 의한 양념 소스]]&gt;</ttl>
-<tlt>&lt;![CDATA[Method for producing seasoning sauce for chicken and seasoning sauce produced by the method]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 23/00')" title="새창으로 열림">A23L 23/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <font title="A23L 23/00|A23L 13/50|A23L 13/40|A23L 27/10"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[주식회사 에프앤에스식품]]&gt;</apv>
-<gnv>&lt;![CDATA[1024894700000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20230112]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 <font color="red"><b>치킨</b></font>용 양념 소스의 제조방법 및 그 방법에 의한 소스에 관한 것으로, 더욱 상세하게는 곤달비 잎 추출물을 제조하는 단계와, 상기 추출물을 김치유산균으로 발효시켜 발효추출물을 제조하는 단계와, 상기 제조된 발효추출물에 소스 조성물을 혼합하는 단계와, 상기 혼합된 혼합물을 가열하는 단계를 포함하며, 상기 김치유산균은 락토바실러스 플란타룸 및 락토바실러스 애시도필러스 중 1종 이상의 것임을 특징으로 한다. 본 발명에 의하면, 감칠맛 및 풍미가 우수하며, 느끼한 맛이 없고, 영양성이 풍부하며, <font color="red"><b>치킨</b></font>의 바삭함이 장시간 유지되도록 하고, <font color="red"><b>치킨</b></font> 특유의 비린내를 완화시킬 수 있다는 장점이 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20220120]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[성수경]]&gt;</inv>
-<agv>&lt;![CDATA[특허법인메이저]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020220008375]]&gt;</src>
-<alt>&lt;![CDATA[치킨용 양념 소스의 제조방법 및 그 방법에 의한 양념 소스의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020220008377</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font>용 디핑 소스의 제조방법 및 그 방법에 의한 디핑 소스 (Method for producing Dipping sauce or chicken and Dipping sauce produced by the method)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨용 디핑 소스의 제조방법 및 그 방법에 의한 디핑 소스]]&gt;</ttl>
-<tlt>&lt;![CDATA[Method for producing Dipping sauce or chicken and Dipping sauce produced by the method]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 23/00')" title="새창으로 열림">A23L 23/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 27/10')" title="새창으로 열림">A23L 27/10</a> <font title="A23L 23/00|A23L 27/10|A23L 29/00|A23L 27/60"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[주식회사 에프앤에스식품]]&gt;</apv>
-<gnv>&lt;![CDATA[1024894660000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20230112]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 <font color="red"><b>치킨</b></font>용 디핑 소스의 제조방법 및 그 방법에 의한 디핑 소스에 관한 것으로, 더욱 상세하게는 곤달비 잎 추출물을 제조하는 단계와, 상기 추출물을 김치유산균으로 발효시켜 발효추출물을 제조하는 단계와, 상기 제조된 발효추출물에 마요네즈, 당류, 식초, 전분 및 잔탄검을 혼합하는 단계를 포함하되, 상기 김치유산균은 락토바실러스 플란타룸 및 락토바실러스 애시도필러스 중 1종 이상의 것임을 특징으로 한다. 본 발명에 의하면, 감칠맛 및 풍미가 우수하며, <font color="red"><b>치킨</b></font>의 느끼한 맛을 제거하고, 영양성이 풍부하며, <font color="red"><b>치킨</b></font> 특유의 비린내를 완화시킬 수 있다는 장점이 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20220120]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[성수경]]&gt;</inv>
-<agv>&lt;![CDATA[특허법인메이저]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020220008377]]&gt;</src>
-<alt>&lt;![CDATA[치킨용 디핑 소스의 제조방법 및 그 방법에 의한 디핑 소스의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020140004973</vdkvgwkey>
-<tlv>&lt;![CDATA[튀김 <font color="red"><b>치킨</b></font>용 소스를 제조하는 방법 (METHOD FOR MANUFACTURING SAUCE USING FRIED CHICKEN)]]&gt;</tlv>
-<ttl>&lt;![CDATA[튀김 치킨용 소스를 제조하는 방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[METHOD FOR MANUFACTURING SAUCE USING FRIED CHICKEN]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[C]]&gt;</lst>
-<lst_txt>&lt;![CDATA[취하]]&gt;</lst_txt>
-<status>&lt;![CDATA[취하]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 23/00')" title="새창으로 열림">A23L 23/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 27/50')" title="새창으로 열림">A23L 27/50</a> <font title="A23L 23/00|A23L 27/50|A23L 27/60|A23L 13/50|A23L 5/10|A23L 19/00"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[정찬식]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[튀김 <font color="red"><b>치킨</b></font>용 소스를 제조하는 방법에 있어서, 물엿 40~50%, 케찹 14~17%, 고과당 11~14%, 토마토페이스트 8~11%, 간장 4~6%, 고추장 3~5%, 양파 3~5%, 마늘 3~5%, 호화전분 1~3%, 고춧가루 0.4~1%, 2배양조식초 0.3~0.8%, 카라멜 0.01~0.2%, 파프리카추출색소 0.01~0.2%, 생강 0.01~0.2%, 올레오레진캡시컴 0.01~0.1% 및 흑후추 0.01~0.05% 등의 물질들을 계량하여 준비하는 단계, 상기 계량한 물질들을 혼합하는 단계 및 상기 혼합한 물질들을 가열조에서 가열 살균한다.]]&gt;</abv>
-<adv>&lt;![CDATA[20140115]]&gt;</adv>
-<onv>&lt;![CDATA[1020150085279]]&gt;</onv>
-<odv>&lt;![CDATA[20150723]]&gt;</odv>
-<inv>&lt;![CDATA[정찬식]]&gt;</inv>
-<agv>&lt;![CDATA[이동건]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020140004973]]&gt;</src>
-<alt>&lt;![CDATA[튀김 치킨용 소스를 제조하는 방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020210002954</vdkvgwkey>
-<tlv>&lt;![CDATA[감바스알아히요 조리법을 이용한 <font color="red"><b>치킨</b></font> 튀김 제조방법-감바스알아히요<font color="red"><b>치킨</b></font> (Gambas al ajillo Chicken-Fried Chicken made with Gambas al ajillo Recipe)]]&gt;</tlv>
-<ttl>&lt;![CDATA[감바스알아히요 조리법을 이용한 치킨 튀김 제조방법-감바스알아히요치킨]]&gt;</ttl>
-<tlt>&lt;![CDATA[Gambas al ajillo Chicken-Fried Chicken made with Gambas al ajillo Recipe]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[A]]&gt;</lst>
-<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
-<status>&lt;![CDATA[공개]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/40')" title="새창으로 열림">A23L 13/40</a> <font title="A23L 13/50|A23L 13/40|A23L 27/10|A23L 23/00|A23L 5/10|A23L 17/40|A23L 19/00"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[조을형]]&gt;</apv>
-<gnv>&lt;![CDATA[ ]]&gt;</gnv>
-<gdv>&lt;![CDATA[ ]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 올리브오일에 새우와 천연 향료, 정제 소금, 흑 후추, 붉은 고추, 마늘 분말, 편 마늘, 페퍼런치노, 토마토,브로콜리,바질을 넣어 제조하는 감바스알아히요를 소스 화 하여 만든 닭튀김 요리에 관한 것으로, 양파 분, 정제 소금, 설탕, 소고기 맛 시즈닝, 과립 양파, 인산염, 마늘 오일, 올레오진켑시컴, 카레, 백 후추를 혼합하여 만든 염지제를 가지고 닭을 숙성시켜 170도에 튀겨내어 감바스알아히요를 소스화 하여 혼합 조리하는 닭튀김 요리-감바스알아히요<font color="red"><b>치킨</b></font>을 의미한다.]]&gt;</abv>
-<adv>&lt;![CDATA[20210110]]&gt;</adv>
-<onv>&lt;![CDATA[1020220101028]]&gt;</onv>
-<odv>&lt;![CDATA[20220719]]&gt;</odv>
-<inv>&lt;![CDATA[조을형]]&gt;</inv>
-<agv>&lt;![CDATA[ ]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020210002954]]&gt;</src>
-<alt>&lt;![CDATA[감바스알아히요 조리법을 이용한 치킨 튀김 제조방법-감바스알아히요치킨의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020210166322</vdkvgwkey>
-<tlv>&lt;![CDATA[<font color="red"><b>치킨</b></font> 구이장치 (chicken roasting device)]]&gt;</tlv>
-<ttl>&lt;![CDATA[치킨 구이장치]]&gt;</ttl>
-<tlt>&lt;![CDATA[chicken roasting device]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A47J 37/04')" title="새창으로 열림">A47J 37/04</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A47J 37/07')" title="새창으로 열림">A47J 37/07</a> ]]&gt;</ipv>
-<apv>&lt;![CDATA[이승창]]&gt;</apv>
-<gnv>&lt;![CDATA[1024886900000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20230110]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 <font color="red"><b>치킨</b></font> 구이장치에 관한 것으로, 그 구성은 내부에 공간이 형성되며, 전방에는 내부의 개폐를 결정하는 투명한 출입문이 형성되는 본체;와, 상기 본체의 내부에 위치되어 구동부로부터 동력을 공급받아 회전되는 회전프레임;과, 상기 회전프레임의 내부에 등각 간격으로 회전 가능하게 다수 개가 연결되며, 내부에는 굽고자 하는 <font color="red"><b>치킨</b></font>이 수용될 수 있는 공간이 마련되어 내부에 수용된 <font color="red"><b>치킨</b></font>의 하중으로 인해 상기 회전프레임의 회동에 항상 정위치를 유지하는 구이망;과, 상기 회전프레임으로 회전력을 공급하여 상기 회전프레임과 함께 상기 구이망이 회전되도록 유도하는 구동부;와, 상기 회전프레임의 내부에 위치되어 상기 구이망 측으로 열원을 제공하는 내부 발열부와, 상기 회전프레임의 외측에 위치되어 상기 구이망 측으로 열원을 제공하는 외부 발열부로 이루어지는 열원 공급부;와, 상기 본체의 하부에 위치되어 상기 구이망에 수용된 <font color="red"><b>치킨</b></font>으로부터 낙하하는 기름을 수용하는 기름 탱크;와, 상기 기름 탱크에 수용된 기름을 상기 구이망에 수용된 <font color="red"><b>치킨</b></font>으로 분사하는 기름 분사수단;과, 상기 구동부와 열원 공급부 및 기름 분수사단의 작동을 제어하는 컨트롤러;를 포함하여 구성된 것으로서, 열원 공급부를 통해 구이망에 수용된 <font color="red"><b>치킨</b></font>으로 골고루 열원을 공급하여 <font color="red"><b>치킨</b></font>이 전체적으로 골고루 신속하게 구워지도록 유도할 수 있을 뿐만 아니라, 칼집 형성수단을 통해 <font color="red"><b>치킨</b></font>의 표면에 칼집을 형성하고, 그 <font color="red"><b>치킨</b></font>으로 기름 분사수단을 통해 기름을 분사시켜 더욱 <font color="red"><b>치킨</b></font>이 골고루 구워지도록 유도하는 동시에 기름이 <font color="red"><b>치킨</b></font>의 표면 및 내부로 스며들면서 <font color="red"><b>치킨</b></font>의 식감과 풍미를 강화하여 <font color="red"><b>치킨</b></font>의 우수한 맛을 확보할 수 있는 효과가 있다.]]&gt;</abv>
-<adv>&lt;![CDATA[20211129]]&gt;</adv>
-<onv>&lt;![CDATA[ ]]&gt;</onv>
-<odv>&lt;![CDATA[ ]]&gt;</odv>
-<inv>&lt;![CDATA[이승창 장예지 김성미]]&gt;</inv>
-<agv>&lt;![CDATA[오주석]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020210166322]]&gt;</src>
-<alt>&lt;![CDATA[치킨 구이장치의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020170099485</vdkvgwkey>
-<tlv>&lt;![CDATA[후라이드 <font color="red"><b>치킨</b></font>의 제조방법 (Method of manufacturing fried chicken)]]&gt;</tlv>
-<ttl>&lt;![CDATA[후라이드 치킨의 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Method of manufacturing fried chicken]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 13/50')" title="새창으로 열림">A23L 13/50</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 5/10')" title="새창으로 열림">A23L 5/10</a> <font title="A23L 13/50|A23L 5/10|A23L 13/00|A23L 23/00"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[주식회사 제너시스비비큐]]&gt;</apv>
-<gnv>&lt;![CDATA[1019776660000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20190507]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 절단한 원료 계육과 배터액을 버무려 후라잉(frying)한 후, <font color="red"><b>치킨</b></font> 소스를 버무리고 토핑을 코팅하는 단계를 포함함으로써, <font color="red"><b>치킨</b></font> 소스와 토핑 및 <font color="red"><b>치킨</b></font>의 조화가 잘 어우러져 관능성이 향상된 황금색 플레이크 후라이드 <font color="red"><b>치킨</b></font>의 제조방법에 관한 것이다.]]&gt;</abv>
-<adv>&lt;![CDATA[20170807]]&gt;</adv>
-<onv>&lt;![CDATA[1020190015822]]&gt;</onv>
-<odv>&lt;![CDATA[20190215]]&gt;</odv>
-<inv>&lt;![CDATA[정수영 이현진 김동표 유성권 우현모 이승택]]&gt;</inv>
-<agv>&lt;![CDATA[황이남]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020170099485]]&gt;</src>
-<alt>&lt;![CDATA[후라이드 치킨의 제조방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-<article>
-<vdkvgwkey>1020110012005</vdkvgwkey>
-<tlv>&lt;![CDATA[김치유산균을 함유한 <font color="red"><b>치킨</b></font>무 및 이의 제조방법 (Vinegar pickled radish containing lactic acid bacteria from Kimchi and its process)]]&gt;</tlv>
-<ttl>&lt;![CDATA[김치유산균을 함유한 치킨무 및 이의 제조방법]]&gt;</ttl>
-<tlt>&lt;![CDATA[Vinegar pickled radish containing lactic acid bacteria from Kimchi and its process]]&gt;</tlt>
-<prv>&lt;![CDATA[null]]&gt;</prv>
-<lst>&lt;![CDATA[R]]&gt;</lst>
-<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
-<status>&lt;![CDATA[등록]]&gt;</status>
-<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'C12N 1/20')" title="새창으로 열림">C12N 1/20</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A23L 19/20')" title="새창으로 열림">A23L 19/20</a> <font title="C12N 1/20|A23L 19/20|A23L 27/10|A23L 33/135|C12R 1/25|C12R 1/23"> .... </font>]]&gt;</ipv>
-<apv>&lt;![CDATA[주식회사 다인소재 주식회사 제너시스비비큐]]&gt;</apv>
-<gnv>&lt;![CDATA[1012692000000]]&gt;</gnv>
-<gdv>&lt;![CDATA[20130522]]&gt;</gdv>
-<abv>&lt;![CDATA[본 발명은 김치에서 분리한 유산균인 Lactobacillus plantarum GBBQ901(기탁번호: KACC 91587)와 Lactobacillus acidophilus GBBQ902(기탁번호: KACC 91588)을 함유하는 <font color="red"><b>치킨</b></font>무 및 그 제조방법에 관한 것으로, 김치에서 분리한 내산성 유산균을 <font color="red"><b>치킨</b></font>무에 첨가하고 숙성을 거침으로, 산도가 높은 조미액에서도 유산균 수가 유지되는 유용한 <font color="red"><b>치킨</b></font>무 제조기술을 제공한다. 본 발명에 따라 제조된 <font color="red"><b>치킨</b></font>무는 숙성발효된 유산균이 생존상태이므로 건강기능성이 뛰어나며, 본 발명에 따른 Lactobacillus plantarum GBBQ901과 Lactobacillus acidophilus GBBQ902는 김치나 산도가 높은 다른 절임식품에도 사용이 가능한 우수한 내산성 유산균이다.]]&gt;</abv>
-<adv>&lt;![CDATA[20110210]]&gt;</adv>
-<onv>&lt;![CDATA[1020120091903]]&gt;</onv>
-<odv>&lt;![CDATA[20120820]]&gt;</odv>
-<inv>&lt;![CDATA[정은탁 윤태미 김샛별 주상집 이승택 이송영]]&gt;</inv>
-<agv>&lt;![CDATA[특허법인 정안 특허법인정직과특허]]&gt;</agv>
-<img/>
-<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020110012005]]&gt;</src>
-<alt>&lt;![CDATA[김치유산균을 함유한 치킨무 및 이의 제조방법의 도면]]&gt;</alt>
-<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
-</article>
-</articles>
-</search>
-</root>
-</body></html>
+<judgementtextfg><![CDATA[N]]></judgementtextfg>
+</article>]
