@@ -1,121 +1,721 @@
 [<article>
-<vdkvgwkey>1020220155905</vdkvgwkey>
-<tlv><![CDATA[<font color='red'><b>AI</b></font>를 이용한 실종자/수배자 추적을 위한 객체 인식 시스템 (Object Recognition System for Tracking Missing Person/Wanted Person Using <font color='red'><b>AI</b></font>)]]></tlv>
-<ttl><![CDATA[AI를 이용한 실종자/수배자 추적을 위한 객체 인식 시스템]]></ttl>
-<tlt><![CDATA[Object Recognition System for Tracking Missing Person/Wanted Person Using <font color='red'><b>AI</b></font>]]></tlt>
-<prv><![CDATA[null]]></prv>
-<lst><![CDATA[A]]></lst>
-<lst_txt><![CDATA[공개]]></lst_txt>
-<status><![CDATA[공개]]></status>
-<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06V 10/74')" title="새창으로 열림">G06V 10/74</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06V 10/774')" title="새창으로 열림">G06V 10/774</a> <font title="G06V 10/74|G06V 10/774|G06V 20/52|G06Q 50/26|G06N 3/045"> .... </font>]]></ipv>
-<apv><![CDATA[이동윤 윤성호 최가인 이영원]]></apv>
-<gnv><![CDATA[ ]]></gnv>
-<gdv><![CDATA[ ]]></gdv>
-<abv><![CDATA[본 발명은 객체 인식 시스템의 관한 것으로서, 실종자와 수배자를 판단하고 경찰에 데이터를 전달하는 것을 목적으로 한다. 즉, 본 발명은 객체 인식 시스템의 관한 것으로서, 더욱 상세하게는 <font color='red'><b>AI</b></font>를 이용한 실종자/수배자 추적을 위한 객체인식 시스템에 있어, 사진 및 <font color='red'><b>그림</b></font>을 통해 실종자 수배자 정보 입력부, 카메라 촬영부, 학습 <font color='red'><b>AI</b></font>를 통해 실종자 및 수배자 정보와 카메라 촬영부의 촬영된 사진과 비교하여 동일성을 추출하는 제어부, 상기 분석을 통해 찾아낸 실종자/수배자에 데이터를 경찰측에 전송하는 데이터 전송부, 상기 전송된 데이터를 수신받아 저장하는 수신 데이터 저장 서버를 특징으로 한다.]]></abv>
-<adv><![CDATA[20221119]]></adv>
-<onv><![CDATA[1020230026973]]></onv>
-<odv><![CDATA[20230227]]></odv>
-<inv><![CDATA[이동윤 윤성호 최가인 이영원]]></inv>
-<agv><![CDATA[ ]]></agv>
+<vdkvgwkey>1020237002836</vdkvgwkey>
+<tlv>&lt;![CDATA[멀티-사용자 공유 인터랙티브 경험들을 포함하는 <font color="red"><b>안경</b></font>류 (EYEWEAR INCLUDING MULTI-USER, SHARED INTERACTIVE EXPERIENCES)]]&gt;</tlv>
+<ttl>&lt;![CDATA[멀티-사용자 공유 인터랙티브 경험들을 포함하는 안경류]]&gt;</ttl>
+<tlt>&lt;![CDATA[EYEWEAR INCLUDING MULTI-USER, SHARED INTERACTIVE EXPERIENCES]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[A]]&gt;</lst>
+<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
+<status>&lt;![CDATA[공개]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06F 3/01')" title="새창으로 열림">G06F 3/01</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06F 3/04815')" title="새창으로 열림">G06F 3/04815</a> <font title="G06F 3/01|G06F 3/04815|G06F 3/04883|G06F 3/14|G06T 19/00|A63F 13/211|A63F 13/212|A63F 13/213|A63F 13/26|A63F 13/428|A63F 13/5255|A63F 13/655|A63F 13/98|G02B 27/01|G06F 1/16"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[스냅 인코포레이티드]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[공유 그룹 작업을 수행하기 위해 <font color="red"><b>안경</b></font>류 디바이스들의 2명의 사용자들 간의 인터랙티브 증강 현실 경험을 제공하는 <font color="red"><b>안경</b></font>류가 제공된다. 공유 그룹 작업 세션 동안, 각각의 <font color="red"><b>안경</b></font>류 사용자는 공동 작업을 수행하기 위해 각각의 사용자가 볼 수 있는 개개의 가상 장면에 디스플레이된 가상 객체들을 조작할 수 있다. 가상 객체들은 <font color="red"><b>안경</b></font>류 사용자들에 의해 공동으로 생성되어 편집될 수 있는 건물 구조와 같은 많은 상이한 타입들의 객체들을 포함할 수 있다.]]&gt;</abv>
+<adv>&lt;![CDATA[20210610]]&gt;</adv>
+<onv>&lt;![CDATA[1020230027287]]&gt;</onv>
+<odv>&lt;![CDATA[20230227]]&gt;</odv>
+<inv>&lt;![CDATA[캔버크, 일테리스 강, 신, 훈 쿠처, 드미트로]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인 남앤남]]&gt;</agv>
 <img/>
-<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020220155905]]></src>
-<alt><![CDATA[AI를 이용한 실종자/수배자 추적을 위한 객체 인식 시스템의 도면]]></alt>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020237002836]]&gt;</src>
+<alt>&lt;![CDATA[멀티-사용자 공유 인터랙티브 경험들을 포함하는 안경류의 도면]]&gt;</alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg><![CDATA[N]]></judgementtextfg>
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
 </article>, <article>
-<vdkvgwkey>1020210091526</vdkvgwkey>
-<tlv><![CDATA[<font color='red'><b>AI</b></font> 기반 <font color='red'><b>그림</b></font>을 이용한 부모와 아동이 자체 제작하는 내<font color='red'><b>그림</b></font> 동화책 제작 시스템 및 이의 방법 (System of making my own picture book by parents and children using <font color='red'><b>ai</b></font>-based pictures and method for the same)]]></tlv>
-<ttl><![CDATA[AI 기반 그림을 이용한 부모와 아동이 자체 제작하는 내그림　동화책 제작 시스템 및 이의 방법]]></ttl>
-<tlt><![CDATA[System of making my own picture book by parents and children using <font color='red'><b>ai</b></font>-based pictures and method for the same]]></tlt>
-<prv><![CDATA[null]]></prv>
-<lst><![CDATA[A]]></lst>
-<lst_txt><![CDATA[공개]]></lst_txt>
-<status><![CDATA[공개]]></status>
-<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06Q 50/22')" title="새창으로 열림">G06Q 50/22</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G16H 20/70')" title="새창으로 열림">G16H 20/70</a> <font title="G06Q 50/22|G16H 20/70|G06F 40/10|G06Q 10/02|G06T 11/60|G06T 7/90"> .... </font>]]></ipv>
-<apv><![CDATA[이성옥]]></apv>
-<gnv><![CDATA[ ]]></gnv>
-<gdv><![CDATA[ ]]></gdv>
-<abv><![CDATA[일 실시예에 따른 <font color='red'><b>그림</b></font>을 이용한 아동심리치유방법은 회원가입단계; 원하는 심리치유기간에 따라 다양하게 상담구독기간을 선택하는 상담구독기간선택단계; 선택된 상기 상담구독기간에 따라 상이한 비용을 결제하는 결제단계; 및 선택된 상기 상담구독기간에 따른 상이한 서비스제공단계를 포함한다.]]></abv>
-<adv><![CDATA[20210713]]></adv>
-<onv><![CDATA[1020230011013]]></onv>
-<odv><![CDATA[20230120]]></odv>
-<inv><![CDATA[이성옥]]></inv>
-<agv><![CDATA[기림특허법인]]></agv>
+<vdkvgwkey>1020227041680</vdkvgwkey>
+<tlv>&lt;![CDATA[가변 투과 안구 렌즈를 구동하기 위한 방법 및 <font color="red"><b>안경</b></font> 장치 (EYEGLASS DEVICE AND METHOD FOR DRIVING A VARIABLE TRANSMISSION OPHTHALMIC LENS)]]&gt;</tlv>
+<ttl>&lt;![CDATA[가변 투과 안구 렌즈를 구동하기 위한 방법 및 안경 장치]]&gt;</ttl>
+<tlt>&lt;![CDATA[EYEGLASS DEVICE AND METHOD FOR DRIVING A VARIABLE TRANSMISSION OPHTHALMIC LENS]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[A]]&gt;</lst>
+<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
+<status>&lt;![CDATA[공개]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 11/00')" title="새창으로 열림">G02C 11/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 7/10')" title="새창으로 열림">G02C 7/10</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[에씰로 앙터나시오날]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[본 개시물은 가변 투과 안구 렌즈(101)를 포함하는 <font color="red"><b>안경</b></font> 장치, 이러한 렌즈의 투과를 구동하기 위한 방법, 이러한 방법을 구현하기 위한 컴퓨터 프로그램 제품 및 비-일시적 컴퓨터 판독 가능 저장 매체에 관한 것이다. <font color="red"><b>안경</b></font> 장치는, 착용자의 환경에서 광의 양을 측정하도록 구성된 광 센서(200); 및 상기 광 센서(200)로부터 적어도 광 데이터를 수신하고, 상기 광 데이터에 기초하여 상기 안구 렌즈(101)의 투과를 구동하도록 구성된 제어 회로(301)를 포함한다. 제어 회로(301)는, 이동 데이터에 추가로 기초하여 상기 안구 렌즈(101)의 투과를 구동하도록 구성되며, 상기 이동 데이터는, 착용자의 머리의 이동의 추정으로부터 도출된다.]]&gt;</abv>
+<adv>&lt;![CDATA[20210623]]&gt;</adv>
+<onv>&lt;![CDATA[1020230028252]]&gt;</onv>
+<odv>&lt;![CDATA[20230228]]&gt;</odv>
+<inv>&lt;![CDATA[페르미지에 브후노 질베흐 세드릭 고라우드 알렉상드르 펠루 마히우 홉텅 뱅상]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인(유한)케이비케이]]&gt;</agv>
 <img/>
-<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020210091526]]></src>
-<alt><![CDATA[AI 기반 그림을 이용한 부모와 아동이 자체 제작하는 내그림　동화책 제작 시스템 및 이의 방법의 도면]]></alt>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020227041680]]&gt;</src>
+<alt>&lt;![CDATA[가변 투과 안구 렌즈를 구동하기 위한 방법 및 안경 장치의 도면]]&gt;</alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg><![CDATA[N]]></judgementtextfg>
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
 </article>, <article>
-<vdkvgwkey>1020190141546</vdkvgwkey>
-<tlv><![CDATA[Arm pelion, Treasure Data 연동을 통한 <font color='red'><b>AI</b></font> 스마트팜플랫폼 구축 시스템 (<font color='red'><b>AI</b></font> Smart Farm Platform Implementation System through the Connection of Arm pelion and Treasure Data)]]></tlv>
-<ttl><![CDATA[Arm pelion, Treasure Data 연동을 통한 AI 스마트팜플랫폼 구축 시스템]]></ttl>
-<tlt><![CDATA[<font color='red'><b>AI</b></font> Smart Farm Platform Implementation System through the Connection of Arm pelion and Treasure Data]]></tlt>
-<prv><![CDATA[null]]></prv>
-<lst><![CDATA[J]]></lst>
-<lst_txt><![CDATA[거절]]></lst_txt>
-<status><![CDATA[거절]]></status>
-<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G06Q 50/02')" title="새창으로 열림">G06Q 50/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A01G 9/24')" title="새창으로 열림">A01G 9/24</a> ]]></ipv>
-<apv><![CDATA[(주)스마트팜센터]]></apv>
-<gnv><![CDATA[ ]]></gnv>
-<gdv><![CDATA[ ]]></gdv>
-<abv><![CDATA[스마트팜 영역에서 환경복합관제모니터링 시스템은 많이 개발되어 사용되고 있는데 범용 플랫폼이 없어 기존 사용자들에게 어려움이 있었다. 새롭게 개발된 Arm pelion과 TreasureData 연동 프로그램을 활용한 스마트팜플랫폼은 이러한 어려움을 해결하고 생산과 소비를 예측할 수 있는 빅데이터 활용 <font color='red'><b>AI</b></font>(인공지능)의 플랫폼으로서 기존의 관제모니터링 시스템의 한계를 극복할 새로운 도구를 개발한 것이다. [<font color='red'><b>그림</b></font>] <font color='red'><b>AI</b></font>에 의한 재배 최적화]]></abv>
-<adv><![CDATA[20191107]]></adv>
-<onv><![CDATA[1020210055279]]></onv>
-<odv><![CDATA[20210517]]></odv>
-<inv><![CDATA[조만호]]></inv>
-<agv><![CDATA[ ]]></agv>
+<vdkvgwkey>1020170165466</vdkvgwkey>
+<tlv>&lt;![CDATA[렌즈 이동 장치 및 이를 이용한 <font color="red"><b>안경</b></font>을 구비한 방독면 (APPARATUS FOR MOVING LENS AND GAS MASK WITH GLASSES OF USING THE SAME)]]&gt;</tlv>
+<ttl>&lt;![CDATA[렌즈 이동 장치 및 이를 이용한 안경을 구비한 방독면]]&gt;</ttl>
+<tlt>&lt;![CDATA[APPARATUS FOR MOVING LENS AND GAS MASK WITH GLASSES OF USING THE SAME]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[F]]&gt;</lst>
+<lst_txt>&lt;![CDATA[소멸]]&gt;</lst_txt>
+<status>&lt;![CDATA[소멸]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A62B 18/08')" title="새창으로 열림">A62B 18/08</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A62B 18/04')" title="새창으로 열림">A62B 18/04</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[송다민 박성현 김건우]]&gt;</apv>
+<gnv>&lt;![CDATA[1019809050000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20190515]]&gt;</gdv>
+<abv>&lt;![CDATA[렌즈 이동 장치 및 이를 이용한 <font color="red"><b>안경</b></font>을 구비한 방독면이 개시된다. 개시되는 일 실시예에 따른 <font color="red"><b>안경</b></font>을 구비한 방독면은, 안면부, 안면부에 마련되고 외부로부터 유입된 공기를 정화시키는 정화부, 안면부에서 착용자의 호흡기와 대응하여 마련되는 배출부, 안면부에 마련되고 투명 재질로 마련되는 투시부, 투시부에 장착되고 제1 렌즈 및 제2 렌즈가 겹쳐지도록 마련되는 <font color="red"><b>안경</b></font>부, 및 안면부에 마련되고 제1 렌즈 및 제2 렌즈 중 하나 이상을 이동시키도록 마련되는 렌즈 이동부를 포함한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20171204]]&gt;</adv>
+<onv>&lt;![CDATA[ ]]&gt;</onv>
+<odv>&lt;![CDATA[ ]]&gt;</odv>
+<inv>&lt;![CDATA[송다민 박성현 김건우]]&gt;</inv>
+<agv>&lt;![CDATA[두호특허법인]]&gt;</agv>
 <img/>
-<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020190141546]]></src>
-<alt><![CDATA[Arm pelion, Treasure Data 연동을 통한 AI 스마트팜플랫폼 구축 시스템의 도면]]></alt>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020170165466]]&gt;</src>
+<alt>&lt;![CDATA[렌즈 이동 장치 및 이를 이용한 안경을 구비한 방독면의 도면]]&gt;</alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg><![CDATA[N]]></judgementtextfg>
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
 </article>, <article>
-<vdkvgwkey>1020220156504</vdkvgwkey>
-<tlv><![CDATA[<font color='red'><b>그림</b></font> 색채 분석 방법 및 시스템 (Method and System of <font color='red'><b>AI</b></font>-based Image Color Analysis)]]></tlv>
-<ttl><![CDATA[그림 색채 분석 방법 및 시스템]]></ttl>
-<tlt><![CDATA[Method and System of <font color='red'><b>AI</b></font>-based Image Color Analysis]]></tlt>
-<prv><![CDATA[null]]></prv>
-<lst><![CDATA[R]]></lst>
-<lst_txt><![CDATA[등록]]></lst_txt>
-<status><![CDATA[등록]]></status>
-<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A61B 5/16')" title="새창으로 열림">A61B 5/16</a>]]></ipv>
-<apv><![CDATA[주식회사 아이스크림아트]]></apv>
-<gnv><![CDATA[1025022100000]]></gnv>
-<gdv><![CDATA[20230216]]></gdv>
-<abv><![CDATA[본 발명은 온/오프라인상에서 입력되는 사용자인 아동이 그린 <font color='red'><b>그림</b></font> 데이터의 객체에 적용된 색채를 분석할 수 있는 <font color='red'><b>그림</b></font> 색채 분석 방법 및 시스템에 관한 것으로, 본 발명의 일 실시예에 따른 <font color='red'><b>그림</b></font> 색채 분석 방법은,a) 아동인 사용자가 입력 모듈을 이용하여 <font color='red'><b>그림</b></font> 데이터를 입력하는 단계; b) 분석 모듈의 데이터 서버가 상기 입력 모듈에 입력된 <font color='red'><b>그림</b></font> 데이터를 인공지능 서버로 전송하며, 상기 인공지능 서버가 상기 <font color='red'><b>그림</b></font> 데이터 내 배경 이미지를 제거하는 단계; c) 상기 인공지능 서버가 <font color='red'><b>그림</b></font> 데이터의 분석을 통해 상기 <font color='red'><b>그림</b></font> 데이터로부터 색채를 추출하여 결과 데이터를 생성하는 단계; d) 피드백 생성 모듈이 상기 인공지능 서버에서 생성된 결과 데이터를 피드백 대시보드에 출력하여 관리자에게 상기 결과 데이터를 제공하는 단계; 및 e) 상기 피드백 생성 모듈이 상기 피드백 대시보드에 출력된 결과 데이터를 상기 사용자의 학부모가 구비한 단말로 전송하며, 상기 단말이 상기 결과 데이터를 시각 피드백의 형태로 출력하여 상기 학부모에게 제공하는 단계;를 포함하고, 상기 결과 데이터는, 상기 인공지능 서버가 학습된 인공지능 알고리즘을 통해 생성하는 색채 사용 정도, 색채 특성 분포도 및 워드클라우드일 수 있다.]]></abv>
-<adv><![CDATA[20221121]]></adv>
-<onv><![CDATA[ ]]></onv>
-<odv><![CDATA[ ]]></odv>
-<inv><![CDATA[강재구 안문주]]></inv>
-<agv><![CDATA[특허법인 아이퍼스]]></agv>
+<vdkvgwkey>1020180085210</vdkvgwkey>
+<tlv>&lt;![CDATA[용접을 돕는 컴퓨터화 <font color="red"><b>안경</b></font>류 디바이스를 제공하는 시스템들 및 방법들 (SYSTEMS AND METHODS PROVIDING A COMPUTERIZED EYEWEAR DEVICE TO AID IN WELDING)]]&gt;</tlv>
+<ttl>&lt;![CDATA[용접을 돕는 컴퓨터화 안경류 디바이스를 제공하는 시스템들 및 방법들]]&gt;</ttl>
+<tlt>&lt;![CDATA[SYSTEMS AND METHODS PROVIDING A COMPUTERIZED EYEWEAR DEVICE TO AID IN WELDING]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[A]]&gt;</lst>
+<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
+<status>&lt;![CDATA[공개]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G09B 19/24')" title="새창으로 열림">G09B 19/24</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B23K 37/00')" title="새창으로 열림">B23K 37/00</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[링컨 글로벌, 인크.]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[용접 환경에서의 통신 및 제어를 지원하는 시스템이 개시된다. 일 실시예에서, 시스템은 용접 환경 내에서 복수의 본질적으로 다른 디바이스 사이에 확장 가능하고, 상호 사용 가능하고, 안전한 통신 연결들을 제공하도록 구성되는 사물 인터넷(IoT) 기술 플랫폼을 포함한다. 시스템은 또한 IoT 기술 플랫폼과 통신하도록 구성되는 용접 전원을 포함한다. 시스템은 컴퓨터화 <font color="red"><b>안경</b></font>류 디바이스를 더 포함한다. 컴퓨터화 <font color="red"><b>안경</b></font>류 디바이스는 IoT 기술 플랫폼을 통하여 용접 전원과 통신하도록 구성되는 제어 및 통신 회로망을 포함한다. 컴퓨터화 <font color="red"><b>안경</b></font>류 디바이스는 또한 투명 디스플레이를 통해 용접 환경의 주변 부분을 사용자가 바라보는 것을 가능하게 하면서, 용접 전원으로부터 IoT 기술 플랫폼을 통하여 수신되는 정보를 표시하도록 구성되는 투명 디스플레이를 포함한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20180723]]&gt;</adv>
+<onv>&lt;![CDATA[1020190012114]]&gt;</onv>
+<odv>&lt;![CDATA[20190208]]&gt;</odv>
+<inv>&lt;![CDATA[다니엘 조셉 알렌 매튜즈 윌리엄 토마스]]&gt;</inv>
+<agv>&lt;![CDATA[김태홍 김진회]]&gt;</agv>
 <img/>
-<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020220156504]]></src>
-<alt><![CDATA[그림 색채 분석 방법 및 시스템의 도면]]></alt>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020180085210]]&gt;</src>
+<alt>&lt;![CDATA[용접을 돕는 컴퓨터화 안경류 디바이스를 제공하는 시스템들 및 방법들의 도면]]&gt;</alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg><![CDATA[N]]></judgementtextfg>
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
 </article>, <article>
-<vdkvgwkey>1020210004472</vdkvgwkey>
-<tlv><![CDATA[감성지능 교육 <font color='red'><b>AI</b></font> 스피커 시스템 (Emotional Intelligence Education <font color='red'><b>AI</b></font> Speaker System)]]></tlv>
-<ttl><![CDATA[감성지능 교육 AI 스피커 시스템]]></ttl>
-<tlt><![CDATA[Emotional Intelligence Education <font color='red'><b>AI</b></font> Speaker System]]></tlt>
-<prv><![CDATA[null]]></prv>
-<lst><![CDATA[R]]></lst>
-<lst_txt><![CDATA[등록]]></lst_txt>
-<status><![CDATA[등록]]></status>
-<ipv><![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'H04R 1/02')" title="새창으로 열림">H04R 1/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G10L 17/02')" title="새창으로 열림">G10L 17/02</a> <font title="H04R 1/02|G10L 17/02|G06F 18/00|G10L 13/00|G06Q 50/10|G06Q 50/20"> .... </font>]]></ipv>
-<apv><![CDATA[안형찬]]></apv>
-<gnv><![CDATA[1023461580000]]></gnv>
-<gdv><![CDATA[20211228]]></gdv>
-<abv><![CDATA[본 발명은 감성지능 교육 <font color='red'><b>AI</b></font> 스피커 시스템에 관한 것으로서, 어린 자녀의 감정을 신속하게 파악하여 부모에게 전달할 수 있도록 하여 부모로 하여금 자녀에게 보다 신속한 감정 대응이 가능하게 되고, 이에 따른 자녀의 감성지능을 향상시키는 효과를 나타내기 위한 것이다. 이를 실현하기 위한 본 발명은, 외부 소리를 감지하는 음성 감지부(10)와; 카메라를 통한 주변의 신체 움직임을 감지하는 동작 감지부(20)와; 소리 및 영상 데이터의 보관이 이루어지는 DB보관부(30)와; 상기 DB보관부(30)에 저장된 소리 데이터의 선택적인 외부 출력이 이루어지는 음성 출력부(40)와; 상기 DB보관부(30)에 저장된 영상 데이터의 선택적인 디스플레이가 이루어지는 영상 출력부(50)와; 상기 각 구성의 동작을 제어하는 제어부(60);를 포함하는 구성을 이루는 것을 특징으로 한다.]]></abv>
-<adv><![CDATA[20210113]]></adv>
-<onv><![CDATA[ ]]></onv>
-<odv><![CDATA[ ]]></odv>
-<inv><![CDATA[안형찬]]></inv>
-<agv><![CDATA[김영관]]></agv>
+<vdkvgwkey>1020170053142</vdkvgwkey>
+<tlv>&lt;![CDATA[간이 <font color="red"><b>안경</b></font> 세척기를 포함하는 <font color="red"><b>안경</b></font> 거치대 (rests for glasses including glasses washer machine)]]&gt;</tlv>
+<ttl>&lt;![CDATA[간이 안경 세척기를 포함하는 안경 거치대]]&gt;</ttl>
+<tlt>&lt;![CDATA[rests for glasses including glasses washer machine]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[F]]&gt;</lst>
+<lst_txt>&lt;![CDATA[소멸]]&gt;</lst_txt>
+<status>&lt;![CDATA[소멸]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 13/00')" title="새창으로 열림">G02C 13/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A45C 11/04')" title="새창으로 열림">A45C 11/04</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[이순미]]&gt;</apv>
+<gnv>&lt;![CDATA[1019806780000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20190515]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 간이 <font color="red"><b>안경</b></font> 세척기를 포함하는 <font color="red"><b>안경</b></font> 거치대에 관한 것으로서, 더욱 상세하게는 <font color="red"><b>안경</b></font>을 보관 및 거치할 수 있는 거치대에 <font color="red"><b>안경</b></font>을 세척할 수 있는 세척구조를 추가하여 <font color="red"><b>안경</b></font>을 거치하면서 <font color="red"><b>안경</b></font>을 간단하게 세척할 수 있는 간이 <font color="red"><b>안경</b></font> 세척기를 포함하는 <font color="red"><b>안경</b></font> 거치대에 관한 것이다.]]&gt;</abv>
+<adv>&lt;![CDATA[20170425]]&gt;</adv>
+<onv>&lt;![CDATA[1020180119405]]&gt;</onv>
+<odv>&lt;![CDATA[20181102]]&gt;</odv>
+<inv>&lt;![CDATA[강준모 강주현 이순미]]&gt;</inv>
+<agv>&lt;![CDATA[ ]]&gt;</agv>
 <img/>
-<src><![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&applno=1020210004472]]></src>
-<alt><![CDATA[감성지능 교육 AI 스피커 시스템의 도면]]></alt>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020170053142]]&gt;</src>
+<alt>&lt;![CDATA[간이 안경 세척기를 포함하는 안경 거치대의 도면]]&gt;</alt>
 <!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
-<judgementtextfg><![CDATA[N]]></judgementtextfg>
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020130167182</vdkvgwkey>
+<tlv>&lt;![CDATA[각성 <font color="red"><b>안경</b></font>, 차량용 미러 유닛 및 표시장치 (AWARENESS GLASSES, CAR MIRROR UNIT AND DISPLAY APPARATUS)]]&gt;</tlv>
+<ttl>&lt;![CDATA[각성 안경, 차량용 미러 유닛 및 표시장치]]&gt;</ttl>
+<tlt>&lt;![CDATA[AWARENESS GLASSES, CAR MIRROR UNIT AND DISPLAY APPARATUS]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B60R 1/12')" title="새창으로 열림">B60R 1/12</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B60K 28/06')" title="새창으로 열림">B60K 28/06</a> <font title="B60R 1/12|B60K 28/06|G02B 5/18|G02B 19/00|G02B 27/01|G02C 7/08|G02C 11/04|A61N 5/06|A61M 21/00"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[삼성디스플레이 주식회사]]&gt;</apv>
+<gnv>&lt;![CDATA[1020949650000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20200324]]&gt;</gdv>
+<abv>&lt;![CDATA[각성 <font color="red"><b>안경</b></font>은 <font color="red"><b>안경</b></font> 프레임, 상기 <font color="red"><b>안경</b></font> 프레임에 장착되고, 전원을 공급받아 광을 발생하는 광원, 상기 광원에 상기 전원을 공급하는 구동부, 상기 광을 수신하여 가이드하고, 사용자의 양 안구에 각각 대응하도록 배치된 한 쌍의 도광 렌즈, 및 상기 한 쌍의 도광 렌즈의 일면에 정의된 특정 영역에 형성되어 상기 광을 회절 반사시켜 상기 사용자의 안구로 제공하는 회절 격자 패턴을 포함한다. 상기 회절 격자 패턴으로부터 출사된 상기 광의 중심 파장은 444nm 내지 484nm의 범위에 위치한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20131230]]&gt;</adv>
+<onv>&lt;![CDATA[1020150078092]]&gt;</onv>
+<odv>&lt;![CDATA[20150708]]&gt;</odv>
+<inv>&lt;![CDATA[백종인 김학선 박원상 조민경]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인 고려]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020130167182]]&gt;</src>
+<alt>&lt;![CDATA[각성 안경, 차량용 미러 유닛 및 표시장치의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020210110034</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font> 접착 마스크 (The glasses mask)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경 접착 마스크]]&gt;</ttl>
+<tlt>&lt;![CDATA[The glasses mask]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[A]]&gt;</lst>
+<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
+<status>&lt;![CDATA[공개]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A62B 18/08')" title="새창으로 열림">A62B 18/08</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 11/00')" title="새창으로 열림">G02C 11/00</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[정우청]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 <font color="red"><b>안경</b></font> 접착 마스크에 관한 것으로서 <font color="red"><b>안경</b></font>테와 마스크가 분리되어 귀가 아픔을 방지하도록 함으로써 기존의 <font color="red"><b>안경</b></font>과 마스크를 같이 사용하면 귀가 아픔 문제점을 해소 하도록 한 것이다. 즉 본 발명은, 마스크에 있어서 <font color="red"><b>안경</b></font>과 마스크를 동시에 사용하여도 귀가 아프지않도록 <font color="red"><b>안경</b></font>테 끝부분에 마스크를 걸 수 있도록 한 <font color="red"><b>안경</b></font>마스크로 구성한 것이다. 따라서, 본 발명은 <font color="red"><b>안경</b></font>테와 마스크가 분리되어 귀가 아픔을 방지하도록 함으로써 기존의 <font color="red"><b>안경</b></font>과 마스크를 같이 사용하면 귀가 아픔 문제점을 해소하도록 한 효과를 갖는 것이다.]]&gt;</abv>
+<adv>&lt;![CDATA[20210820]]&gt;</adv>
+<onv>&lt;![CDATA[1020230027819]]&gt;</onv>
+<odv>&lt;![CDATA[20230228]]&gt;</odv>
+<inv>&lt;![CDATA[정우청]]&gt;</inv>
+<agv>&lt;![CDATA[ ]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020210110034]]&gt;</src>
+<alt>&lt;![CDATA[안경 접착 마스크의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020107011100</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font> 렌즈 요소 (OPHTHALMIC LENS ELEMENT)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경 렌즈 요소]]&gt;</ttl>
+<tlt>&lt;![CDATA[OPHTHALMIC LENS ELEMENT]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 7/04')" title="새창으로 열림">G02C 7/04</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 7/02')" title="새창으로 열림">G02C 7/02</a> <font title="G02C 7/04|G02C 7/02|G02B 3/00"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[비젼 씨알씨 리미티드]]&gt;</apv>
+<gnv>&lt;![CDATA[1015234070000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20150520]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 <font color="red"><b>안경</b></font> 렌즈 요소에 관한 것이다. 렌즈 요소는 전방 표면과 후방 표면을 포함하며, 이들 중 적어도 하나는 수평 자오선과 수직 자오선을 포함한다. 렌즈 요소의 중심 영역은 착용자에게 선명한 중심와시를 제공하기 위한 제1 배율을 제공하는 중심와시 구역을 포함한다. 또한, 제1 배율에 대한 양의 배율의 주연 영역이 포함된다. 주연 영역은 수직 자오선에 대해 양측으로 위치되고 중심 영역으로부터 반경방향 외향으로 연장되는 이중 누진 구역을 포함한다. 렌즈 요소는 표면 비점수차의 분포를 제공하며, 이는 수평 자오선 상에서 중심 영역과 누진 구역에 비교적 낮은 표면 비점수차를 제공한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20081023]]&gt;</adv>
+<onv>&lt;![CDATA[1020100091183]]&gt;</onv>
+<odv>&lt;![CDATA[20100818]]&gt;</odv>
+<inv>&lt;![CDATA[바나스 솔리어스 레이몬드]]&gt;</inv>
+<agv>&lt;![CDATA[안국찬 양영준]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020107011100]]&gt;</src>
+<alt>&lt;![CDATA[안경 렌즈 요소의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[Y]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020097007640</vdkvgwkey>
+<tlv>&lt;![CDATA[교정용 <font color="red"><b>안경</b></font> 렌즈의 방향을 결정하는 방법 및 장치, 그리고 상기 교정용 <font color="red"><b>안경</b></font> 렌즈를 광학적으로 설계하는 방법 (A METHOD AND A DEVICE FOR DETERMINING THE ORIENTATION OF A CORRECTING OPHTHALMIC LENS, AND A METHOD OF OPTICALLY DESIGNING THE CORRECTING LENS)]]&gt;</tlv>
+<ttl>&lt;![CDATA[교정용 안경 렌즈의 방향을 결정하는 방법 및 장치, 그리고 상기 교정용 안경 렌즈를 광학적으로 설계하는 방법]]&gt;</ttl>
+<tlt>&lt;![CDATA[A METHOD AND A DEVICE FOR DETERMINING THE ORIENTATION OF A CORRECTING OPHTHALMIC LENS, AND A METHOD OF OPTICALLY DESIGNING THE CORRECTING LENS]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 13/00')" title="새창으로 열림">G02C 13/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G01B 11/00')" title="새창으로 열림">G01B 11/00</a> <font title="G02C 13/00|G01B 11/00|G01M 11/00"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[에실로룩소티카]]&gt;</apv>
+<gnv>&lt;![CDATA[1013751610000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20140311]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은, 장래 착용자에 대한 교정용 <font color="red"><b>안경</b></font> 렌즈의 방향 중 하나 이상의 성분을 착용 상태에서 결정하는 장치 및 방법에 관한 것이다. 본 발명은, 프레임(10)에 또는 상기 프레임에 설치된 전시용 렌즈에 위치 식별 시스템(20)을 설치하는 단계로서, 상기 위치 식별 시스템(20)은 하나 이상의 기지의 기하학적 특징을 가지는 하나 이상의 식별 소자(60, 70, 80)를 포함하는 단계; 수직 안면 평면에서 상기 수직 소자의 영상을 2차원적으로 캡쳐하는 단계; 상기 캡쳐된 영상을 처리하여, 상기 식별 소자의 기지의 기하학적 특징에 의존하는 상기 식별 소자의 영상의 캡쳐된 기하학적 특징을 측정하는 단계; 및 상기 캡쳐된 기하학적 특징과 기지의 기하학적 특징을 비교하여, 렌즈의 방향 중 하나 이상의 성분을 계산하는 단계;를 포함할 수 있다. 또한, 본 발명은 교정용 렌즈를 광학적으로 설계하는 방법에 관한 것이다. 교정용 렌즈, 전시용 렌즈, 위치 식별 시스템, 식별 소자, 영상 캡쳐 장치, 계산 및 프로세서 수단]]&gt;</abv>
+<adv>&lt;![CDATA[20070910]]&gt;</adv>
+<onv>&lt;![CDATA[1020090066296]]&gt;</onv>
+<odv>&lt;![CDATA[20090623]]&gt;</odv>
+<inv>&lt;![CDATA[쇼보, 쟝-삐에르 리에부와, 파비엔느]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인오리진]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020097007640]]&gt;</src>
+<alt>&lt;![CDATA[교정용 안경 렌즈의 방향을 결정하는 방법 및 장치, 그리고 상기 교정용 안경 렌즈를 광학적으로 설계하는 방법의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020170103605</vdkvgwkey>
+<tlv>&lt;![CDATA[무<font color="red"><b>안경</b></font>식 3차원 영상표시장치의 동적 최대 시역 형성 방법 (Method for Generating Dynamic Maximal Viewing Zone of 3D Autostereoscopic Display)]]&gt;</tlv>
+<ttl>&lt;![CDATA[무안경식 3차원 영상표시장치의 동적 최대 시역 형성 방법]]&gt;</ttl>
+<tlt>&lt;![CDATA[Method for Generating Dynamic Maximal Viewing Zone of 3D Autostereoscopic Display]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'H04N 13/30')" title="새창으로 열림">H04N 13/30</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'H04N 13/00')" title="새창으로 열림">H04N 13/00</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[한국과학기술연구원]]&gt;</apv>
+<gnv>&lt;![CDATA[1019633920000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20190322]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 무<font color="red"><b>안경</b></font>식 3차원 영상표시장치의 동적 최대 시역 형성 방법에 관한 것으로, 관찰자가 최적 관찰 거리에서 깊이 방향으로 벗어나면, 소정 주기(k)의 3D 단위화소들 별로 시점영상을 재배치하고, 상기 소정 주기(k)는 관찰자가 최적 관찰 거리에서 깊이 방향으로 벗어난 거리에 따라 결정된다.]]&gt;</abv>
+<adv>&lt;![CDATA[20170816]]&gt;</adv>
+<onv>&lt;![CDATA[1020190018900]]&gt;</onv>
+<odv>&lt;![CDATA[20190226]]&gt;</odv>
+<inv>&lt;![CDATA[김성규 윤기혁]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인 티앤아이]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020170103605]]&gt;</src>
+<alt>&lt;![CDATA[무안경식 3차원 영상표시장치의 동적 최대 시역 형성 방법의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020180104434</vdkvgwkey>
+<tlv>&lt;![CDATA[미세먼지 차단<font color="red"><b>안경</b></font> (Fine dust protection glasses)]]&gt;</tlv>
+<ttl>&lt;![CDATA[미세먼지 차단안경]]&gt;</ttl>
+<tlt>&lt;![CDATA[Fine dust protection glasses]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 11/00')" title="새창으로 열림">G02C 11/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 11/08')" title="새창으로 열림">G02C 11/08</a> <font title="G02C 11/00|G02C 11/08|A61F 9/02"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[충남대학교산학협력단]]&gt;</apv>
+<gnv>&lt;![CDATA[1020943390000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20200323]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 미세먼지 차단<font color="red"><b>안경</b></font>에 관한 것으로, 더욱 자세하게는 사용자의 눈으로 유입되는 미세먼지를 차단하기 위하여, 일측이 사용자의 눈 주위에 밀착되는 패킹부를 구비하여 <font color="red"><b>안경</b></font> 프레임의 측면부를 통해 유입되는 미세먼지를 차단하며, <font color="red"><b>안경</b></font> 렌즈에 습기가 생기지 않도록 구비되는 통기공 및 미세먼지 필터를 탈착 가능하도록 형성하여 사용자의 편의성을 향상시키는 미세먼지를 차단할 수 있는 미세먼지 차단<font color="red"><b>안경</b></font>에 관한 것이다.]]&gt;</abv>
+<adv>&lt;![CDATA[20180903]]&gt;</adv>
+<onv>&lt;![CDATA[1020200026470]]&gt;</onv>
+<odv>&lt;![CDATA[20200311]]&gt;</odv>
+<inv>&lt;![CDATA[김영아 한지수 이상민 박종관 김천규]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인 플러스]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020180104434]]&gt;</src>
+<alt>&lt;![CDATA[미세먼지 차단안경의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020180041624</vdkvgwkey>
+<tlv>&lt;![CDATA[마이크로 히터가 구비된 스마트 글래스, <font color="red"><b>안경</b></font>, 자동차 주차 보조 카메라, 실험용 보<font color="red"><b>안경</b></font>, 스포츠형 고글, 오토바이 보호 헬멧 (SMART GLASSES, GLASSESS, CAR PARKING ASSISTANT CAMERA, EXPERIMENTAL SAFETY GOGGLE, SPORTS GOGGLES AND MOTOCYCLE PROTECTIVE HELMET HAVING MICRO HEATER)]]&gt;</tlv>
+<ttl>&lt;![CDATA[마이크로 히터가 구비된 스마트 글래스, 안경, 자동차 주차 보조 카메라, 실험용 보안경, 스포츠형 고글, 오토바이 보호 헬멧]]&gt;</ttl>
+<tlt>&lt;![CDATA[SMART GLASSES, GLASSESS, CAR PARKING ASSISTANT CAMERA, EXPERIMENTAL SAFETY GOGGLE, SPORTS GOGGLES AND MOTOCYCLE PROTECTIVE HELMET HAVING MICRO HEATER]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'H05B 3/84')" title="새창으로 열림">H05B 3/84</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02B 27/01')" title="새창으로 열림">G02B 27/01</a> <font title="H05B 3/84|G02B 27/01|A61F 9/02|A42B 3/04|B60R 11/04"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[국민대학교산학협력단]]&gt;</apv>
+<gnv>&lt;![CDATA[1020567930000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20191211]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명에 의한 마이크로 히터가 구비된 스마트 글래스, <font color="red"><b>안경</b></font>, 자동차 주차 보조 카메라, 실험용 보<font color="red"><b>안경</b></font>, 스포츠형 고글, 오토바이 보호 헬멧이 개시된다. 본 발명의 일 실시예에 따른 마이크로 히터가 구비된 스마트 글래스는 지지 프레임; 상기 지지 프레임에 결합되어 영상 정보를 제공하고, 투명한 물질로 형성된 영상 광학부; 상기 영상 광학부의 적어도 일면에 형성된 마이크로 히터; 및 상기 마이크로 히터에 연결되어, 상기 영상 광학부의 표면에 발생된 습기를 제거하기 위해 상기 마이크로 히터에 소정의 전류를 인가하는 제어부;를 포함하고, 상기 마이크로 히터는, 레이저와 금속 유기 이온 잉크를 이용하여 미리 정해진 형상으로 형성된, 눈으로 식별이 불가능한 금속의 미세 패턴이고, 상기 제어부로부터 소정의 전류가 인가되면 온도가 상승하여 상기 습기를 제거한다. 상기 금속의 미세 패턴은, 소정의 열전도도를 갖는 상기 금속 유기 이온 잉크가 도포된 층의 미리 정해진 패터닝 영역에, 베셀 빔을 집속 광학 소자를 통과시켜 조사하여, 상기 패터닝 영역에 있는 금속 나노 시드가 성장 소결되어 형성되고, 상기 베셀 빔을 조사하여 상기 금속 나노 시드가 성장 소결되는 과정에서 상기 금속 유기 이온 잉크의 열전도도는 1~100W/mK 이내이다.]]&gt;</abv>
+<adv>&lt;![CDATA[20180410]]&gt;</adv>
+<onv>&lt;![CDATA[1020190118383]]&gt;</onv>
+<odv>&lt;![CDATA[20191018]]&gt;</odv>
+<inv>&lt;![CDATA[강봉철 권승갑 백승현]]&gt;</inv>
+<agv>&lt;![CDATA[손재용]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020180041624]]&gt;</src>
+<alt>&lt;![CDATA[마이크로 히터가 구비된 스마트 글래스, 안경, 자동차 주차 보조 카메라, 실험용 보안경, 스포츠형 고글, 오토바이 보호 헬멧의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020157008125</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font> 렌즈 요소 (OPHTHALMIC LENS ELEMENT)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경 렌즈 요소]]&gt;</ttl>
+<tlt>&lt;![CDATA[OPHTHALMIC LENS ELEMENT]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 7/02')" title="새창으로 열림">G02C 7/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 7/04')" title="새창으로 열림">G02C 7/04</a> <font title="G02C 7/02|G02C 7/04|G02C 7/06"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[비젼 씨알씨 리미티드]]&gt;</apv>
+<gnv>&lt;![CDATA[1016274760000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20160530]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 <font color="red"><b>안경</b></font> 렌즈 요소에 관한 것이다. 렌즈 요소는 전방 표면과 후방 표면을 포함하며, 이들 중 적어도 하나는 수평 자오선과 수직 자오선을 포함한다. 렌즈 요소의 중심 영역은 착용자에게 선명한 중심와시를 제공하기 위한 제1 배율을 제공하는 중심와시 구역을 포함한다. 또한, 제1 배율에 대한 양의 배율의 주연 영역이 포함된다. 주연 영역은 수직 자오선에 대해 양측으로 위치되고 중심 영역으로부터 반경방향 외향으로 연장되는 이중 누진 구역을 포함한다. 렌즈 요소는 표면 비점수차의 분포를 제공하며, 이는 수평 자오선 상에서 중심 영역과 누진 구역에 비교적 낮은 표면 비점수차를 제공한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20081023]]&gt;</adv>
+<onv>&lt;![CDATA[1020150041179]]&gt;</onv>
+<odv>&lt;![CDATA[20150415]]&gt;</odv>
+<inv>&lt;![CDATA[바나스 솔리어스 레이몬드]]&gt;</inv>
+<agv>&lt;![CDATA[양영준 안국찬]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020157008125]]&gt;</src>
+<alt>&lt;![CDATA[안경 렌즈 요소의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020200086459</vdkvgwkey>
+<tlv>&lt;![CDATA[3D <font color="red"><b>안경</b></font>을 착용하고 웨어러블 EEG 헤드셋을 구비하는 EEG 측정 및 자극 시스템 및 방법 (EEG detection and nerve stimulation system including a wearable EEG headset and 3D glasses wearing a patient and method thereof)]]&gt;</tlv>
+<ttl>&lt;![CDATA[3D 안경을 착용하고 웨어러블 EEG 헤드셋을 구비하는 EEG 측정 및 자극 시스템 및 방법]]&gt;</ttl>
+<tlt>&lt;![CDATA[EEG detection and nerve stimulation system including a wearable EEG headset and 3D glasses wearing a patient and method thereof]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[J]]&gt;</lst>
+<lst_txt>&lt;![CDATA[거절]]&gt;</lst_txt>
+<status>&lt;![CDATA[거절]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A61M 21/00')" title="새창으로 열림">A61M 21/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'A61N 5/06')" title="새창으로 열림">A61N 5/06</a> <font title="A61M 21/00|A61N 5/06|A61N 1/36|A61N 1/04|A61N 1/40|A61B 5/378|A61B 5/374|A61B 5/00|G16H 20/70|G06F 3/01"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[미션테크 주식회사 김은성]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[3D <font color="red"><b>안경</b></font>을 착용하고 웨어러블 EEG 헤드셋을 구비하는 EEG 측정 및 자극 시스템 및 방법이 개시된다. 3D <font color="red"><b>안경</b></font>을 착용하고 웨어러블 EEG 헤드셋을 구비하는 EEG 측정 및 자극 시스템은 게임, 동영상, 3D 영상, 또는 3D VR/AR 콘텐츠를 표시하는 VR 영상 디스플레이 기기; 상기 VR 영상 디스플레이 기기와 USB 케이블, Wi-Fi, Bluetooth 통신부 중 어느 하나를 통해 연결되며, ERP(Event related potential) 버튼으로 사용되는 환자 제어 장치; 통신부와 제어부를 구비하며, 상기 VR 영상 디스플레이 기기의 게임, 동영상, 3D 영상, 또는 3D VR/AR 콘텐츠를 시청하는 3D 헤드업 디스플레이 기능을 갖는 3D <font color="red"><b>안경</b></font>; 및 상기 3D 헤드업 디스플레이 기능을 갖는 3D <font color="red"><b>안경</b></font>과 유무선 통신을 통해 연동되며, 머리 부분의 측정 지점에 각각 EEG 전극과 자극부(신경 자극기)를 구비하며, 게임과 동영상의 자극에 반응하여 검출된 다채널 EEG 신호를 유무선 통신을 통해 EEG 측정 및 자극 제어 시스템으로 전송하며, 상기 3D 헤드업 디스플레이 또는 상기 EEG 측정 및 자극 제어 시스템으로부터 수신된 자극 제어 신호에 따라 각 EEG 전극마다 구비된 자극부에 의해 1) 광신호 자극, 2) 전기 자극, 또는 3) RF 주파수 자극에 의해 뇌전증 병소 위치와 부위 또는 마비된 신체에 대응하는 해당 뇌의 위치와 부위를 자극하는 웨어러블 EEG 헤드셋을 포함한다. 웨어러블 EEG 헤드셋은 3D 헤드업 디스플레이 기능을 갖는 3D <font color="red"><b>안경</b></font>과 통신되며, VR 영상 디스플레이 기기(예, 3DTV)의 게임 또는 3D 영상, 3D VR/AR 콘텐츠를 보면서 환자 제어 장치(Patient Control Device/Button - 스마트폰(App) 또는 IoT 디바이스)를 사용하여 게임과 동영상의 3D 영상과 3D VR/AR 콘텐츠를 보면서 자극에 따라 환자의 뇌의 인지 반응에 따른 다채널의 EEG 전극으로부터 생성된 다채널 EEG 신호를 EEG 측정 및 자극 제어 시스템으로 전송하고, EEG 측정 및 자극 제어 시스템은 다채널 EEG 신호들의 뇌파 분석과 뇌전도(EEG)의 사건 관련 전위(Event Related Potientials, ERP)를 분석하여 뇌질환 환자, 치매 환자, 우울증 환자는 상대적으로 정상인 보다 ERP의 반응 속도가 느리며, 뇌파 분석을 통해 EEG 측정 및 자극 제어 시스템으로부터 자극 제어 신호를 웨어러블 EEG 헤드셋으로 전송하고, 웨어러블 EEG 헤드셋은 자극 제어 신호에 따라 1) 광신호 자극, 2) 전기 자극, 또는 3) RF 주파수 자극을 통해 뇌신경 치료를 위해 웨어러블 EEG 헤드셋의 다채널 EEG 검출과 뇌 병소 부위와 위치에 뇌 신경 자극치료가 가능하다.]]&gt;</abv>
+<adv>&lt;![CDATA[20200713]]&gt;</adv>
+<onv>&lt;![CDATA[1020220008444]]&gt;</onv>
+<odv>&lt;![CDATA[20220121]]&gt;</odv>
+<inv>&lt;![CDATA[김남영 김은성]]&gt;</inv>
+<agv>&lt;![CDATA[이여송]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020200086459]]&gt;</src>
+<alt>&lt;![CDATA[3D 안경을 착용하고 웨어러블 EEG 헤드셋을 구비하는 EEG 측정 및 자극 시스템 및 방법의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020150153143</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font>테, 스마트폰 외장재 등 다중 금속 구조물의 표면처리방법, 이를 통해 제작된 <font color="red"><b>안경</b></font>테 및 스마트폰 외장재 (Surface treatment of multiple metal structures, and grasses frame and smartphone case produced by it)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경테, 스마트폰 외장재 등 다중 금속 구조물의 표면처리방법, 이를 통해 제작된 안경테 및 스마트폰 외장재]]&gt;</ttl>
+<tlt>&lt;![CDATA[Surface treatment of multiple metal structures, and grasses frame and smartphone case produced by it]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'C25D 11/22')" title="새창으로 열림">C25D 11/22</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'C25D 11/24')" title="새창으로 열림">C25D 11/24</a> <font title="C25D 11/22|C25D 11/24|C25D 11/16|C23G 5/00|G02C 13/00|A45C 11/00"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[주식회사 세원하이텍]]&gt;</apv>
+<gnv>&lt;![CDATA[1017201160000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20170321]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 다중 금속 구조물의 표면처리방법, 이를 통해 제작된 <font color="red"><b>안경</b></font>테 및 스마트폰 외장재에 관한 것으로서, 알루미늄 또는 알루미늄 합금으로 이루어진 제1 금속체와 티타늄 또는 티타늄 합금으로 이루어진 제2 금속체를 상호 부착 또는 결합시켜 다중 금속체를 구성하는 금속체 결합단계와; 상기 금속체 결합단계 후에 제1 금속체를 중심으로 아노다이징 처리하고, 제1 색으로 착색하는 제1 표면 처리단계와; 상기 제1 표면 처리단계 후에 제2 금속체를 중심으로 전착 처리하여 제2 색으로 착색하는 제2 표면 처리단계를 포함하여 구성됨으로써, 다양한 질감과 컬러를 구현할 수 있고, 제조비용을 절감하면서도 외관의 미려함을 추구하여 경제성 및 상품성을 높일 수 있다.]]&gt;</abv>
+<adv>&lt;![CDATA[20151102]]&gt;</adv>
+<onv>&lt;![CDATA[ ]]&gt;</onv>
+<odv>&lt;![CDATA[ ]]&gt;</odv>
+<inv>&lt;![CDATA[방민철 이석진]]&gt;</inv>
+<agv>&lt;![CDATA[김일환]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020150153143]]&gt;</src>
+<alt>&lt;![CDATA[안경테, 스마트폰 외장재 등 다중 금속 구조물의 표면처리방법, 이를 통해 제작된 안경테 및 스마트폰 외장재의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020170114256</vdkvgwkey>
+<tlv>&lt;![CDATA[안면받침부를 구비한 <font color="red"><b>안경</b></font> (Glasses with faceplates)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안면받침부를 구비한 안경]]&gt;</ttl>
+<tlt>&lt;![CDATA[Glasses with faceplates]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 11/00')" title="새창으로 열림">G02C 11/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/12')" title="새창으로 열림">G02C 5/12</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[최정환]]&gt;</apv>
+<gnv>&lt;![CDATA[1017873280000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20171011]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 안면받침부를 구비한 <font color="red"><b>안경</b></font>에 관한 것으로서, 한 쌍의 렌즈(10)와, 상기 렌즈(10)를 고정하는 한 쌍의 림(20)과, 상기 한 쌍의 림(20)을 연결하는 브릿지(30)와, 코받침나사(50)를 이용해 상기 림(20)에 탈부착 가능케 결합하는 코받침부(40)와, 제4나사(70c)를 이용해 상기 림(20)에 탈부착 가능케 결합하는 안면받침부(60)를 포함하여 구성한다. 본 발명에 따르면, 코받침부(40)와 안면받침부(60)의 선택적인 사용이 가능케 함과 동시에 코에 하중 부담을 주지 않으면서도 흘러내림 없는 안정적인 착용감을 제공할 수 있는 효과가 있다.]]&gt;</abv>
+<adv>&lt;![CDATA[20170907]]&gt;</adv>
+<onv>&lt;![CDATA[ ]]&gt;</onv>
+<odv>&lt;![CDATA[ ]]&gt;</odv>
+<inv>&lt;![CDATA[최정환]]&gt;</inv>
+<agv>&lt;![CDATA[장종윤]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020170114256]]&gt;</src>
+<alt>&lt;![CDATA[안면받침부를 구비한 안경의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020210070731</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font>용 미끄럼 방지 스티커 (ANTI-SLIP STICKER FOR GLASSES)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경용 미끄럼 방지 스티커]]&gt;</ttl>
+<tlt>&lt;![CDATA[ANTI-SLIP STICKER FOR GLASSES]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[J]]&gt;</lst>
+<lst_txt>&lt;![CDATA[거절]]&gt;</lst_txt>
+<status>&lt;![CDATA[거절]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/12')" title="새창으로 열림">G02C 5/12</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'C09J 7/26')" title="새창으로 열림">C09J 7/26</a> <font title="G02C 5/12|C09J 7/26|C09J 7/29|B32B 5/18|B32B 7/06|B32B 27/06|B32B 27/36"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[주식회사 위풋테크놀로지]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 <font color="red"><b>안경</b></font>용 미끄럼 방지 스티커에 관한 것으로, 더욱 상세하게는 <font color="red"><b>안경</b></font>의 코받침 부분에 탈거 가능하게 부착되어 안면 상에서 <font color="red"><b>안경</b></font>의 흘러내림을 방지하는 <font color="red"><b>안경</b></font>용 미끄럼 방지 스티커에 관한 것이다. 본 발명의 일 실시예에 따른 <font color="red"><b>안경</b></font>용 미끄럼 방지 스티커는 기재층과, 기재층의 상면에 형성되는 폴리우레탄층과, 폴리우레탄층의 상면에 형성되는 핫멜트코팅층과, 핫멜트코팅층의 상면에 형성되는 점착층과, 점착층의 상면에 탈거 가능하게 부착되는 이형지를 포함하고, 폴리우레탄층은 내부에 복수의 셀이 형성되고, 상면 및 하면에 논슬립홈이 형성되며, 기재층은 폴리우레탄층으로부터 탈거 가능한 것을 특징으로 한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20210601]]&gt;</adv>
+<onv>&lt;![CDATA[1020220162368]]&gt;</onv>
+<odv>&lt;![CDATA[20221208]]&gt;</odv>
+<inv>&lt;![CDATA[김태효 조성호]]&gt;</inv>
+<agv>&lt;![CDATA[차준용]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020210070731]]&gt;</src>
+<alt>&lt;![CDATA[안경용 미끄럼 방지 스티커의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020190091670</vdkvgwkey>
+<tlv>&lt;![CDATA[무나사 <font color="red"><b>안경</b></font>힌지를 가지는 조립식 <font color="red"><b>안경</b></font> (Eyeglasses For Assembling Type With Screwless Hinge)]]&gt;</tlv>
+<ttl>&lt;![CDATA[무나사 안경힌지를 가지는 조립식 안경]]&gt;</ttl>
+<tlt>&lt;![CDATA[Eyeglasses For Assembling Type With Screwless Hinge]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/22')" title="새창으로 열림">G02C 5/22</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/14')" title="새창으로 열림">G02C 5/14</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[최정환]]&gt;</apv>
+<gnv>&lt;![CDATA[1022829660000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20210722]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 가는 선재의 와이어를 절곡하여 렌즈의 테두리를 지지하고 수평 방향과 수직 방향으로 서로 교차되는 연결부재들이 끼움 결합되어 빠지지 않도록 <font color="red"><b>안경</b></font>힌지를 구성하여 나사 체결 없이 <font color="red"><b>안경</b></font>을 조립할 수 있는 무나사 <font color="red"><b>안경</b></font>힌지를 가지는 조립식 <font color="red"><b>안경</b></font>에 관한 것이다. 본 발명은 렌즈의 테두리를 지지하는 지지 프레임; 상기 렌즈의 테두리를 지지하고, 상기 지지 프레임에 착탈 가능하게 결합되는 착탈부재; 상기 지지 프레임의 양측 단부에 각각 결합된 <font color="red"><b>안경</b></font>힌지; 및 상기 <font color="red"><b>안경</b></font>힌지에 결합되어 접거나 펼 수 있는 <font color="red"><b>안경</b></font>다리;를 포함하되, 상기 <font color="red"><b>안경</b></font>힌지는 힌지몸체, 상기 지지 프레임으로부터 연장 형성된 제1 연결부재, 상기 <font color="red"><b>안경</b></font>다리로부터 연장 형성된 제2 연결부재를 구비하고, 상기 힌지몸체에 상기 제1 연결부재와 상기 제2 연결부재를 교차시켜 결합하기 위한 복수개의 통로가 형성되고, 상기 복수개의 통로에는 통로들간 연통되는 교차 영역이 형성되고, 상기 제1 연결부재와 상기 제2 연결부재 중 상기 어느 하나의 연결부재가 교차 영역을 막아 다른 하나의 연결부재의 이동을 제한하는 것을 특징으로 한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20190729]]&gt;</adv>
+<onv>&lt;![CDATA[1020210013902]]&gt;</onv>
+<odv>&lt;![CDATA[20210208]]&gt;</odv>
+<inv>&lt;![CDATA[최정환]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인명]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020190091670]]&gt;</src>
+<alt>&lt;![CDATA[무나사 안경힌지를 가지는 조립식 안경의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020187018330</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font> 렌즈의 제조 방법 (METHOD FOR MANUFACTURING SPECTACLE LENS)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경 렌즈의 제조 방법]]&gt;</ttl>
+<tlt>&lt;![CDATA[METHOD FOR MANUFACTURING SPECTACLE LENS]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 7/12')" title="새창으로 열림">G02C 7/12</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 7/10')" title="새창으로 열림">G02C 7/10</a> <font title="G02C 7/12|G02C 7/10|G02C 13/00|G02B 5/30"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[호야 렌즈 타일랜드 리미티드]]&gt;</apv>
+<gnv>&lt;![CDATA[1020904140000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20200311]]&gt;</gdv>
+<abv>&lt;![CDATA[시감(視感) 투과율이 높고, 또한 충분한 편광 기능을 구비한 <font color="red"><b>안경</b></font> 렌즈를 제공한다. 러빙 처리면 상에, 이색성 색소를 0.04~1.5 질량% 함유하는 도포액을, 스핀 코트법에 의해 회전수 200~600 rpm으로 도포하여 편광층을 형성하는 <font color="red"><b>안경</b></font> 렌즈의 제조 방법.]]&gt;</abv>
+<adv>&lt;![CDATA[20170630]]&gt;</adv>
+<onv>&lt;![CDATA[1020180088701]]&gt;</onv>
+<odv>&lt;![CDATA[20180806]]&gt;</odv>
+<inv>&lt;![CDATA[고토 다쿠미 이나바 츠요시]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인태평양]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
+<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020100029464</vdkvgwkey>
+<tlv>&lt;![CDATA[자동배출장치가 구비된 <font color="red"><b>안경</b></font>렌즈 연마폐수 처리 장치 (Lens edging water treating apparatus with grinding powder automatic discharging device)]]&gt;</tlv>
+<ttl>&lt;![CDATA[자동배출장치가 구비된 안경렌즈 연마폐수 처리 장치]]&gt;</ttl>
+<tlt>&lt;![CDATA[Lens edging water treating apparatus with grinding powder automatic discharging device]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'C02F 5/02')" title="새창으로 열림">C02F 5/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'C02F 11/125')" title="새창으로 열림">C02F 11/125</a> <font title="C02F 5/02|C02F 11/125|B01D 24/16|C02F 103/34"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[서영파일테크 주식회사]]&gt;</apv>
+<gnv>&lt;![CDATA[1011982480000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20121031]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 <font color="red"><b>안경</b></font>렌즈의 연마폐수 처리 장치에 관한 것으로, 더욱 상세히는 <font color="red"><b>안경</b></font>렌즈의 연마 과정에서 배출되는 연마분을 포집하여 자동으로 배출하는 장치가 구비된 자동배출장치가 구비된 <font color="red"><b>안경</b></font>렌즈 연마폐수 처리 장치에 관한 것이다. 본 발명은 옥습기에 공급하는 연마수를 저장하는 제1연마수탱크와, 옥습기에서 사용된 연마 폐수에 함유된 오염 성분을 미리 제거하기 위해 상기 옥습기에서 유입되는 폐수 중에 함유된 입자가 상대적으로 큰 오염 물질을 걸러주는 거름망이 구비된 제2연마수탱크와, 상기 제2연마수탱크에서 공급된 폐수의 미세 오염 물질을 걸러주는 미세필터을 구비하여, 상기 미세필터에 의해 걸러진 청수를 상기 제1연마수탱크로 공급하는 제1필터하우징과, 상기 제2연마수탱크에서 제1필터하우징으로 폐수를 펌핑해주는 펌프 및 상기 제1필터하우징의 미세필터를 통과하지 못해 하부로 침전된 연마분이 수거되고, 내부에 스크류가 구비되어 스크류의 회전에 의해 침전된 연마분을 외부로 배출하는 자동배출탱크를 포함하여 구성되는 자동배출장치가 구비된 <font color="red"><b>안경</b></font>렌즈 연마폐수 처리 장치를 제공한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20100331]]&gt;</adv>
+<onv>&lt;![CDATA[1020110109653]]&gt;</onv>
+<odv>&lt;![CDATA[20111006]]&gt;</odv>
+<inv>&lt;![CDATA[차정익]]&gt;</inv>
+<agv>&lt;![CDATA[장한특허법인]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020100029464]]&gt;</src>
+<alt>&lt;![CDATA[자동배출장치가 구비된 안경렌즈 연마폐수 처리 장치의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020160007670</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font>테용 힌지 조립체 (Hinge assembly for glasses frame)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경테용 힌지 조립체]]&gt;</ttl>
+<tlt>&lt;![CDATA[Hinge assembly for glasses frame]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[F]]&gt;</lst>
+<lst_txt>&lt;![CDATA[소멸]]&gt;</lst_txt>
+<status>&lt;![CDATA[소멸]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/22')" title="새창으로 열림">G02C 5/22</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/10')" title="새창으로 열림">G02C 5/10</a> <font title="G02C 5/22|G02C 5/10|G02C 5/14|G02C 13/00"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[정진백]]&gt;</apv>
+<gnv>&lt;![CDATA[1016568030000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20160906]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 프론트의 양단에 다리를 힌지구조로 조립하여, 다리의 절첩 및 전개기능을 구현하는 <font color="red"><b>안경</b></font>테용 힌지 조립체에 관한 것으로, 본 발명에서는 상부와 하부에 힌지 조립홈이 각각 형성된 연결부를 갖고, 상기 연결부의 후미에 지지단이 형성된 힌지부재와; 다리 선단부에 일체로 형성되며 힌지부재의 각 힌지 조립홈에 힌지구조로 견착되는 한 쌍의 후크 조립편을 포함하여 구성되어, 프론트의 단부와 다리의 선단부를 힌지구조로 연결하는 것으로, 상기 후크 조립편이 형성된 다리의 선단부의 외벽에는 다리와 분리 성형된 탄지시트가 적층되게 배치되고, 상기 탄지시트는 후단부를 적층된 다리에 고정시켜 고정단을 형성하고 선단부는 자유단을 형성하여서, 상기 다리와 분리 구성되어 다리의 외벽에 적층되게 배치된 탄지시트의 탄성 지지작용에 의해, 힌지 조립홈을 중심으로 내측, 외측으로 선회하여 절첩 전개되는 다리는 탄력적으로 지지하여 구속되도록 구성한 것을 특징으로 한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20160121]]&gt;</adv>
+<onv>&lt;![CDATA[ ]]&gt;</onv>
+<odv>&lt;![CDATA[ ]]&gt;</odv>
+<inv>&lt;![CDATA[정진백]]&gt;</inv>
+<agv>&lt;![CDATA[김경미]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020160007670]]&gt;</src>
+<alt>&lt;![CDATA[안경테용 힌지 조립체의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020210125948</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font> (EYE GLASSES)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경]]&gt;</ttl>
+<tlt>&lt;![CDATA[EYE GLASSES]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[A]]&gt;</lst>
+<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
+<status>&lt;![CDATA[공개]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/22')" title="새창으로 열림">G02C 5/22</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/00')" title="새창으로 열림">G02C 5/00</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[가부시키가이샤 아이반]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[템플의 조정을 용이하게 하고 착용감이 뛰어난 <font color="red"><b>안경</b></font>을 제공한다. 렌즈와 상기 렌즈가 삽입된 <font color="red"><b>안경</b></font>테를 포함하는 <font color="red"><b>안경</b></font>으로서, 상기 <font color="red"><b>안경</b></font>은 상기 <font color="red"><b>안경</b></font>테의 일단에 형성되는 엔드피스의 후면에 고정되는 힌지; 그리고, 상기 힌지에 회동 가능하게 설치되는 템플을 포함하고, 상기 힌지에 회동 가능하게 설치되는 템플을 포함하고, 상기 힌지는 상기 템플의 일단에 연결되는 연결부를 구비하고, 상기 연결부는 상기 엔드피스의 가장자리보다 더 안쪽의 위치에 형성되고, 상기 템플은 상기 연결부에 연결된 상기 템플의 일단으로부터 상기 템플의 타단을 향해 연신하고, 상기 엔드피스의 가장자리 부근에서 상기 템플 및 상기 엔드피스 사이의 각도가 소정 각도 이상이 되도록 절곡된다.]]&gt;</abv>
+<adv>&lt;![CDATA[20210923]]&gt;</adv>
+<onv>&lt;![CDATA[1020220162590]]&gt;</onv>
+<odv>&lt;![CDATA[20221208]]&gt;</odv>
+<inv>&lt;![CDATA[나카가와 히로타카]]&gt;</inv>
+<agv>&lt;![CDATA[권혁수 송윤호]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020210125948]]&gt;</src>
+<alt>&lt;![CDATA[안경의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020090088209</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font> 형태의 헤드셋 장치, 이를 포함하는 로봇 제어 시스템 및 이를 이용한 로봇 제어 방법 (Glasses type headset apparatus, control system for robot including the same and control method for robot thereof)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경 형태의 헤드셋 장치, 이를 포함하는 로봇 제어 시스템 및 이를 이용한 로봇 제어 방법]]&gt;</ttl>
+<tlt>&lt;![CDATA[Glasses type headset apparatus, control system for robot including the same and control method for robot thereof]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[F]]&gt;</lst>
+<lst_txt>&lt;![CDATA[소멸]]&gt;</lst_txt>
+<status>&lt;![CDATA[소멸]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02B 27/01')" title="새창으로 열림">G02B 27/01</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G08C 23/04')" title="새창으로 열림">G08C 23/04</a> <font title="G02B 27/01|G08C 23/04|H04Q 9/02|G06F 18/00|G06F 21/32"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[한국전자통신연구원]]&gt;</apv>
+<gnv>&lt;![CDATA[1012659570000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20130514]]&gt;</gdv>
+<abv>&lt;![CDATA[<font color="red"><b>안경</b></font> 형태의 헤드셋 장치가 제공된다. 헤드셋 장치는, 사용자 인식부가 형성된 렌즈 및 사용자 인식부에 의한 사용자 인증 결과에 따라 외부로 다수의 적외선을 발산시키기 위한 발광부가 형성된 <font color="red"><b>안경</b></font>테를 포함한다. 헤드셋, 사용자 추종, 적외선 검출]]&gt;</abv>
+<adv>&lt;![CDATA[20090917]]&gt;</adv>
+<onv>&lt;![CDATA[1020100065065]]&gt;</onv>
+<odv>&lt;![CDATA[20100615]]&gt;</odv>
+<inv>&lt;![CDATA[이대하 김재홍 손주찬]]&gt;</inv>
+<agv>&lt;![CDATA[(유)한양특허법인]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020090088209]]&gt;</src>
+<alt>&lt;![CDATA[안경 형태의 헤드셋 장치, 이를 포함하는 로봇 제어 시스템 및 이를 이용한 로봇 제어 방법의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020140016720</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font>다리 및 그 제조방법 (Temple and the manufacture method)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경다리 및 그 제조방법]]&gt;</ttl>
+<tlt>&lt;![CDATA[Temple and the manufacture method]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[G]]&gt;</lst>
+<lst_txt>&lt;![CDATA[포기]]&gt;</lst_txt>
+<status>&lt;![CDATA[포기]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/14')" title="새창으로 열림">G02C 5/14</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 13/00')" title="새창으로 열림">G02C 13/00</a> <font title="G02C 5/14|G02C 13/00|B29D 12/02"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[정진백]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 <font color="red"><b>안경</b></font>다리 및 그 제조방법에 관한 것으로, 특히 철 재질의 심재를 갖는 합성수지재의 <font color="red"><b>안경</b></font>다리에 관한 것이면서 매우 새롭고 다양한 디자인이 가능하도록 사출로 제조하는 방법과 그에 의한 <font color="red"><b>안경</b></font>다리에 관한 것이다. 본 발명은 금속재질을 이용하여 절삭가공하는 방법을 통하여 본체부와 귀걸이부를 갖는 다리골조를 제조하고, 가공된 다리골조에 도금, 도장, 코팅 등의 표면처리 공정을 통하여 원하는 색상과 질감을 표현토록 하며, 상하부 금형을 이용하여 본체부를 감싸도록 투명재질의 외피를 인서트 사출하고, 돌출부를 절삭하여 외피로부터 본체부가 돌출되지 않도록 하는 돌출부를 제거하고 경첩 및 귀걸이팁을 결합하여 이루어지는 것이다.]]&gt;</abv>
+<adv>&lt;![CDATA[20140213]]&gt;</adv>
+<onv>&lt;![CDATA[1020150095433]]&gt;</onv>
+<odv>&lt;![CDATA[20150821]]&gt;</odv>
+<inv>&lt;![CDATA[정진백]]&gt;</inv>
+<agv>&lt;![CDATA[이석화]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020140016720]]&gt;</src>
+<alt>&lt;![CDATA[안경다리 및 그 제조방법의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020067019253</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font>렌즈를 수동으로 중심조정하는 방법, <font color="red"><b>안경</b></font>렌즈의 중심조정 및 블로킹 방법, 및 중심조정 및 블로킹 장치 (METHOD FOR MANUALLY CENTERING AN OPHTHALMIC LENS, METHOD FOR CENTERING/BLOCKING AN OPHTHALMIC LENS, AND CENTERING/BLOCKING DEVICE)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경렌즈를 수동으로 중심조정하는 방법, 안경렌즈의 중심조정 및 블로킹 방법, 및 중심조정 및 블로킹 장치]]&gt;</ttl>
+<tlt>&lt;![CDATA[METHOD FOR MANUALLY CENTERING AN OPHTHALMIC LENS, METHOD FOR CENTERING/BLOCKING AN OPHTHALMIC LENS, AND CENTERING/BLOCKING DEVICE]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 13/00')" title="새창으로 열림">G02C 13/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B24B 9/14')" title="새창으로 열림">B24B 9/14</a> <font title="G02C 13/00|B24B 9/14|B24B 13/005"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[에씰로르 엥떼르나씨오날(꽁파니 제네랄 돕띠끄)]]&gt;</apv>
+<gnv>&lt;![CDATA[1011263030000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20120306]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은, 교정에 의해, 지지체가 단독으로 조명될 때, 조명수단(S)과 획득 수단(C) 사이에 놓여 있고 2mm 내지 10mm인 최대 외부 치수를 제공하는 투명한 부호 지지체(124)에 형성된 미리 정해진 기하학적 기호인 불투명 부호(124B)의 그림자를 획득하고 저장하는 단계 a;와 상기 <font color="red"><b>안경</b></font>렌즈와 투명 부호 지지체를 중첩시키는 단계 b;와 상기 <font color="red"><b>안경</b></font>렌즈와 상기 지지체가 조명 수단에 의해 함께 조명될 때 상기 <font color="red"><b>안경</b></font>렌즈에 의해 편향된 상기 지지체의 기하학적 기호의 그림자를 획득하고 저장하는 단계 c;와 <font color="red"><b>안경</b></font>렌즈가 조명 수단에 의해 조명될 때, 중심조정용 <font color="red"><b>안경</b></font>렌즈(103)의 중심 및/또는 초점 마크(PC)의 그림자를 획득하기 위해, 획득 수단을 이용하는 단계 d;와 렌즈(103)의 중심 및/또는 축 마크(PC)의 그림자와, 프레임의 테두리(200)의 기준 지점(CB)에 대하여 렌즈(103)의 중심 마크(PC)에 대해 요구되는 위치에 대응하는 가상의 중심조정 타켓(CC)을, 디스플레이 스크린(105)에 표시하는 단계 e;와 단계 a와 단계 c의 획득물을 비교함으로써 측정되는 기하학적 기호인 불투명 부호(124B)의 프리즘 편향으로부터, 중심 마크(PC)에 대하여 프레임(200)의 테두리의 기준점(CB)의 또는 그 반대의 보정된 상대적 위치(CBc)를 추정하는 단계 f; 및 렌즈의 중심 마크의 그림자를 수동으로 가상의 중심조정 타켓과 일치시키는 단계 g;를 포함하는, <font color="red"><b>안경</b></font>렌즈를 수동으로 중심조정하는 방법에 관한 것이다. 렌즈, 프레임, 조명수단, 스크린]]&gt;</abv>
+<adv>&lt;![CDATA[20050105]]&gt;</adv>
+<onv>&lt;![CDATA[1020070030765]]&gt;</onv>
+<odv>&lt;![CDATA[20070316]]&gt;</odv>
+<inv>&lt;![CDATA[디보, 파비앙]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인오리진]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020067019253]]&gt;</src>
+<alt>&lt;![CDATA[안경렌즈를 수동으로 중심조정하는 방법, 안경렌즈의 중심조정 및 블로킹 방법, 및 중심조정 및 블로킹 장치의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020207032035</vdkvgwkey>
+<tlv>&lt;![CDATA[스마트 수면 <font color="red"><b>안경</b></font> 및 그 케이블 구조 (SMART SLEEP GLASSES AND CABLE STRUCTURE)]]&gt;</tlv>
+<ttl>&lt;![CDATA[스마트 수면 안경 및 그 케이블 구조]]&gt;</ttl>
+<tlt>&lt;![CDATA[SMART SLEEP GLASSES AND CABLE STRUCTURE]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[J]]&gt;</lst>
+<lst_txt>&lt;![CDATA[거절]]&gt;</lst_txt>
+<status>&lt;![CDATA[거절]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 11/00')" title="새창으로 열림">G02C 11/00</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 5/22')" title="새창으로 열림">G02C 5/22</a> <font title="G02C 11/00|G02C 5/22|F21V 8/00"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[선전 치이앤하이 아이스콜드 아이티 코., 엘티디.]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[본 출원에서는 스마트 수면 <font color="red"><b>안경</b></font> 및 그 케이블 구조를 공개하는 바, 스마트 수면 <font color="red"><b>안경</b></font>에는 <font color="red"><b>안경</b></font>테와 <font color="red"><b>안경</b></font>다리가 포함되고, <font color="red"><b>안경</b></font>테와 <font color="red"><b>안경</b></font>다리는 힌지 결합 구조를 통하여 연결을 구현하며; 그 중에서, 힌지 결합 구조에는 <font color="red"><b>안경</b></font>테 단부에 구비되는 제1 힌지 구조와 <font color="red"><b>안경</b></font>다리 단부에 구비되는 제2 힌지 구조가 포함되고, 케이블은 각각 제1 힌지 구조와 제2 힌지 구조를 통과하며; 스마트 수면 <font color="red"><b>안경</b></font>이 접철 상태에 처할 때, 제1 힌지 구조와 제2 힌지 구조가 배합되어 케이블을 커버한다. 본 출원의 수면 <font color="red"><b>안경</b></font>의 케이블 구조에서, 케이블은 <font color="red"><b>안경</b></font>테와 <font color="red"><b>안경</b></font>다리 간의 힌지 결합 구조 중에서 배선되어, 스마트 수면 <font color="red"><b>안경</b></font> 내의 케이블 조립 가능성을 구현하고, 스마트 수면 <font color="red"><b>안경</b></font>의 전체 외관을 아름답게 하였다.]]&gt;</abv>
+<adv>&lt;![CDATA[20191223]]&gt;</adv>
+<onv>&lt;![CDATA[1020210069012]]&gt;</onv>
+<odv>&lt;![CDATA[20210610]]&gt;</odv>
+<inv>&lt;![CDATA[치, 징 리, 지에칸 주, 홍싱]]&gt;</inv>
+<agv>&lt;![CDATA[김기문]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020207032035]]&gt;</src>
+<alt>&lt;![CDATA[스마트 수면 안경 및 그 케이블 구조의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020200048435</vdkvgwkey>
+<tlv>&lt;![CDATA[전면부의 엔드피스가 분리 가능한 <font color="red"><b>안경</b></font> (EYEGLASSES WITH REPLACEABLE FRONT ENDPIECES)]]&gt;</tlv>
+<ttl>&lt;![CDATA[전면부의 엔드피스가 분리 가능한 안경]]&gt;</ttl>
+<tlt>&lt;![CDATA[EYEGLASSES WITH REPLACEABLE FRONT ENDPIECES]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[A]]&gt;</lst>
+<lst_txt>&lt;![CDATA[공개]]&gt;</lst_txt>
+<status>&lt;![CDATA[공개]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 11/02')" title="새창으로 열림">G02C 11/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 11/00')" title="새창으로 열림">G02C 11/00</a> <font title="G02C 11/02|G02C 11/00|G02C 11/06|H04R 5/033"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[오윤석]]&gt;</apv>
+<gnv>&lt;![CDATA[ ]]&gt;</gnv>
+<gdv>&lt;![CDATA[ ]]&gt;</gdv>
+<abv>&lt;![CDATA[전면부의 엔드피스가 분리 가능한 <font color="red"><b>안경</b></font>(10)이 제공된다. 상기 전면부의 엔드피스가 분리 가능한 <font color="red"><b>안경</b></font>(10)은, <font color="red"><b>안경</b></font> 렌즈가 장착되는 렌즈 프레임(100); 및 상기 렌즈 프레임(100)과 한 쌍의 <font color="red"><b>안경</b></font> 다리(300)를 연결하되, 상기 렌즈 프레임(100)의 양측 끝단에 탈착 가능하도록 구비되는 한 쌍의 엔드피스(200)를 포함할 수 있다.]]&gt;</abv>
+<adv>&lt;![CDATA[20200422]]&gt;</adv>
+<onv>&lt;![CDATA[1020210130354]]&gt;</onv>
+<odv>&lt;![CDATA[20211101]]&gt;</odv>
+<inv>&lt;![CDATA[오윤석]]&gt;</inv>
+<agv>&lt;![CDATA[해움특허법인]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020200048435]]&gt;</src>
+<alt>&lt;![CDATA[전면부의 엔드피스가 분리 가능한 안경의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020187018331</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font> 렌즈 및 <font color="red"><b>안경</b></font> (SPECTACLE LENS AND SPECTACLES)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경 렌즈 및 안경]]&gt;</ttl>
+<tlt>&lt;![CDATA[SPECTACLE LENS AND SPECTACLES]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 7/12')" title="새창으로 열림">G02C 7/12</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02B 5/30')" title="새창으로 열림">G02B 5/30</a> <font title="G02C 7/12|G02B 5/30|G02C 7/10"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[호야 렌즈 타일랜드 리미티드]]&gt;</apv>
+<gnv>&lt;![CDATA[1020862730000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20200302]]&gt;</gdv>
+<abv>&lt;![CDATA[반짝임의 억제 능력의 관점에서 만족스러운 편광도를 구비하고, 또한 높은 시감(視感) 투과율을 구비한 <font color="red"><b>안경</b></font> 렌즈로서, 종래 기술에 비해 프레임 선택의 자유도가 높고, 또한 수주로부터 납품까지의 납기를 단축시킬 수 있는 <font color="red"><b>안경</b></font> 렌즈 및 <font color="red"><b>안경</b></font>의 제공. 렌즈 기재와 상기 렌즈 기재 상에 직접 또는 다른 층을 개재하여 이색성 색소 도포층을 가지는 <font color="red"><b>안경</b></font> 렌즈로서, 편광도가 10~60%이고, 또한 시감 투과율이 75%를 초과하는 <font color="red"><b>안경</b></font> 렌즈 및 상기 <font color="red"><b>안경</b></font> 렌즈와 이 <font color="red"><b>안경</b></font> 렌즈를 장착한 프레임을 가지는 <font color="red"><b>안경</b></font>.]]&gt;</abv>
+<adv>&lt;![CDATA[20170630]]&gt;</adv>
+<onv>&lt;![CDATA[1020180086245]]&gt;</onv>
+<odv>&lt;![CDATA[20180730]]&gt;</odv>
+<inv>&lt;![CDATA[고토 다쿠미 이나바 츠요시]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인태평양]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/images/common/pic_noimage.gif]]&gt;</src>
+<alt>&lt;![CDATA[이미지 없음]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020070067676</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font>다리 및 그 제조방법 (Temple and the manufacture method)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경다리 및 그 제조방법]]&gt;</ttl>
+<tlt>&lt;![CDATA[Temple and the manufacture method]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[F]]&gt;</lst>
+<lst_txt>&lt;![CDATA[소멸]]&gt;</lst_txt>
+<status>&lt;![CDATA[소멸]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'B29D 12/02')" title="새창으로 열림">B29D 12/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G02C 13/00')" title="새창으로 열림">G02C 13/00</a> ]]&gt;</ipv>
+<apv>&lt;![CDATA[정진백]]&gt;</apv>
+<gnv>&lt;![CDATA[1008723140000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20081128]]&gt;</gdv>
+<abv>&lt;![CDATA[본 발명은 <font color="red"><b>안경</b></font>다리 및 그 제조방법에 관한 것으로, 특히 철 재질의 심재를 갖는 합성수지재의 <font color="red"><b>안경</b></font>다리에 관한 것이면서 두 가지의 재질 또는 두 가지 색상을 가진 재료를 사용하여 <font color="red"><b>안경</b></font>다리를 제조함으로써 디자인의 향상과 제조의 편의성 및 견고성 등을 골고루 갖도록 하는 것이다. 구체적으로 첫번째의 사출에서는 <font color="red"><b>안경</b></font>다리(1)의 전체 또는 일부분에 <font color="red"><b>안경</b></font>다리(1) 두께의 절반이 되는 1차성형부(1')를 을 먼저 형성하면서 1차성형부(1')의 중앙에 심재(2)를 삽입할 요홈(3)을 동시에 형성하며, 사출이 완료되면 요홈(3)에 심재(2)를 삽입하고 심재(2)를 삽입한 상태에서 나머지 절반인 2차성형부(1")를 마저 사출하여 <font color="red"><b>안경</b></font>다리(1)의 외형을 완성하는 것을 특징으로 한다. <font color="red"><b>안경</b></font>다리, 사출, 이중사출, 심재, 요홈, 2차성형]]&gt;</abv>
+<adv>&lt;![CDATA[20070705]]&gt;</adv>
+<onv>&lt;![CDATA[ ]]&gt;</onv>
+<odv>&lt;![CDATA[ ]]&gt;</odv>
+<inv>&lt;![CDATA[정진백]]&gt;</inv>
+<agv>&lt;![CDATA[이석화]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020070067676]]&gt;</src>
+<alt>&lt;![CDATA[안경다리 및 그 제조방법의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
+</article>, <article>
+<vdkvgwkey>1020177022991</vdkvgwkey>
+<tlv>&lt;![CDATA[<font color="red"><b>안경</b></font> 장용 파라미터 측정 장치, <font color="red"><b>안경</b></font> 장용 파라미터 측정 프로그램 및 위치 지정 방법 (MEASUREMENT DEVICE FOR EYEGLASSES-WEARING PARAMETER, MEASUREMENT PROGRAM FOR EYEGLASSES-WEARING PARAMETER, AND POSITION DESIGNATION METHOD)]]&gt;</tlv>
+<ttl>&lt;![CDATA[안경 장용 파라미터 측정 장치, 안경 장용 파라미터 측정 프로그램 및 위치 지정 방법]]&gt;</ttl>
+<tlt>&lt;![CDATA[MEASUREMENT DEVICE FOR EYEGLASSES-WEARING PARAMETER, MEASUREMENT PROGRAM FOR EYEGLASSES-WEARING PARAMETER, AND POSITION DESIGNATION METHOD]]&gt;</tlt>
+<prv>&lt;![CDATA[null]]&gt;</prv>
+<lst>&lt;![CDATA[R]]&gt;</lst>
+<lst_txt>&lt;![CDATA[등록]]&gt;</lst_txt>
+<status>&lt;![CDATA[등록]]&gt;</status>
+<ipv>&lt;![CDATA[<a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G01B 11/02')" title="새창으로 열림">G01B 11/02</a> <a href="javascript:remoconOpenKpat(0, 'IPC_DETAIL', 'G01B 11/26')" title="새창으로 열림">G01B 11/26</a> <font title="G01B 11/02|G01B 11/26|G02C 13/00|A61B 3/11"> .... </font>]]&gt;</ipv>
+<apv>&lt;![CDATA[호야 렌즈 타일랜드 리미티드]]&gt;</apv>
+<gnv>&lt;![CDATA[1019602110000]]&gt;</gnv>
+<gdv>&lt;![CDATA[20190313]]&gt;</gdv>
+<abv>&lt;![CDATA[<font color="red"><b>안경</b></font> 프레임을 장용하는 피검사자의 <font color="red"><b>안경</b></font> 장용 파라미터에 대해 측정을 실시할 때에 사용되는 <font color="red"><b>안경</b></font> 장용 파라미터 측정 장치 (1) 를, 상기 피검사자의 <font color="red"><b>안경</b></font> 프레임 장용 상태에 있어서의 얼굴 화상인 제 1 화상과 <font color="red"><b>안경</b></font> 프레임 비장용 상태에 있어서의 얼굴 화상인 제 2 화상을 각각 취득하고, 상기 제 1 화상과 상기 제 2 화상을 관련지은 제 3 화상을 준비하는 정보 처리부 (15) 와, 상기 정보 처리부 (15) 가 준비한 상기 제 3 화상을 표시하는 표시 화면부 (12) 와, 상기 표시 화면부 (12) 가 표시하는 상기 제 3 화상 상에서 상기 <font color="red"><b>안경</b></font> 장용 파라미터의 측정 기준점의 지정을 실시하는 조작부 (12a) 와, 지정된 상기 측정 기준점의 데이터를 사용하여 <font color="red"><b>안경</b></font> 장용 파라미터를 산출하는 계측 연산 수단 (15e) 을 구비하여 구성한다.]]&gt;</abv>
+<adv>&lt;![CDATA[20160310]]&gt;</adv>
+<onv>&lt;![CDATA[1020170105587]]&gt;</onv>
+<odv>&lt;![CDATA[20170919]]&gt;</odv>
+<inv>&lt;![CDATA[다도코로 노부유키 히로노 나오야 마츠시마 마사아키]]&gt;</inv>
+<agv>&lt;![CDATA[특허법인코리아나]]&gt;</agv>
+<img/>
+<src>&lt;![CDATA[http://kpat.kipris.or.kr/kpat/remoteFile.do?method=thumNail&amp;applno=1020177022991]]&gt;</src>
+<alt>&lt;![CDATA[안경 장용 파라미터 측정 장치, 안경 장용 파라미터 측정 프로그램 및 위치 지정 방법의 도면]]&gt;</alt>
+<!--examinedTextFg><![CDATA[N]]></examinedTextFg-->
+<judgementtextfg>&lt;![CDATA[N]]&gt;</judgementtextfg>
 </article>]
