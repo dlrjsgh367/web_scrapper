@@ -5,49 +5,26 @@ from bs4 import BeautifulSoup
 import xml
 import xml.etree.ElementTree as ET
 
-def sort(a, b, c, d, e, f, g, h, i, j, k):
 
+def sort_func(a, d, l):
+    """
+    xml 태그를 제거해주는 함수입니다.
+    """
     a_fix = '<root>{}</root>'.format(a)
     a_content = ET.fromstring(a_fix).text
 
-    b_fix = '<root>{}</root>'.format(b)
-    b_content = ET.fromstring(b_fix).text
-    
-    c_fix = '<root>{}</root>'.format(c)
-    c_content = ET.fromstring(c_fix).text
-
     d_fix = '<root>{}</root>'.format(d)
-    d_content = ET.fromstring(d_fix).text
+    d_content = ET.fromstring(d_fix).textt
 
-    e_fix = '<root>{}</root>'.format(e)
-    e_content = ET.fromstring(e_fix).text
-
-    f_fix = '<root>{}</root>'.format(f)
-    f_content = ET.fromstring(f_fix).text
-
-    g_fix = '<root>{}</root>'.format(g)
-    g_content = ET.fromstring(g_fix).text
-
-    h_fix = '<root>{}</root>'.format(h)
-    h_content = ET.fromstring(h_fix).text
-
-    i_fix = '<root>{}</root>'.format(i)
-    i_content = ET.fromstring(i_fix).text
-
-    j_fix = '<root>{}</root>'.format(j)
-    j_content = ET.fromstring(j_fix).text
-
-    k_fix = '<root>{}</root>'.format(k)
-    k_content = ET.fromstring(k_fix).text
+    l_fix = '<root>{}</root>'.format(l)
+    l_content = ET.fromstring(l_fix).text
     
-    result = f"특허명 : {a_content}", f"IPC : {b_content}", f"출원인 : {c_content}", f"출원번호 : {d_content}", f"출원일자 : {e_content}", f"등록번호 : {f_content}", f"등록일자 : {g_content}", f"공개번호 : {h_content}", f"공개일자 : {i_content}", f"대리인 : {j_content}", f"발명자 : {k_content}", "\n"
+    result =  f"출원번호 : {d_content}", f"특허명 : {a_content}", f"요약 : {l_content}", "\n"
     return result
 
-
-# category : 검색유형
 # row : row개의 검색결과를 가져옴
 # Keyword : 검색어 입력(검색어 + 검색어 도 됨)
-def search_result(category, row, Keyword):
+def search_result(Keyword, row):
     # 결과값을 담아놓는 리스트
     result_list = []
     
@@ -72,13 +49,7 @@ def search_result(category, row, Keyword):
     
     # data 
     data = {
-    "next": f"{category}",
-    # patentList
-    # designList
-    # trademarkList
-    # frnUSList
-    # frnEUList
-    # frnJPList
+    "next": "patentList",
     "FROM": "SEARCH",
     "searchInTransKorToEng": "N",
     "searchInTransEngToKor": "N",
@@ -96,22 +67,20 @@ def search_result(category, row, Keyword):
     result = soup.find_all("article")
 
     with open("search_result.xml", "w", encoding='utf8') as f:
-        f.write(str(result))
+        f.write(str(soup))
 
     for item in result:
-        tlv = item.find('tlv').text # 특허명
-        ipv = item.select_one('a').text # IPC
-        apv = item.find('apv').text # 출원인
-        vdkvgwkey = item.find('vdkvgwkey').text # 출원번호
-        adv = item.find('adv').text # 출원일자
-        gnv = item.find('gnv').text # 등록번호
-        gdv = item.find('gdv').text # 등록일자
-        onv = item.find('onv').text # 공개번호
-        odv = item.find('odv').text # 공개일자
-        agv = item.find('agv').text # 대리인
-        inv = item.find('inv').text # 발명자
-        abv = item.find('abv').text # 상세 설명
-        result_list.append(sort(tlv,ipv,apv,vdkvgwkey,adv,gnv,gdv,onv,odv,agv,inv))
+        
+        # 특허명
+        tlv = item.find('tlv').text 
+        
+        # 출원번호
+        vdkvgwkey = item.find('vdkvgwkey').text 
+        
+        # 요약
+        abv = item.find('abv').text 
+        
+        result_list.append(sort_func(tlv,vdkvgwkey,abv))
 
     Real_result_list  = []
     for i in result_list[:row]:
@@ -120,9 +89,9 @@ def search_result(category, row, Keyword):
     # 결과 값 txt 파일 저장
     with open("search_result.txt", "w", encoding='utf8') as f:
         f.writelines(Real_result_list)
-    
+
 if __name__ == "__main__":
-    search_result(category="patentList", row=30, Keyword="안경")
+    search_result(Keyword="감자", row=15)
     
     
 
